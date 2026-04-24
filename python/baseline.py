@@ -70,8 +70,13 @@ class BaselineProver:
         return False, None, stats
 
     def _search(self, sequent: Sequent, max_depth: int, term_depth: int) -> Optional[DerivationTree]:
+        """
+        Recursive search for a proof tree.
+        Each call represents a node in the derivation. For branching rules,
+        all children must be successfully closed (AND nodes). For quantifier
+        instantiation, we try terms until one leads to a closed tree (OR nodes).
+        """
         self.steps += 1
-        # Track relative depth reached
         self.max_depth_reached = max(self.max_depth_reached, 20 - max_depth)
 
         if self._check_timeout():
@@ -93,40 +98,43 @@ class BaselineProver:
             return None
 
         # 2. Rule selection (Algorithm 2 Greedy Scan)
-        # Scan antecedent then succedent for the first applicable logical connective.
+        # We pick the very first formula that isn't an atom.
         rule = self._find_first_applicable_rule(sequent)
         if rule:
             rule_name, idx, side = rule
+            # If the greedy scan picks a quantifier, it "hogs" the search:
+            # we must try to close the proof using this rule application.
             if rule_name in ("∀L", "∃R"):
                 return self._apply_quantifier_rule(sequent, rule_name, idx, side, max_depth, term_depth)
             else:
                 return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth)
 
+        # Only atoms left and no identity -> Branch not provable
         return None
 
     def _find_first_applicable_rule(self, sequent: Sequent) -> Optional[Tuple[str, int, str]]:
         """Greedy scan for the first formula that isn't an atom."""
-        # Scan Antecedent
+        # Scan Antecedent first (left-to-right)
         for i, f in enumerate(sequent.antecedent):
             if isinstance(f, BinaryOp):
                 if f.connective == Connective.AND: return "∧L", i, "L"
                 if f.connective == Connective.OR:  return "∨L", i, "L"
                 if f.connective == Connective.IMPLIES: return "→L", i, "L"
                 if f.connective == Connective.IFF: return "↔L", i, "L"
-            if isinstance(f, Negation): return "¬L", i, "L"
-            if isinstance(f, QuantifiedFormula):
+            elif isinstance(f, Negation): return "¬L", i, "L"
+            elif isinstance(f, QuantifiedFormula):
                 if f.quantifier == Quantifier.FORALL: return "∀L", i, "L"
                 if f.quantifier == Quantifier.EXISTS: return "∃L", i, "L"
         
-        # Scan Succedent
+        # Scan Succedent (left-to-right)
         for i, f in enumerate(sequent.succedent):
             if isinstance(f, BinaryOp):
                 if f.connective == Connective.AND: return "∧R", i, "R"
                 if f.connective == Connective.OR:  return "∨R", i, "R"
                 if f.connective == Connective.IMPLIES: return "→R", i, "R"
                 if f.connective == Connective.IFF: return "↔R", i, "R"
-            if isinstance(f, Negation): return "¬R", i, "R"
-            if isinstance(f, QuantifiedFormula):
+            elif isinstance(f, Negation): return "¬R", i, "R"
+            elif isinstance(f, QuantifiedFormula):
                 if f.quantifier == Quantifier.FORALL: return "∀R", i, "R"
                 if f.quantifier == Quantifier.EXISTS: return "∃R", i, "R"
         
@@ -148,7 +156,6 @@ class BaselineProver:
         elif rule == "¬L":
             children_sequents = [Sequent(new_antecedent, new_succedent + [f.formula])]
         elif rule == "∃L":
-            # Fresh eigenvariable
             avoid = self._get_all_vars(sequent)
             fresh_var = Variable(self._variant("z", avoid))
             children_sequents = [Sequent(new_antecedent + [f.instantiate(fresh_var)], new_succedent)]
@@ -159,7 +166,6 @@ class BaselineProver:
         elif rule == "¬R":
             children_sequents = [Sequent(new_antecedent + [f.formula], new_succedent)]
         elif rule == "∀R":
-            # Fresh eigenvariable
             avoid = self._get_all_vars(sequent)
             fresh_var = Variable(self._variant("z", avoid))
             children_sequents = [Sequent(new_antecedent, new_succedent + [f.instantiate(fresh_var)])]
@@ -190,29 +196,27 @@ class BaselineProver:
                 Sequent(new_antecedent, new_succedent + [imp2])
             ]
         
+        # Branching check: All children must eventually be closed to return a closed proof tree.
         children_trees = []
         for s in children_sequents:
             child = self._search(s, max_depth - 1, term_depth)
             if child is None:
-                return None
+                return None # One branch failed -> rule application failed
             children_trees.append(child)
         
         return DerivationTree(sequent, rule_applied=rule, children=children_trees)
 
     def _apply_quantifier_rule(self, sequent: Sequent, rule: str, idx: int, side: str, max_depth: int, term_depth: int) -> Optional[DerivationTree]:
         f = sequent.antecedent[idx] if side == "L" else sequent.succedent[idx]
-        
-        # Herbrand universe enumeration
         terms = self._enumerate_terms(sequent, term_depth)
         
+        # Backtracking Search for a term that allows all resulting branches to close.
         for t in terms:
             if side == "L": # ∀L
                 new_ant = list(sequent.antecedent)
-                # Keep the quantifier for completeness (contraction) but move to end
                 quant = new_ant.pop(idx)
-                new_ant.append(quant)
-                # Add instantiated formula to front
-                new_ant.insert(0, f.instantiate(t))
+                new_ant.append(quant) # Contraction: move to end
+                new_ant.insert(0, f.instantiate(t)) # New instance at front
                 new_seq = Sequent(new_ant, list(sequent.succedent))
             else: # ∃R
                 new_suc = list(sequent.succedent)
@@ -223,6 +227,7 @@ class BaselineProver:
             
             child = self._search(new_seq, max_depth - 1, term_depth)
             if child:
+                # Successfully closed this branch with term t
                 return DerivationTree(sequent, rule_applied=f"{rule}({t})", children=[child])
         
         return None
