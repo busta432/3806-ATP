@@ -106,7 +106,7 @@ class BaselineProver:
             return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth, used_instantiations)
 
         # Phase 3: Quantifier rules
-        quant = self._find_quantifier_rule(sequent)
+        quant = self._find_quantifier_rule(sequent, term_depth, used_instantiations)
         if quant:
             rule_name, idx, side = quant
             return self._apply_quantifier_rule(sequent, rule_name, idx, side, max_depth, term_depth, used_instantiations)
@@ -159,16 +159,22 @@ class BaselineProver:
         
         return None
 
-    def _find_quantifier_rule(self, sequent: Sequent):
+    def _find_quantifier_rule(self, sequent: Sequent, term_depth: int, used_instantiations: Set[Tuple[Formula, Term]]):
+        # Generate available terms for this depth
+        terms = self._enumerate_terms(sequent, term_depth)
+        
         # Left side
         for i, f in enumerate(sequent.antecedent):
             if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.FORALL:
-                return "∀L", i, "L"
+                # ONLY select this rule if there's at least one term we haven't used yet
+                if any((f, t) not in used_instantiations for t in terms):
+                    return "∀L", i, "L"
         
         # Right side
         for i, f in enumerate(sequent.succedent):
             if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.EXISTS:
-                return "∃R", i, "R"
+                if any((f, t) not in used_instantiations for t in terms):
+                    return "∃R", i, "R"
         
         return None
 
