@@ -11,6 +11,7 @@ Reference:
 """
 
 import time
+import itertools
 from typing import Optional, Set, List, Tuple
 from fol_types import (
     Term, Variable, Constant, Function,
@@ -40,13 +41,13 @@ class BaselineProver:
         initial_sequent = Sequent(antecedent=[], succedent=[formula])
         
         # Iterative deepening over tree depth and term depth
-        # Similar to OCaml implementation: max_d up to 20, term_d up to 3
+        # Faithful to OCaml: max_d up to 20, term_d up to 3
         for term_d in range(4):
             for max_d in range(1, 21):
                 if self._check_timeout():
                     break
                 
-                res = self._search(initial_sequent, max_d, term_d, set())
+                res = self._search(initial_sequent, max_d, term_d)
                 if res:
                     elapsed = (time.time() - self.start_time) * 1000.0
                     stats = {
@@ -68,10 +69,10 @@ class BaselineProver:
         }
         return False, None, stats
 
-    def _search(self, sequent: Sequent, max_depth: int, term_depth: int, used_instantiations: Set[Tuple[Formula, Term]]) -> Optional[DerivationTree]:
+    def _search(self, sequent: Sequent, max_depth: int, term_depth: int) -> Optional[DerivationTree]:
         self.steps += 1
-        current_depth = 20 - max_depth # Approximation
-        self.max_depth_reached = max(self.max_depth_reached, current_depth)
+        # Track relative depth reached
+        self.max_depth_reached = max(self.max_depth_reached, 20 - max_depth)
 
         if self._check_timeout():
             return None
@@ -97,19 +98,19 @@ class BaselineProver:
         inv = self._find_invertible_rule(sequent)
         if inv:
             rule_name, idx, side = inv
-            return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth, used_instantiations)
+            return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth)
 
         # Phase 2: Branching rules
         branching = self._find_branching_rule(sequent)
         if branching:
             rule_name, idx, side = branching
-            return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth, used_instantiations)
+            return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth)
 
-        # Phase 3: Quantifier rules
-        quant = self._find_quantifier_rule(sequent, term_depth, used_instantiations)
+        # Phase 3: Quantifier rules (The "Naive" part)
+        quant = self._find_quantifier_rule(sequent)
         if quant:
             rule_name, idx, side = quant
-            return self._apply_quantifier_rule(sequent, rule_name, idx, side, max_depth, term_depth, used_instantiations)
+            return self._apply_quantifier_rule(sequent, rule_name, idx, side, max_depth, term_depth)
 
         return None
 
@@ -159,26 +160,23 @@ class BaselineProver:
         
         return None
 
-    def _find_quantifier_rule(self, sequent: Sequent, term_depth: int, used_instantiations: Set[Tuple[Formula, Term]]):
-        # Generate available terms for this depth
-        terms = self._enumerate_terms(sequent, term_depth)
+    def _find_quantifier_rule(self, sequent: Sequent):
+        # Faithful to Algorithm 2: No skipping based on term availability.
+        # Just pick the first quantifier found.
         
         # Left side
         for i, f in enumerate(sequent.antecedent):
             if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.FORALL:
-                # ONLY select this rule if there's at least one term we haven't used yet
-                if any((f, t) not in used_instantiations for t in terms):
-                    return "∀L", i, "L"
+                return "∀L", i, "L"
         
         # Right side
         for i, f in enumerate(sequent.succedent):
             if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.EXISTS:
-                if any((f, t) not in used_instantiations for t in terms):
-                    return "∃R", i, "R"
+                return "∃R", i, "R"
         
         return None
 
-    def _apply_rule(self, sequent: Sequent, rule: str, idx: int, side: str, max_depth: int, term_depth: int, used_instantiations: Set[Tuple[Formula, Term]]) -> Optional[DerivationTree]:
+    def _apply_rule(self, sequent: Sequent, rule: str, idx: int, side: str, max_depth: int, term_depth: int) -> Optional[DerivationTree]:
         new_antecedent = list(sequent.antecedent)
         new_succedent = list(sequent.succedent)
         
@@ -225,12 +223,10 @@ class BaselineProver:
                 Sequent(new_antecedent, new_succedent + [f.right])
             ]
         elif rule == "↔L":
-            # A <-> B  =>  (A -> B) & (B -> A)
             imp1 = BinaryOp(Connective.IMPLIES, f.left, f.right)
             imp2 = BinaryOp(Connective.IMPLIES, f.right, f.left)
             children_sequents = [Sequent(new_antecedent + [imp1, imp2], new_succedent)]
         elif rule == "↔R":
-            # A <-> B  =>  (A -> B) and (B -> A)
             imp1 = BinaryOp(Connective.IMPLIES, f.left, f.right)
             imp2 = BinaryOp(Connective.IMPLIES, f.right, f.left)
             children_sequents = [
@@ -240,25 +236,20 @@ class BaselineProver:
         
         children_trees = []
         for s in children_sequents:
-            child = self._search(s, max_depth - 1, term_depth, used_instantiations)
+            child = self._search(s, max_depth - 1, term_depth)
             if child is None:
                 return None
             children_trees.append(child)
         
         return DerivationTree(sequent, rule_applied=rule, children=children_trees)
 
-    def _apply_quantifier_rule(self, sequent: Sequent, rule: str, idx: int, side: str, max_depth: int, term_depth: int, used_instantiations: Set[Tuple[Formula, Term]]) -> Optional[DerivationTree]:
+    def _apply_quantifier_rule(self, sequent: Sequent, rule: str, idx: int, side: str, max_depth: int, term_depth: int) -> Optional[DerivationTree]:
         f = sequent.antecedent[idx] if side == "L" else sequent.succedent[idx]
         
         # Herbrand universe enumeration
         terms = self._enumerate_terms(sequent, term_depth)
         
         for t in terms:
-            if (f, t) in used_instantiations:
-                continue
-            
-            new_used = used_instantiations | {(f, t)}
-            
             if side == "L": # ∀L
                 new_ant = list(sequent.antecedent)
                 # Keep the quantifier for completeness (contraction) but move to end
@@ -274,11 +265,9 @@ class BaselineProver:
                 new_suc.insert(0, f.instantiate(t))
                 new_seq = Sequent(list(sequent.antecedent), new_suc)
             
-            child = self._search(new_seq, max_depth - 1, term_depth, new_used)
+            child = self._search(new_seq, max_depth - 1, term_depth)
             if child:
-                # Rule name with term for clarity
-                full_rule = f"{rule}({t})"
-                return DerivationTree(sequent, rule_applied=full_rule, children=[child])
+                return DerivationTree(sequent, rule_applied=f"{rule}({t})", children=[child])
         
         return None
 
@@ -305,7 +294,6 @@ class BaselineProver:
             if arity == 0:
                 continue
             
-            import itertools
             for args in itertools.product(smaller_terms, repeat=arity):
                 new_terms.append(Function(name, args))
         
