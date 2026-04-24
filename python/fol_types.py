@@ -165,11 +165,12 @@ class Connective(Enum):
     AND     = auto()   # ∧
     OR      = auto()   # ∨
     IMPLIES = auto()   # →
+    IFF     = auto()   # ↔
 
 
 @dataclass(frozen=True)
 class BinaryOp(Formula):
-    """φ ∧ ψ  /  φ ∨ ψ  /  φ → ψ"""
+    """φ ∧ ψ  /  φ ∨ ψ  /  φ → ψ  /  φ ↔ ψ"""
     connective: Connective
     left: Formula
     right: Formula
@@ -185,7 +186,12 @@ class BinaryOp(Formula):
         )
 
     def __str__(self) -> str:
-        symbol = {Connective.AND: "∧", Connective.OR: "∨", Connective.IMPLIES: "→"}[self.connective]
+        symbol = {
+            Connective.AND: "∧", 
+            Connective.OR: "∨", 
+            Connective.IMPLIES: "→",
+            Connective.IFF: "↔"
+        }[self.connective]
         return f"({self.left} {symbol} {self.right})"
 
     def __repr__(self) -> str:

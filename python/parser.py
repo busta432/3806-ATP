@@ -34,8 +34,12 @@ from fol_types import (
 
 FOL_GRAMMAR = r"""
     // Top-level
-    formula : implies #Not sure I understand why we need this extra layer.
-    // Precedence: implies < or < and < neg < atom/paren # 
+    formula : iff
+
+    iff     : implies ("<->" implies)+             -> iff
+            | implies
+
+    // Precedence: iff < implies < or < and < neg < atom/paren # 
     implies : or ("->" or)+                        -> implies
             | or
 
@@ -109,10 +113,9 @@ class FOLTransformer(Transformer):
     
     def var_or_const(self, items) -> Term:
         name = str(items[0])
-    # If this name is currently bound by a quantifier → Variable
-    # Otherwise it's a free name → treat as Constant
-    # Ensure it's a single char a-z or a char followed by digits
-        if len(name) >= 1 or (len(name) > 1 and name[1:].isdigit()): #Changed if len(name) from == 1 to >= 1 and passed 62/62 tests for test_parser.py.
+        # If this name is currently bound by a quantifier → Variable
+        # Otherwise it's a free name → treat as Constant
+        if name in self._bound:
             return Variable(name)
         return Constant(name)
 
@@ -166,6 +169,13 @@ class FOLTransformer(Transformer):
         result = items[-1]
         for left in reversed(items[:-1]):
             result = BinaryOp(Connective.IMPLIES, left, result)
+        return result
+
+    def iff(self, items) -> Formula:
+        # items may be [A, B, C] — fold left: ((A ↔ B) ↔ C)
+        result = items[0]
+        for right in items[1:]:
+            result = BinaryOp(Connective.IFF, result, right)
         return result
 
     def paren(self, items) -> Formula:
@@ -304,6 +314,7 @@ if __name__ == "__main__":
         ("P & Q",                   "(P ∧ Q)"),
         ("P | Q",                   "(P ∨ Q)"),
         ("P -> Q",                  "(P → Q)"),
+        ("P <-> Q",                 "(P ↔ Q)"),
         ("P -> Q -> R",             "(P → (Q → R))"),   # right-assoc
         ("P & Q | R",               "((P ∧ Q) ∨ R)"),   # precedence
         ("~P & Q",                  "(¬P ∧ Q)"),
