@@ -92,87 +92,43 @@ class BaselineProver:
         if max_depth <= 0:
             return None
 
-        # 2. Rule selection by tiers
-        
-        # Phase 1: Invertible rules (Non-branching)
-        inv = self._find_invertible_rule(sequent)
-        if inv:
-            rule_name, idx, side = inv
-            return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth)
-
-        # Phase 2: Branching rules
-        branching = self._find_branching_rule(sequent)
-        if branching:
-            rule_name, idx, side = branching
-            return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth)
-
-        # Phase 3: Quantifier rules (The "Naive" part)
-        quant = self._find_quantifier_rule(sequent)
-        if quant:
-            rule_name, idx, side = quant
-            return self._apply_quantifier_rule(sequent, rule_name, idx, side, max_depth, term_depth)
+        # 2. Rule selection (Algorithm 2 Greedy Scan)
+        # Scan antecedent then succedent for the first applicable logical connective.
+        rule = self._find_first_applicable_rule(sequent)
+        if rule:
+            rule_name, idx, side = rule
+            if rule_name in ("∀L", "∃R"):
+                return self._apply_quantifier_rule(sequent, rule_name, idx, side, max_depth, term_depth)
+            else:
+                return self._apply_rule(sequent, rule_name, idx, side, max_depth, term_depth)
 
         return None
 
-    def _find_invertible_rule(self, sequent: Sequent):
-        # Left side
+    def _find_first_applicable_rule(self, sequent: Sequent) -> Optional[Tuple[str, int, str]]:
+        """Greedy scan for the first formula that isn't an atom."""
+        # Scan Antecedent
         for i, f in enumerate(sequent.antecedent):
             if isinstance(f, BinaryOp):
-                if f.connective == Connective.AND:
-                    return "∧L", i, "L"
-                if f.connective == Connective.IFF:
-                    return "↔L", i, "L"
-            if isinstance(f, Negation):
-                return "¬L", i, "L"
-            if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.EXISTS:
-                return "∃L", i, "L"
+                if f.connective == Connective.AND: return "∧L", i, "L"
+                if f.connective == Connective.OR:  return "∨L", i, "L"
+                if f.connective == Connective.IMPLIES: return "→L", i, "L"
+                if f.connective == Connective.IFF: return "↔L", i, "L"
+            if isinstance(f, Negation): return "¬L", i, "L"
+            if isinstance(f, QuantifiedFormula):
+                if f.quantifier == Quantifier.FORALL: return "∀L", i, "L"
+                if f.quantifier == Quantifier.EXISTS: return "∃L", i, "L"
         
-        # Right side
+        # Scan Succedent
         for i, f in enumerate(sequent.succedent):
             if isinstance(f, BinaryOp):
-                if f.connective == Connective.OR:
-                    return "∨R", i, "R"
-                if f.connective == Connective.IMPLIES:
-                    return "→R", i, "R"
-            if isinstance(f, Negation):
-                return "¬R", i, "R"
-            if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.FORALL:
-                return "∀R", i, "R"
-        
-        return None
-
-    def _find_branching_rule(self, sequent: Sequent):
-        # Left side
-        for i, f in enumerate(sequent.antecedent):
-            if isinstance(f, BinaryOp):
-                if f.connective == Connective.OR:
-                    return "∨L", i, "L"
-                if f.connective == Connective.IMPLIES:
-                    return "→L", i, "L"
-        
-        # Right side
-        for i, f in enumerate(sequent.succedent):
-            if isinstance(f, BinaryOp):
-                if f.connective == Connective.AND:
-                    return "∧R", i, "R"
-                if f.connective == Connective.IFF:
-                    return "↔R", i, "R"
-        
-        return None
-
-    def _find_quantifier_rule(self, sequent: Sequent):
-        # Faithful to Algorithm 2: No skipping based on term availability.
-        # Just pick the first quantifier found.
-        
-        # Left side
-        for i, f in enumerate(sequent.antecedent):
-            if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.FORALL:
-                return "∀L", i, "L"
-        
-        # Right side
-        for i, f in enumerate(sequent.succedent):
-            if isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.EXISTS:
-                return "∃R", i, "R"
+                if f.connective == Connective.AND: return "∧R", i, "R"
+                if f.connective == Connective.OR:  return "∨R", i, "R"
+                if f.connective == Connective.IMPLIES: return "→R", i, "R"
+                if f.connective == Connective.IFF: return "↔R", i, "R"
+            if isinstance(f, Negation): return "¬R", i, "R"
+            if isinstance(f, QuantifiedFormula):
+                if f.quantifier == Quantifier.FORALL: return "∀R", i, "R"
+                if f.quantifier == Quantifier.EXISTS: return "∃R", i, "R"
         
         return None
 
