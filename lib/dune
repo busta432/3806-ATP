@@ -5,9 +5,7 @@
 (ocamllex lexer tptp_lexer)
 
 (menhir
- (modules parser)
- (flags --explain))
+ (modules parser))
 
 (menhir
- (modules tptp_parser)
- (flags --explain))
+ (modules tptp_parser))

@@ -199,7 +199,7 @@ and apply_rule stats depth term_limit sequent rule =
     let x, body = match List.nth sequent.succedent i with Forall(x, b) -> x, b | _ -> failwith "ForallRight" in
     let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
     let x' = variant x avoid in
-    let body' = subst [(x, Var x')] body in
+    let body' = subst [(x, Func (x', []))] body in
     let suc' = List.filteri (fun j _ -> i <> j) sequent.succedent in
     let s' = { sequent with succedent = body' :: suc' } in
     map_proof_tree (Inference (ForallRight (i, x'), sequent, [])) [s'] stats depth term_limit
@@ -208,7 +208,7 @@ and apply_rule stats depth term_limit sequent rule =
     let x, body = match List.nth sequent.antecedent i with Exists(x, b) -> x, b | _ -> failwith "ExistsLeft" in
     let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
     let x' = variant x avoid in
-    let body' = subst [(x, Var x')] body in
+    let body' = subst [(x, Func (x', []))] body in
     let ant' = List.filteri (fun j _ -> i <> j) sequent.antecedent in
     let s' = { sequent with antecedent = body' :: ant' } in
     map_proof_tree (Inference (ExistsLeft (i, x'), sequent, [])) [s'] stats depth term_limit
@@ -231,35 +231,40 @@ and map_proof_tree inf goals stats depth term_limit =
   | None -> None
 
 and find_first_rule sequent =
-  let rec scan_left i = function
+  (* Phase 1: Scan for propositional rules or eigenvariable rules (Non-instantiating) *)
+  let rec scan_non_inst side i = function
     | [] -> None
     | f :: fs ->
-      (match f with
-       | And _ -> Some (AndLeft i)
-       | Or _ -> Some (OrLeft i)
-       | Implies _ -> Some (ImpliesLeft i)
-       | Iff _ -> Some (IffLeft i)
-       | Not _ -> Some (NotLeft i)
-       | Forall _ -> Some (ForallLeft (i, Var "_"))
-       | Exists _ -> Some (ExistsLeft (i, "_"))
-       | _ -> scan_left (i + 1) fs)
+      match side, f with
+      | _, And _ -> Some (if side = `L then AndLeft i else AndRight i)
+      | _, Or _ -> Some (if side = `L then OrLeft i else OrRight i)
+      | _, Implies _ -> Some (if side = `L then ImpliesLeft i else ImpliesRight i)
+      | _, Iff _ -> Some (if side = `L then IffLeft i else IffRight i)
+      | _, Not _ -> Some (if side = `L then NotLeft i else NotRight i)
+      | `L, Exists _ -> Some (ExistsLeft (i, "_"))
+      | `R, Forall _ -> Some (ForallRight (i, "_"))
+      | _ -> scan_non_inst side (i + 1) fs
   in
-  let rec scan_right i = function
+
+  (* Phase 2: Scan for instantiation rules (∀L, ∃R) *)
+  let rec scan_inst side i = function
     | [] -> None
     | f :: fs ->
-      (match f with
-       | And _ -> Some (AndRight i)
-       | Or _ -> Some (OrRight i)
-       | Implies _ -> Some (ImpliesRight i)
-       | Iff _ -> Some (IffRight i)
-       | Not _ -> Some (NotRight i)
-       | Forall _ -> Some (ForallRight (i, "_"))
-       | Exists _ -> Some (ExistsRight (i, Var "_"))
-       | _ -> scan_right (i + 1) fs)
+      match side, f with
+      | `L, Forall _ -> Some (ForallLeft (i, Var "_"))
+      | `R, Exists _ -> Some (ExistsRight (i, Var "_"))
+      | _ -> scan_inst side (i + 1) fs
   in
-  match scan_left 0 sequent.antecedent with
+
+  match scan_non_inst `L 0 sequent.antecedent with
   | Some r -> Some r
-  | None -> scan_right 0 sequent.succedent
+  | None ->
+    match scan_non_inst `R 0 sequent.succedent with
+    | Some r -> Some r
+    | None ->
+      match scan_inst `L 0 sequent.antecedent with
+      | Some r -> Some r
+      | None -> scan_inst `R 0 sequent.succedent
 
 (* ================================================================ *)
 (* MAIN ENTRY POINT                                                  *)
@@ -270,7 +275,13 @@ and find_first_rule sequent =
 let prove formula timeout_ms =
   let start_time = Unix.gettimeofday () in
   let stats = make_stats () in
-  let sequent = { antecedent = []; succedent = [formula] } in
+  
+  (* Ground free variables: treat them as constants for the search *)
+  let f_vars = free_vars_unique formula in
+  let ground_subst = List.map (fun v -> (v, Func(v, []))) f_vars in
+  let grounded_formula = subst ground_subst formula in
+  
+  let sequent = { antecedent = []; succedent = [grounded_formula] } in
   
   let rec iterative_deepening max_d term_d =
     let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in

@@ -1,5 +1,5 @@
-(lang dune 3.12)
-(using menhir 2.1)
+(lang dune 3.13)
+(using menhir 3.0)
 
 (name atp_ocaml)
 (version 0.1.0)
@@ -18,7 +18,7 @@
   "A three-engine automated theorem prover implementing LK' backward search (baseline + improved) and resolution refutation for first-order logic.")
  (depends
   (ocaml (>= 5.0))
-  (dune (>= 3.12))
+  (dune (>= 3.13))
   (menhir (>= 20230608))
   (alcotest (>= 1.7.0))
   (cmdliner (>= 1.2.0))
