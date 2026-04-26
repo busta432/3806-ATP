@@ -1,0 +1,9 @@
+_build/
+.git/
+*.pdf
+*.png
+*.txt
+results/
+docs/
+*.md
+!README.md
