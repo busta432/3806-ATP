@@ -1,0 +1,169 @@
+3806ICT Assignment 1: 
+
+
+Papers to Read: 
+https://openresearch-repository.anu.edu.au/server/api/core/bitstreams/0dd1a5b4-6ea0-4721-9d7f-e90f711d4a0a/content
+
+https://aclanthology.org/C02-1066.pdf - Parsing Termination of Unification Grammars
+
+http://arxiv.org/pdf/cs/9301110 - Designing a Theorem Prover
+
+https://www.cs.cmu.edu/~fp/courses/15317-f08/cmuonly/dyckhoff92.pdf & https://www.jstor.org/stable/2275431 - CONTRACTION-FREE SEQUENT CALCULI FOR INTUITIONISTIC LOGIC
+
+https://z3prover.github.io/papers/programmingz3.html - Programming Z3
+
+Rubric Notes: 
+- Formatting & Structure is easy marks, need to get perfect 
+(3 marks out of 30 total - 10% of grade)
+
+Datasets (5 marks): Needs to have multiple datasets from different sources with justification of why they are good choices and suitable for the task. 
+	- Keep within a certain Runtime complexity of operations. 
+	- Ensure there is a good amount of only partially solvable proofs to test algorithm logic doesn't have shortcuts or infinity runtime errors. 
+
+Method (10 Marks): Requires a figure that illustrates the architecture of system. 
+- Describe each part of the baseline & new algo. 
+- Analyse your new algo and give reasonable hypothesis why it would outperform the baseline. 
+
+Implementation (10 Marks): 
+Gives implementation details. Gives experiment setup. Demonstrates the effectiveness of the proposed method in results in a well-designed table. Sufficient analysis of the results.
+- Marks drop to below 5 if missing one aspect, below 3 if missing two aspects. 
+
+Discussion (2 Marks) - Limitations of work & Propose potential future improvements. 
+
+
+Thoughts - Most important parts to get right are the method and results table and analysis in implementation. The dataset, formatting and discussion should be easy non-miss marks, that is just attention to detail. 
+
+
+
+Research & Proposed Thoughts: 
+The first and most critical improvement is the systematic exploitation of invertible rules. A logical rule is said to be invertible if the premises are provable if and only if the conclusion is provable. In the context of automated deduction, applying an invertible rule is always "safe" because it does not require backtracking. If the goal is provable, it remains provable after the application of an invertible rule. The inversion strategy replaces "don't-know non-determinism" (where the prover must guess which rule to apply) with "don't-care non-determinism" (where any invertible rule can be applied in any order). This significantly reduces the branching factor of the search.
+
+
+Beyond simple inversion, the algorithm should implement Focusing. Developed by Andreoli, Focusing forces the prover to complete a chain of related inferences before moving to a new part of the sequent, which eliminates many redundant permutations of the same proof tree. This "backchaining" approach is particularly effective in logics with large numbers of hypotheses, such as those found in software verification.
+
+The algorithm either reuses existing terms or creates a fresh one, which is essentially a guess. This is highly inefficient because most terms in the Herbrand universe are irrelevant to the proof.
+
+The academic solution is the transition to a Free-Variable Sequent Calculus.
+This symbolic approach transforms a "guessing" problem into a constraint satisfaction problem, which can be solved efficiently using standard unification algorithms like the Martelli-Montanari algorithm.
+
+## 1. Research Objectives
+
+### Primary Questions
+1. **How does Algorithm 2 (naïve backward search in LK') perform on standard FOL benchmarks?**
+   - Measure solve rate, time, and proof complexity on TPTP datasets
+   
+2. **Which algorithmic improvements yield the most significant performance gains?**
+   - Hypothesis: Invertible-first ordering (I2) + iterative deepening (I1) provide the largest gains with minimal implementation effort
+   - Hypothesis: Loop detection (I3) is critical for preventing non-termination on non-provable formulae
+   - Hypothesis: Unification-guided instantiation (I4) provides dramatic improvements on quantifier-heavy problems
+
+3. **What are the fundamental limitations of the LK' backward search approach?**
+   - Where does it fail compared to resolution-based or tableaux methods?
+   - What classes of problems remain intractable?
+
+---
+
+## 2. Literature Review Plan
+
+### 2.1 Core Textbook
+
+
+### 2.2 Foundational References
+
+Harrison, J. (2009). *Handbook of Practical Logic and Automated Reasoning*. Cambridge University Press. | Canonical OCaml ATP implementations; formula manipulation; unification; tableaux; MESON 
+Fitting, M. (1996). *First-Order Logic and Automated Theorem Proving*. 2nd ed., Springer. | Theoretical foundation for sequent calculus proof search 
+Troelstra, A.S. & Schwichtenberg, H. (2000). *Basic Proof Theory*. 2nd ed., Cambridge University Press. | LK calculus, cut elimination, structural rules
+Leitsch, A. (1997). *The Resolution Calculus*. Springer. | Alternative approach for comparison context 
+
+### 2.3 Algorithm & Optimization Papers
+
+Dyckhoff, R. (1992). "Contraction-Free Sequent Calculi for Intuitionistic Logic". *J. Symbolic Logic*, 57(3). | Contraction-free calculi; termination guarantees | I6 |
+Letz, R. et al. (1994). "Controlled Integration of the Cut Rule into Connection Tableau Calculi". *J. Automated Reasoning*, 13(3). | Iterative deepening + connection tableaux | I1 |
+Hähnle, R. (2001). "Tableaux and Related Methods". In *Handbook of Automated Reasoning*. | Comprehensive survey of tableau methods |survey |
+Loveland, D.W. (1978). *Automated Theorem Proving: A Logical Basis*. North-Holland. | Foundation for resolution and model elimination 
+Pfenning, F. (2004). "Automated Theorem Proving" (lecture notes, CMU). | Focusing, phase-structured proof search | I7 |
+
+
+### 2.4 Implementation Resources
+
+Harrison OCaml ATP examples | Code | https://www.cl.cam.ac.uk/~jrh13/atp/OCaml_v0/index.html 
+
+Ben Lynn — First-Order Logic (Haskell) | Code + tutorial | https://crypto.stanford.edu/~blynn/compiler/fol.html 
+
+Ben Lynn — ATP (Haskell) | Code + tutorial | https://crypto.stanford.edu/~blynn/compiler/atp.html 
+
+Cornell CS 3110 — Lexing and Parsing | Tutorial | https://courses.cs.cornell.edu/cs3110/2021sp/textbook/interp/lex_parse.html 
+
+Alt-Ergo (OCaml SMT solver) | Reference code | https://alt-ergo.ocamlpro.com/ 
+
+Menhir manual | Documentation | http://gallium.inria.fr/~fpottier/menhir/ 
+
+### 2.5 Benchmark & Evaluation
+TPTP Problem Library | Benchmark suite | http://www.tptp.org/ 
+
+TPTP FOF Syntax Documentation | Format spec | http://www.tptp.org/TPTP/SyntaxBNF.html 
+SystemOnTPTP | Online prover testing | http://www.tptp.org/cgi-bin/SystemOnTPTP 
+
+
+
+
+---
+
+## 3. Key Theoretical Concepts
+
+### 3.1 Sequent Calculus (LK')
+The sequent calculus LK' is a formal proof system where:
+- **Sequents** have the form Γ ⊢ Δ (antecedent ⊢ succedent)
+- **Rules** are applied backwards from conclusion to premises
+- The system is **sound** (if we can derive Γ ⊢ Δ, then Γ logically implies Δ) and **complete** (if Γ logically implies Δ, there exists a derivation)
+
+### 3.2 Invertibility
+A rule is **invertible** if the conclusion is provable if and only if the premises are provable. Invertible rules can be applied greedily without losing completeness.
+
+### 3.3 Eigenvariable Condition
+When applying ∀R or ∃L backwards, the introduced variable must be **fresh** — it must not appear free in any formula in the sequent. This prevents unsound proofs.
+
+### 3.4 Herbrand's Theorem
+A quantifier-free formula is satisfiable iff it is satisfiable in a Herbrand interpretation. This justifies enumerating ground terms when instantiating quantifiers.
+
+### 3.5 Unification
+First-order unification finds a substitution σ such that σ(s) = σ(t) for terms s and t. Key properties:
+- **Most general unifier (MGU)** exists and is unique (up to renaming)
+- **Occurs check** prevents infinite terms
+- Robinson's algorithm runs in exponential time worst-case, but practical implementations use near-linear algorithms
+
+---
+
+## 4. Annotated Bibliography
+
+### Core 
+
+**Hou, Z. (2021). *Fundamentals of Logic and Computation*. Springer.**
+- The course textbook. Algorithm 2 on p.67 is the baseline we must implement.
+- Covers sequent calculus LK', proof search, and formal verification.
+
+**Harrison, J. (2009). *Handbook of Practical Logic and Automated Reasoning*. Cambridge.**
+- The definitive reference for implementing theorem provers in OCaml.
+- Chapters 3-6 cover exactly our domain: FOL, sequent calculus, tableaux, resolution, MESON.
+- The accompanying OCaml code is our primary implementation reference.
+- *Key files*: `formulas.ml` (AST), `fol.ml` (FOL ops), `tableaux.ml` (proof search), `meson.ml` (MESON), `unif.ml` (unification)
+
+**Dyckhoff, R. (1992). "Contraction-Free Sequent Calculi for Intuitionistic Logic". *JSL* 57(3).**
+- Provides contraction-free rules that guarantee termination in propositional logic.
+- Relevant for I6 improvement (contraction control).
+- The key insight: replacing the problematic →L rule with 4 specific rules eliminates the need for contraction.
+
+**Pfenning, F. (2004). "Automated Theorem Proving" (lecture notes, CMU).**
+- Excellent explanation of focusing — a technique that dramatically reduces non-determinism.
+- I7 improvement (stretch goal) would implement a simplified version.
+- Available at: https://www.cs.cmu.edu/~fp/courses/atp/handouts/atp.pdf
+
+**TPTP Problem Library. http://www.tptp.org/**
+- The standard benchmark for ATP evaluation. We use FOF (first-order formulae) problems.
+- Problems are rated 0.0-1.0 by difficulty.
+- Must cite as benchmark source.
+
+**Lynn, B. — "First-Order Logic" and "ATP". Stanford.**
+- Excellent Haskell implementations of Gilmore, DPLL, Tableaux, and MESON.
+- Not directly portable to OCaml, but the algorithmic descriptions are clear.
+- Useful for understanding: NNF, skolemization, Herbrand theorem, unification, DPLL.
