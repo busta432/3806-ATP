@@ -227,6 +227,7 @@ and apply_and_search stats depth_limit sigma metavars history sequent rule =
      | Some (subst', m') ->
        search stats depth_limit subst' m' history { sequent with antecedent = b :: ant' })
 
+
   | ForallLeft (i, _) ->
     let x, body = match List.nth sequent.antecedent i with Forall(x,b) -> x,b | _ -> failwith "ForallL" in
     let m_name, m_next = fresh_metavar metavars in

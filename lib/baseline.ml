@@ -16,18 +16,15 @@ open Formula
 (* ================================================================ *)
 
 (** Generate all terms up to a certain depth using the given 
-    function symbols (pairs of name, arity). *)
-let rec enumerate_terms functions max_depth =
+    function symbols and base terms (constants/free variables). *)
+let rec enumerate_terms functions base_terms max_depth =
   if max_depth < 0 then []
-  else if max_depth = 0 then
-    (* Constants only *)
-    let constants = List.filter (fun (_, arity) -> arity = 0) functions in
-    List.map (fun (name, _) -> Func (name, [])) constants
+  else if max_depth = 0 then base_terms
   else
-    let smaller_terms = enumerate_terms functions (max_depth - 1) in
+    let smaller_terms = enumerate_terms functions base_terms (max_depth - 1) in
     let new_terms = 
       List.concat_map (fun (name, arity) ->
-        if arity = 0 then [Func (name, [])]
+        if arity = 0 then [] (* Constants are already in base_terms *)
         else
           let rec n_ary_product n =
             if n = 0 then [[]]
@@ -40,17 +37,18 @@ let rec enumerate_terms functions max_depth =
           List.map (fun args -> Func (name, args)) (n_ary_product arity)
       ) functions
     in
-    unique (smaller_terms @ new_terms)
+    unique (base_terms @ new_terms)
 
-(** Get all function symbols from a sequent. 
-    If none, add a default constant "c". *)
-let functions_of_sequent { antecedent; succedent } =
+(** Get all function symbols and base terms from a sequent. 
+    If no base terms, add a default constant "c". *)
+let get_functions_and_base_terms { antecedent; succedent } =
   let forms = antecedent @ succedent in
-  let all_fs = List.concat_map functions_of forms in
-  let all_v_consts = List.concat_map (fun f -> List.map (fun v -> (v, 0)) (free_vars f)) forms in
-  let unique_fs = unique (all_fs @ all_v_consts) in
-  if List.exists (fun (_, arity) -> arity = 0) unique_fs then unique_fs
-  else ("c", 0) :: unique_fs
+  let all_fs = List.concat_map functions_of forms |> List.filter (fun (_, a) -> a > 0) in
+  let fvs = List.concat_map free_vars forms |> unique |> List.map (fun v -> Var v) in
+  let consts = List.concat_map constants_of forms |> unique |> List.map (fun c -> Func (c, [])) in
+  let bases = unique (fvs @ consts) in
+  let final_bases = if bases = [] then [Func ("c", [])] else bases in
+  unique all_fs, final_bases
 
 (* ================================================================ *)
 (* PROOF SEARCH CORE                                                 *)
@@ -62,7 +60,7 @@ let is_identity { antecedent; succedent } =
 (** Main search function.
     Strictly prioritized based on the if-else chain in Algorithm 2.
     [used] tracks (formula, term) pairs already instantiated on this branch. *)
-let rec search (stats : prover_stats) max_depth term_limit used sequent =
+let rec search (stats : prover_stats) max_depth term_limit used toggle sequent =
   stats.steps <- stats.steps + 1;
   stats.max_depth <- max (20 - max_depth) stats.max_depth;
 
@@ -72,88 +70,48 @@ let rec search (stats : prover_stats) max_depth term_limit used sequent =
   else if List.mem Bot sequent.antecedent then Some (Axiom (BotLeft, sequent))
   else if max_depth <= 0 then None
   else
+    let rec try_rules = function
+      | [] -> None
+      | r :: rs ->
+          (match apply_rule stats (max_depth - 1) term_limit used (not toggle) sequent r with
+           | Some tree -> Some tree
+           | None -> try_rules rs)
+    in
     (* 2. Tier 2: Non-branching propositional and eigenvariable rules *)
-    match find_tier2_rule sequent with
-    | Some rule -> apply_rule stats (max_depth - 1) term_limit used sequent rule
-    | None ->
-    (* 3. Tier 3: Branching propositional rules *)
-    match find_tier3_rule sequent with
-    | Some rule -> apply_rule stats (max_depth - 1) term_limit used sequent rule
-    | None ->
-    (* 4. Tier 4/5: Quantifier instantiation *)
-    match find_tier4_rule sequent with
-    | Some rule -> apply_quantifier_rule stats (max_depth - 1) term_limit used sequent rule
-    | None -> None
-
-
-(** Apply a quantifier rule. Tries all terms in the Herbrand universe. *)
-and apply_quantifier_rule stats depth term_limit used sequent rule =
-  let terms = enumerate_terms (functions_of_sequent sequent) term_limit in
-  match rule with
-  | ForallLeft (i, _) ->
-    let f = List.nth sequent.antecedent i in
-    let x, body = match f with Forall(x, b) -> x, b | _ -> failwith "ForallL" in
-    let rec try_terms = function
-      | [] -> 
-          (* Tier 5: Fallback to fresh variable if all terms fail or were used *)
-          let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
-          let z' = variant "z" avoid in
-          let body' = subst [(x, Var z')] body in
-          let ant_rest = List.filteri (fun j _ -> i <> j) sequent.antecedent in
-          let s' = { sequent with antecedent = body' :: (ant_rest @ [f]) } in
-          stats.inst_attempts <- stats.inst_attempts + 1;
-          (match search stats depth term_limit ((f, Var z') :: used) s' with
-           | Some tree -> Some (Inference (ForallLeft (i, Var z'), sequent, [tree]))
-           | None -> None)
-      | t :: ts ->
-          if List.mem (f, t) used then try_terms ts
-          else
-            let body' = subst [(x, t)] body in
-            let ant_rest = List.filteri (fun j _ -> i <> j) sequent.antecedent in
-            let s' = { sequent with antecedent = body' :: (ant_rest @ [f]) } in
-            stats.inst_attempts <- stats.inst_attempts + 1;
-            match search stats depth term_limit ((f, t) :: used) s' with
-            | Some tree -> Some (Inference (ForallLeft (i, t), sequent, [tree]))
-            | None -> try_terms ts
-    in try_terms terms
-
-  | ExistsRight (i, _) ->
-    let f = List.nth sequent.succedent i in
-    let x, body = match f with Exists(x, b) -> x, b | _ -> failwith "ExistsR" in
-    let rec try_terms = function
-      | [] -> 
-          (* Tier 5: Fallback to fresh variable *)
-          let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
-          let z' = variant "z" avoid in
-          let body' = subst [(x, Var z')] body in
-          let suc_rest = List.filteri (fun j _ -> i <> j) sequent.succedent in
-          let s' = { sequent with succedent = body' :: (suc_rest @ [f]) } in
-          stats.inst_attempts <- stats.inst_attempts + 1;
-          (match search stats depth term_limit ((f, Var z') :: used) s' with
-           | Some tree -> Some (Inference (ExistsRight (i, Var z'), sequent, [tree]))
-           | None -> None)
-      | t :: ts ->
-          if List.mem (f, t) used then try_terms ts
-          else
-            let body' = subst [(x, t)] body in
-            let suc_rest = List.filteri (fun j _ -> i <> j) sequent.succedent in
-            let s' = { sequent with succedent = body' :: (suc_rest @ [f]) } in
-            stats.inst_attempts <- stats.inst_attempts + 1;
-            match search stats depth term_limit ((f, t) :: used) s' with
-            | Some tree -> Some (Inference (ExistsRight (i, t), sequent, [tree]))
-            | None -> try_terms ts
-    in try_terms terms
-  | _ -> failwith "Invalid quantifier rule"
+    let rules2 = find_all_tier2_rules sequent toggle in
+    if rules2 <> [] then try_rules rules2
+    else
+      (* 3. Tier 3: Branching propositional rules *)
+      let rules3 = find_all_tier3_rules sequent toggle in
+      if rules3 <> [] then try_rules rules3
+      else
+        (* 4. Tier 4: Quantifier instantiation with UNUSED EXISTING terms *)
+        let apps4 = find_all_tier4_applications sequent term_limit used toggle in
+        if apps4 <> [] then
+          let rec try_apps = function
+            | [] -> None
+            | (r, t) :: rs ->
+                (match apply_quantifier_instantiation stats (max_depth - 1) term_limit used (not toggle) sequent r t with
+                 | Some tree -> Some tree
+                 | None -> try_apps rs)
+          in try_apps apps4
+        else
+          (* 5. Tier 5: Quantifier instantiation with FRESH term *)
+          let rules5 = find_all_tier5_rules sequent toggle in
+          if rules5 <> [] then
+            let rec try_fresh = function
+              | [] -> None
+              | r :: rs ->
+                  let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
+                  let z' = variant "z" avoid in
+                  (match apply_quantifier_instantiation stats (max_depth - 1) term_limit used (not toggle) sequent r (Var z') with
+                   | Some tree -> Some tree
+                   | None -> try_fresh rs)
+            in try_fresh rules5
+          else None
 
 (** Apply a specific rule at a sequent. *)
-and apply_rule stats depth term_limit used sequent rule =
-  let map_children trees = match rule with
-    | AndLeft _ | OrRight _ | ImpliesRight _ | NotLeft _ | NotRight _ | IffLeft _ | ForallRight _ | ExistsLeft _ ->
-        Inference (rule, sequent, trees)
-    | AndRight _ | OrLeft _ | ImpliesLeft _ | IffRight _ ->
-        Inference (rule, sequent, trees)
-    | _ -> failwith "Unexpected rule"
-  in
+and apply_rule stats depth term_limit used next_toggle sequent rule =
   let children_sequents = match rule with
     | AndLeft i ->
         let a, b = match List.nth sequent.antecedent i with And(a,b) -> a,b | _ -> failwith "AndL" in
@@ -180,14 +138,14 @@ and apply_rule stats depth term_limit used sequent rule =
         let ant' = List.filteri (fun j _ -> i <> j) sequent.antecedent in
         [{ sequent with antecedent = Implies(a,b) :: Implies(b,a) :: ant' }]
     | ForallRight (i, _) ->
-        let x, body = match List.nth sequent.succedent i with Forall(x, b) -> x, b | _ -> failwith "∀R" in
+        let x, body = match List.nth sequent.succedent i with Forall(x, b) -> x, b | _ -> failwith "forallR" in
         let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
         let x' = variant x avoid in
         let body' = subst [(x, Var x')] body in
         let suc' = List.filteri (fun j _ -> i <> j) sequent.succedent in
         [{ sequent with succedent = body' :: suc' }]
     | ExistsLeft (i, _) ->
-        let x, body = match List.nth sequent.antecedent i with Exists(x, b) -> x, b | _ -> failwith "∃L" in
+        let x, body = match List.nth sequent.antecedent i with Exists(x, b) -> x, b | _ -> failwith "existsL" in
         let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
         let x' = variant x avoid in
         let body' = subst [(x, Var x')] body in
@@ -209,57 +167,100 @@ and apply_rule stats depth term_limit used sequent rule =
         let a, b = match List.nth sequent.succedent i with Iff(a,b) -> a,b | _ -> failwith "IffR" in
         let suc' = List.filteri (fun j _ -> i <> j) sequent.succedent in
         [{ sequent with succedent = Implies(a,b) :: suc' }; { sequent with succedent = Implies(b,a) :: suc' }]
-    | _ -> failwith "Quantifier rule in non-quantifier handler"
+    | _ -> failwith "Quantifier instantiation rule in non-quantifier handler"
   in
   let rec prove_all = function
     | [] -> Some []
     | g :: gs ->
-        match search stats depth term_limit used g with
-        | None -> None
-        | Some t -> match prove_all gs with None -> None | Some ts -> Some (t :: ts)
+        (match search stats depth term_limit used next_toggle g with
+         | None -> None
+         | Some t -> match prove_all gs with None -> None | Some ts -> Some (t :: ts))
   in
   match prove_all children_sequents with
-  | Some trees -> Some (map_children trees)
+  | Some trees -> Some (Inference (rule, sequent, trees))
   | None -> None
 
-and find_tier2_rule sequent =
-  let rec scan_ant i = function
-    | [] -> None
-    | f :: fs -> match f with
+and apply_quantifier_instantiation stats depth term_limit used next_toggle sequent rule t =
+  stats.inst_attempts <- stats.inst_attempts + 1;
+  let s' = match rule with
+    | ForallLeft (i, _) ->
+        let f = List.nth sequent.antecedent i in
+        let x, body = match f with Forall(x, b) -> x, b | _ -> failwith "ForallL" in
+        let body' = subst [(x, t)] body in
+        let ant_rest = List.filteri (fun j _ -> i <> j) sequent.antecedent in
+        { sequent with antecedent = body' :: (ant_rest @ [f]) } (* Contraction *)
+    | ExistsRight (i, _) ->
+        let f = List.nth sequent.succedent i in
+        let x, body = match f with Exists(x, b) -> x, b | _ -> failwith "ExistsR" in
+        let body' = subst [(x, t)] body in
+        let suc_rest = List.filteri (fun j _ -> i <> j) sequent.succedent in
+        { sequent with succedent = body' :: (suc_rest @ [f]) }
+    | _ -> failwith "Invalid quantifier rule"
+  in
+  let f_orig = match rule with ForallLeft(i, _) -> List.nth sequent.antecedent i | ExistsRight(i, _) -> List.nth sequent.succedent i | _ -> failwith "!" in
+  match search stats depth term_limit ((f_orig, t) :: used) next_toggle s' with
+  | Some tree -> 
+      let final_rule = match rule with ForallLeft(i, _) -> ForallLeft(i, t) | ExistsRight(i, _) -> ExistsRight(i, t) | r -> r in
+      Some (Inference (final_rule, sequent, [tree]))
+  | None -> None
+
+and find_all_tier2_rules sequent toggle =
+  let scan_ant () =
+    List.mapi (fun i f -> match f with
       | And _ -> Some (AndLeft i) | Iff _ -> Some (IffLeft i) | Not _ -> Some (NotLeft i)
-      | Exists _ -> Some (ExistsLeft (i, "_")) | _ -> scan_ant (i+1) fs
+      | Exists _ -> Some (ExistsLeft (i, "_")) | _ -> None
+    ) sequent.antecedent |> List.filter_map (fun x -> x)
   in
-  let rec scan_suc i = function
-    | [] -> None
-    | f :: fs -> match f with
+  let scan_suc () =
+    List.mapi (fun i f -> match f with
       | Or _ -> Some (OrRight i) | Implies _ -> Some (ImpliesRight i) | Not _ -> Some (NotRight i)
-      | Forall _ -> Some (ForallRight (i, "_")) | _ -> scan_suc (i+1) fs
+      | Forall _ -> Some (ForallRight (i, "_")) | _ -> None
+    ) sequent.succedent |> List.filter_map (fun x -> x)
   in
-  match scan_ant 0 sequent.antecedent with Some r -> Some r | None -> scan_suc 0 sequent.succedent
+  if toggle then scan_ant () @ scan_suc () else scan_suc () @ scan_ant ()
 
-and find_tier3_rule sequent =
-  let rec scan_ant i = function
-    | [] -> None
-    | f :: fs -> match f with
-      | Or _ -> Some (OrLeft i) | Implies _ -> Some (ImpliesLeft i) | _ -> scan_ant (i+1) fs
+and find_all_tier3_rules sequent toggle =
+  let scan_ant () =
+    List.mapi (fun i f -> match f with
+      | Or _ -> Some (OrLeft i) | Implies _ -> Some (ImpliesLeft i) | _ -> None
+    ) sequent.antecedent |> List.filter_map (fun x -> x)
   in
-  let rec scan_suc i = function
-    | [] -> None
-    | f :: fs -> match f with
-      | And _ -> Some (AndRight i) | Iff _ -> Some (IffRight i) | _ -> scan_suc (i+1) fs
+  let scan_suc () =
+    List.mapi (fun i f -> match f with
+      | And _ -> Some (AndRight i) | Iff _ -> Some (IffRight i) | _ -> None
+    ) sequent.succedent |> List.filter_map (fun x -> x)
   in
-  match scan_ant 0 sequent.antecedent with Some r -> Some r | None -> scan_suc 0 sequent.succedent
+  if toggle then scan_ant () @ scan_suc () else scan_suc () @ scan_ant ()
 
-and find_tier4_rule sequent =
-  let rec scan_ant i = function
-    | [] -> None
-    | Forall _ :: _ -> Some (ForallLeft (i, Var "_")) | _ :: fs -> scan_ant (i+1) fs
+and find_all_tier4_applications sequent term_limit used toggle =
+  let funcs, bases = get_functions_and_base_terms sequent in
+  let terms = enumerate_terms funcs bases term_limit in
+  let scan_ant () =
+    List.mapi (fun i f -> match f with
+      | Forall _ ->
+          List.filter_map (fun t -> if List.mem (f, t) used then None else Some (ForallLeft (i, Var "_"), t)) terms
+      | _ -> []
+    ) sequent.antecedent |> List.flatten
   in
-  let rec scan_suc i = function
-    | [] -> None
-    | Exists _ :: _ -> Some (ExistsRight (i, Var "_")) | _ :: fs -> scan_suc (i+1) fs
+  let scan_suc () =
+    List.mapi (fun i f -> match f with
+      | Exists _ ->
+          List.filter_map (fun t -> if List.mem (f, t) used then None else Some (ExistsRight (i, Var "_"), t)) terms
+      | _ -> []
+    ) sequent.succedent |> List.flatten
   in
-  match scan_ant 0 sequent.antecedent with Some r -> Some r | None -> scan_suc 0 sequent.succedent
+  if toggle then scan_ant () @ scan_suc () else scan_suc () @ scan_ant ()
+
+and find_all_tier5_rules sequent toggle =
+  let scan_ant () =
+    List.mapi (fun i f -> match f with Forall _ -> Some (ForallLeft (i, Var "_")) | _ -> None) sequent.antecedent
+    |> List.filter_map (fun x -> x)
+  in
+  let scan_suc () =
+    List.mapi (fun i f -> match f with Exists _ -> Some (ExistsRight (i, Var "_")) | _ -> None) sequent.succedent
+    |> List.filter_map (fun x -> x)
+  in
+  if toggle then scan_ant () @ scan_suc () else scan_suc () @ scan_ant ()
 
 (* ================================================================ *)
 (* MAIN ENTRY POINT                                                  *)
@@ -273,7 +274,7 @@ let prove formula timeout_ms =
     let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
     if elapsed > timeout_ms then { engine = Baseline; solved = false; stats = { stats with time_ms = elapsed } }
     else
-      match search stats max_d term_d [] sequent with
+      match search stats max_d term_d [] true sequent with
       | Some _ ->
         stats.time_ms <- (Unix.gettimeofday () -. start_time) *. 1000.;
         { engine = Baseline; solved = true; stats }

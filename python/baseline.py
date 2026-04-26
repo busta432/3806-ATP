@@ -34,8 +34,8 @@ class BaselineProver:
         initial_sequent = Sequent(antecedent=[], succedent=[formula])
         
         # Iterative deepening over tree depth and term depth
-        for term_d in range(4):
-            for max_d in range(1, 21):
+        for term_d in range(4): #Limits structural complexity.
+            for max_d in range(1, 21): #Constrains max height of the proof tree.
                 if self._check_timeout(): break
                 
                 res = self._search(initial_sequent, max_d, term_d, set(), True)
@@ -156,6 +156,7 @@ class BaselineProver:
                 elif side == "R" and isinstance(f, QuantifiedFormula) and f.quantifier == Quantifier.EXISTS: rules.append(("∃R", i, "R"))
         return rules
 
+# Describes How Each Rule Transforms the Sequent - Infernece Rules.
     def _apply_rule(self, sequent: Sequent, rule: str, idx: int, side: str, max_depth: int, term_depth: int, used: Set[Tuple[Formula, Term]], next_toggle: bool) -> Optional[DerivationTree]:
         new_ant, new_suc = list(sequent.antecedent), list(sequent.succedent)
         f = new_ant.pop(idx) if side == "L" else new_suc.pop(idx)
@@ -191,7 +192,15 @@ class BaselineProver:
             children_trees.append(child)
         return DerivationTree(sequent, rule_applied=rule, children=children_trees)
 
+
     def _apply_quantifier_instantiation(self, sequent: Sequent, rule: str, idx: int, side: str, t: Term, max_depth: int, term_depth: int, used: Set[Tuple[Formula, Term]], next_toggle: bool) -> Optional[DerivationTree]:
+        """
+        The code implements this by retaining the quantified formula after instantiation (pop + append to end) while adding the instantiated version at the front.
+
+        The used set prevents infinite loops: new_used = used | {(f, t)} creates a new set (immutable update) adding this pair. When the recursive call checks Tier 4, it skips any (formula, term) already in used. This set is local to each branch — sibling branches start fresh.
+
+        Moving the quantifier to the end is a search heuristic — it deprioritizes re-using it immediately, giving other formulae a chance to simplify the sequent first. The rule still records the instantiated formula at position 0 so it's tried early next round.
+        """
         f = sequent.antecedent[idx] if side == "L" else sequent.succedent[idx]
         new_used = used | {(f, t)}
         
@@ -215,7 +224,6 @@ class BaselineProver:
         if not base_terms:
             base_terms.add(Constant('c'))
         return self._gen_terms(funcs, base_terms, max_depth)
-
     def _gen_terms(self, funcs: dict, base_terms: Set[Term], max_depth: int) -> List[Term]:
         if max_depth < 0: return []
         if max_depth == 0: return list(base_terms)
@@ -233,7 +241,6 @@ class BaselineProver:
             if ts not in seen:
                 seen.add(ts); result.append(t)
         return result
-
     def _get_functions_and_base_terms(self, sequent: Sequent) -> Tuple[dict, Set[Term]]:
         funcs = {}
         base_terms = set()
@@ -247,7 +254,7 @@ class BaselineProver:
             elif isinstance(f_or_t, Constant):
                 base_terms.add(f_or_t)
             elif isinstance(f_or_t, Variable):
-                if f_or_t.name not in bound:
+                if f_or_t.name not in bound: #Free Variables
                     base_terms.add(f_or_t)
             elif isinstance(f_or_t, Atom):
                 for a in f_or_t.args: collect(a, bound)
@@ -261,6 +268,7 @@ class BaselineProver:
         for f in sequent.antecedent + sequent.succedent:
             collect(f)
         return funcs, base_terms
+
 
     def _get_all_vars(self, sequent: Sequent) -> Set[str]:
         vars = set()
@@ -277,6 +285,7 @@ class BaselineProver:
                 vars.add(f_or_t.variable.name); collect(f_or_t.body)
         for f in sequent.antecedent + sequent.succedent: collect(f)
         return vars
+
 
     def _variant(self, name: str, avoid: Set[str]) -> str:
         v = name
