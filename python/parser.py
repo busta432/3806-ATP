@@ -185,13 +185,11 @@ class FOLTransformer(Transformer):
 
     def forall(self, items) -> QuantifiedFormula:
         var_name = str(items[0])
-        self._bound.discard(var_name)   # clean up after recursion
         body     = items[1]
         return QuantifiedFormula(Quantifier.FORALL, Variable(var_name), body)
 
     def exists(self, items) -> QuantifiedFormula:
         var_name = str(items[0])
-        self._bound.discard(var_name)
         body     = items[1]
         return QuantifiedFormula(Quantifier.EXISTS, Variable(var_name), body)
 
