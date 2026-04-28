@@ -24,6 +24,24 @@ let rec apply (sigma : substitution) = function
   | Func (f, args) ->
     Func (f, List.map (apply sigma) args)
 
+(** Apply a substitution to a formula. *)
+let rec apply_to_formula sigma = function
+  | Top -> Top
+  | Bot -> Bot
+  | Pred (p, args) -> Pred (p, List.map (apply sigma) args)
+  | Not f -> Not (apply_to_formula sigma f)
+  | And (f1, f2) -> And (apply_to_formula sigma f1, apply_to_formula sigma f2)
+  | Or (f1, f2) -> Or (apply_to_formula sigma f1, apply_to_formula sigma f2)
+  | Implies (f1, f2) -> Implies (apply_to_formula sigma f1, apply_to_formula sigma f2)
+  | Iff (f1, f2) -> Iff (apply_to_formula sigma f1, apply_to_formula sigma f2)
+  | Forall (x, f) -> Forall (x, apply_to_formula sigma f)
+  | Exists (x, f) -> Exists (x, apply_to_formula sigma f)
+
+(** Apply a substitution to a sequent. *)
+let apply_to_sequent sigma s =
+  { antecedent = List.map (apply_to_formula sigma) s.antecedent;
+    succedent = List.map (apply_to_formula sigma) s.succedent }
+
 (** Apply a substitution to a literal. *)
 let apply_literal sigma = function
   | Pos (p, args) -> Pos (p, List.map (apply sigma) args)
@@ -72,10 +90,10 @@ and unify_terms sigma s t rest =
   | _ when s = t ->
     (* Identical terms — constraint satisfied *)
     unify sigma rest
-  | Var x, t' ->
+  | Var x, t' when is_metavar x ->
     if occurs x sigma t' then None  (* Occurs check *)
     else unify ((x, t') :: sigma) rest
-  | t', Var x ->
+  | t', Var x when is_metavar x ->
     if occurs x sigma t' then None  (* Occurs check *)
     else unify ((x, t') :: sigma) rest
   | Func (f, args1), Func (g, args2) ->
