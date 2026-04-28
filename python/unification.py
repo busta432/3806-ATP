@@ -3,7 +3,7 @@ unification.py — First-order unification algorithm.
 Ported from unification.ml.
 """
 
-from fol_types import Term, Variable, Function, Constant
+from fol_types import Term, Variable, Function, Constant, Formula, Atom, Negation, BinaryOp, QuantifiedFormula
 
 Substitution = dict[str, Term]
 
@@ -16,6 +16,18 @@ def apply(sigma: Substitution, t: Term) -> Term:
     if isinstance(t, Function):
         return Function(t.name, tuple(apply(sigma, arg) for arg in t.args))
     return t
+
+def apply_to_formula(sigma: Substitution, f: Formula) -> Formula:
+    """Apply a substitution to a formula."""
+    if isinstance(f, Atom):
+        return Atom(f.predicate, tuple(apply(sigma, arg) for arg in f.args))
+    if isinstance(f, Negation):
+        return Negation(apply_to_formula(sigma, f.formula))
+    if isinstance(f, BinaryOp):
+        return BinaryOp(f.connective, apply_to_formula(sigma, f.left), apply_to_formula(sigma, f.right))
+    if isinstance(f, QuantifiedFormula):
+        return QuantifiedFormula(f.quantifier, f.variable, apply_to_formula(sigma, f.body))
+    return f
 
 def occurs(x: str, sigma: Substitution, t: Term) -> bool:
     """Check if variable x occurs in term t (after applying sigma)."""

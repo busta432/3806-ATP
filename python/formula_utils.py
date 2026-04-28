@@ -178,5 +178,28 @@ def term_functions(t: Term) -> list[tuple[str, int]]:
         return [(t.name, 0)]
     return []
 
+def term_complexity(t: Term) -> int:
+    """Number of symbols in a term."""
+    if isinstance(t, (Variable, Constant)):
+        return 1
+    if isinstance(t, Function):
+        return 1 + sum(term_complexity(arg) for arg in t.args)
+    return 1
+
+def formula_complexity(f: Formula) -> int:
+    """
+    Calculate a complexity score for a formula.
+    Heuristic: sum of symbols + (10 * quantifier depth).
+    """
+    if isinstance(f, Atom):
+        return 1 + sum(term_complexity(arg) for arg in f.args)
+    if isinstance(f, Negation):
+        return 1 + formula_complexity(f.formula)
+    if isinstance(f, BinaryOp):
+        return 1 + formula_complexity(f.left) + formula_complexity(f.right)
+    if isinstance(f, QuantifiedFormula):
+        return 10 + formula_complexity(f.body)
+    return 1
+
 def constants_of(f: Formula) -> list[str]:
     return unique([name for name, arity in functions_of(f) if arity == 0])
