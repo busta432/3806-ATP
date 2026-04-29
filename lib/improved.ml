@@ -51,7 +51,7 @@ type search_node = {
 (* AXIOM CHECKING WITH INDEXING                                     *)
 (* ================================================================ *)
 
-let find_identity sigma antecedent succedent =
+let find_identity stats sigma antecedent succedent =
   let index = FingerprintIndex.create () in
   let non_atom_ants = ref [] in
   List.iter (function
@@ -66,8 +66,10 @@ let find_identity sigma antecedent succedent =
           | [] -> check_succs rest
           | (Pred (_, args_a)) :: as_rest ->
               let args_s = match s with Pred (_, a) -> a | _ -> [] in
-              (match unify sigma (List.combine args_a args_s) with
-               | Some sigma' -> Some sigma'
+              (match unify is_metavar sigma (List.combine args_a args_s) with
+               | Some sigma' -> 
+                   if sigma' <> sigma then stats.inst_hits <- stats.inst_hits + 1;
+                   Some sigma'
                | None -> try_unify as_rest)
           | _ :: as_rest -> try_unify as_rest
         in try_unify candidates
@@ -148,8 +150,8 @@ let apply_rule sequent = function
   | ImpliesLeft i ->
       let a, b = match List.nth sequent.antecedent i with Implies(a,b) -> a,b | _ -> failwith "ImpL" in
       let rest_ant = List.filteri (fun j _ -> i <> j) sequent.antecedent in
-      [{ sequent with antecedent = rest_ant; succedent = a :: sequent.succedent };
-       { sequent with antecedent = b :: rest_ant }]
+      [{ antecedent = rest_ant; succedent = a :: sequent.succedent };
+       { antecedent = b :: rest_ant; succedent = sequent.succedent }]
   | IffRight i ->
       let a, b = match List.nth sequent.succedent i with Iff(a,b) -> a,b | _ -> failwith "IffR" in
       let rest = List.filteri (fun j _ -> i <> j) sequent.succedent in
@@ -169,16 +171,31 @@ let apply_rule sequent = function
 (* TREE GENERATION                                                  *)
 (* ================================================================ *)
 
+let classify_rule = function
+  | AndLeft _ | OrRight _ | ImpliesRight _ | NotLeft _ | NotRight _ 
+  | ForallRight _ | ExistsLeft _ | IffLeft _ -> true (* Invertible *)
+  | _ -> false (* Branching or Instantiation *)
+
 let rec mk_node sequent =
   { sequent; expansion = lazy (expand_node sequent) }
 
 and expand_node sequent =
   let l_rules = collect_rules 0 sequent.antecedent in
   let r_rules = collect_right_rules 0 sequent.succedent in
-  let all_rules = List.map (fun (r, f) -> (r, formula_complexity f)) (l_rules @ r_rules) in
-  (* Heuristic: prioritize simpler formulas *)
-  let sorted_rules = List.sort (fun (_, c1) (_, c2) -> compare c1 c2) all_rules in
-  List.map (fun (r, _) -> (r, List.map mk_node (apply_rule sequent r))) sorted_rules
+  let all_rules = List.map (fun (r, f) -> (r, f, formula_complexity f)) (l_rules @ r_rules) in
+  
+  let inv = List.filter (fun (r, _, _) -> classify_rule r) all_rules in
+  let rest = List.filter (fun (r, _, _) -> not (classify_rule r)) all_rules in
+  
+  let sorted_inv = List.sort (fun (_, _, c1) (_, _, c2) -> compare c1 c2) inv in
+  let sorted_rest = List.sort (fun (_, _, c1) (_, _, c2) -> compare c1 c2) rest in
+  
+  (* If invertible rules exist, ONLY try the simplest one first (don't mix or try all) *)
+  if sorted_inv <> [] then
+    let (r, _, _) = List.hd sorted_inv in
+    [(r, List.map mk_node (apply_rule sequent r))]
+  else
+    List.map (fun (r, _, _) -> (r, List.map mk_node (apply_rule sequent r))) sorted_rest
 
 (* ================================================================ *)
 (* PROOF SEARCH CORE                                                 *)
@@ -202,22 +219,21 @@ let rec search stats depth_limit sigma failed_cache seen_literals node =
   if List.mem Top node.sequent.succedent || List.mem Bot node.sequent.antecedent then
     Some sigma
   else
-    match find_identity sigma node.sequent.antecedent node.sequent.succedent with
+    match find_identity stats sigma node.sequent.antecedent node.sequent.succedent with
     | Some sigma' -> Some sigma'
     | None ->
         if depth_limit = 0 then (Hashtbl.add failed_cache (h, depth_limit) (); None) else
         
-        (* Regularity: check for literal repetition *)
-        let lits = List.filter (fun f -> match f with Pred _ -> true | Not(Pred _) -> true | _ -> false) 
-                    (node.sequent.antecedent @ node.sequent.succedent) in
-        let norm_lits = List.map (fun f -> Printer.pp_formula (apply_to_formula sigma f)) lits in
-        if List.exists (fun l -> List.mem l seen_literals) norm_lits then None else
-        let new_seen = seen_literals @ norm_lits in
+        (* Regularity check disabled temporarily *)
+        let new_seen = seen_literals in 
 
         (* 2. Expansion *)
         let rec try_expansions = function
           | [] -> (Hashtbl.add failed_cache (h, depth_limit) (); None)
           | (rule, branches) :: rest ->
+              (match rule with
+               | ForallLeft _ | ExistsRight _ -> stats.inst_attempts <- stats.inst_attempts + 1
+               | _ -> ());
               let rec try_branches current_sigma = function
                 | [] -> Some current_sigma
                 | b :: bs ->

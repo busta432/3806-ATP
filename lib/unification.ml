@@ -77,34 +77,35 @@ let rec occurs x sigma = function
     This implements Robinson's algorithm with the following invariant:
     at each step, the current sigma is a partial solution and the
     pair list represents remaining constraints to solve. *)
-let rec unify (sigma : substitution) (pairs : (term * term) list) : substitution option =
+let rec unify is_substitutable (sigma : substitution) (pairs : (term * term) list) : substitution option =
   match pairs with
   | [] -> Some sigma
   | (s, t) :: rest ->
     let s' = apply sigma s in
     let t' = apply sigma t in
-    unify_terms sigma s' t' rest
+    unify_terms is_substitutable sigma s' t' rest
 
-and unify_terms sigma s t rest =
+and unify_terms is_substitutable sigma s t rest =
   match s, t with
   | _ when s = t ->
     (* Identical terms — constraint satisfied *)
-    unify sigma rest
-  | Var x, t' when is_metavar x ->
+    unify is_substitutable sigma rest
+  | Var x, t' when is_substitutable x ->
     if occurs x sigma t' then None  (* Occurs check *)
-    else unify ((x, t') :: sigma) rest
-  | t', Var x when is_metavar x ->
+    else unify is_substitutable ((x, t') :: sigma) rest
+  | t', Var x when is_substitutable x ->
     if occurs x sigma t' then None  (* Occurs check *)
-    else unify ((x, t') :: sigma) rest
+    else unify is_substitutable ((x, t') :: sigma) rest
   | Func (f, args1), Func (g, args2) ->
     if f <> g || List.length args1 <> List.length args2 then None
     else
       let new_pairs = List.combine args1 args2 in
-      unify sigma (new_pairs @ rest)
+      unify is_substitutable sigma (new_pairs @ rest)
+  | _ -> None
 
 (** Attempt to unify two terms starting from an empty substitution. *)
-let unify_terms_fresh s t =
-  unify [] [(s, t)]
+let unify_terms_fresh is_subst s t =
+  unify is_subst [] [(s, t)]
 
 (* ================================================================ *)
 (* LITERAL UNIFICATION                                               *)
@@ -113,26 +114,26 @@ let unify_terms_fresh s t =
 (** Unify two literals (for resolution).
     Two literals can unify if they have the same predicate and polarity,
     and their argument lists unify. *)
-let unify_literals sigma l1 l2 =
+let unify_literals is_subst sigma l1 l2 =
   match l1, l2 with
   | Pos (p, args1), Pos (q, args2)
   | Neg (p, args1), Neg (q, args2) ->
     if p <> q || List.length args1 <> List.length args2 then None
     else
       let pairs = List.combine args1 args2 in
-      unify sigma pairs
+      unify is_subst sigma pairs
   | _ -> None
 
 (** Unify complementary literals (for resolution: one positive, one negative).
     Checks if Pos(P, args1) can unify with Neg(P, args2). *)
-let unify_complementary sigma l1 l2 =
+let unify_complementary is_subst sigma l1 l2 =
   match l1, l2 with
   | Pos (p, args1), Neg (q, args2)
   | Neg (q, args2), Pos (p, args1) ->
     if p <> q || List.length args1 <> List.length args2 then None
     else
       let pairs = List.combine args1 args2 in
-      unify sigma pairs
+      unify is_subst sigma pairs
   | _ -> None
 
 (* ================================================================ *)

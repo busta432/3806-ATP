@@ -59,7 +59,7 @@ let subsumes c1 c2 =
       let rec try_l2s = function
         | [] -> false
         | l2 :: l2s ->
-          (match unify_literals sigma l1 l2 with
+          (match unify_literals (fun _ -> true) sigma l1 l2 with
            | Some sigma' -> if search sigma' rest then true else try_l2s l2s
            | None -> try_l2s l2s)
       in
@@ -80,7 +80,7 @@ let resolve c1 c2 =
   let res = ref [] in
   List.iter (fun l1 ->
     List.iter (fun l2 ->
-      match unify_complementary [] l1 l2 with
+      match unify_complementary (fun _ -> true) [] l1 l2 with
       | Some sigma ->
         let r = List.filter (fun l -> l <> l1) c1' @ List.filter (fun l -> l <> l2) c2' in
         res := (simplify_clause (apply_clause sigma r)) :: !res
@@ -98,7 +98,7 @@ let factor clause =
     | l1 :: rest ->
       List.iter (fun l2 ->
         if l1 <> l2 then
-          match unify_literals [] l1 l2 with
+          match unify_literals (fun _ -> true) [] l1 l2 with
           | Some sigma ->
             res := (simplify_clause (apply_clause sigma clause)) :: !res
           | None -> ()

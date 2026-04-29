@@ -10,6 +10,8 @@ open Formula
     Push negations inwards until they are only in front of predicates. *)
 let rec nnf = function
   | Not (Not a) -> nnf a
+  | Not Top -> Bot
+  | Not Bot -> Top
   | Not (And (a, b)) -> Or (nnf (Not a), nnf (Not b))
   | Not (Or (a, b)) -> And (nnf (Not a), nnf (Not b))
   | Not (Implies (a, b)) -> And (nnf a, nnf (Not b))
@@ -70,14 +72,16 @@ let rec distribute = function
 
 (** Convert a CNF formula to a list of clauses (disjunctions of literals). *)
 let rec clausify = function
+  | Top -> []
+  | Bot -> [[]]
   | And (a, b) -> clausify a @ clausify b
   | f ->
     let rec literals = function
       | Or (a, b) -> literals a @ literals b
       | Pred (p, args) -> [Pos (p, args)]
       | Not (Pred (p, args)) -> [Neg (p, args)]
-      | Top -> [] (* Should have been simplified *)
-      | Bot -> []
+      | Bot | Not Top -> []
+      | Top | Not Bot -> failwith "clausify: tautological clause should have been simplified"
       | _ -> failwith "clausify: expected literals (NNF)"
     in
     [literals f]
