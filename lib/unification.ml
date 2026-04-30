@@ -1,13 +1,8 @@
 (** unification.ml — First-order unification algorithm.
     
     Implements Robinson's unification algorithm with occurs check.
-    Shared by Engine 2 (unification-guided instantiation, I4) and
-    Engine 3 (resolution — literal unification).
-    
-    Reference:
-    - Robinson, J.A. (1965). "A Machine-Oriented Logic Based on the
-      Resolution Principle". JACM, 12(1).
-    - Harrison (2009), Handbook of Practical Logic, Section 3.9 *)
+    Extended with rank-based dependency checks for soundness in 
+    metavariable-based sequent calculus (Engine 2). *)
 
 open Types
 
@@ -15,19 +10,16 @@ open Types
 (* SUBSTITUTION APPLICATION                                          *)
 (* ================================================================ *)
 
-(** Apply a substitution to a term (chase variable bindings). *)
 let rec apply (sigma : substitution) = function
   | Var x ->
     (match List.assoc_opt x sigma with
-     | Some t -> apply sigma t  (* Chase chains: x -> y -> ... *)
+     | Some t -> apply sigma t
      | None -> Var x)
   | Func (f, args) ->
     Func (f, List.map (apply sigma) args)
 
-(** Apply a substitution to a formula. *)
 let rec apply_to_formula sigma = function
-  | Top -> Top
-  | Bot -> Bot
+  | Top -> Top | Bot -> Bot
   | Pred (p, args) -> Pred (p, List.map (apply sigma) args)
   | Not f -> Not (apply_to_formula sigma f)
   | And (f1, f2) -> And (apply_to_formula sigma f1, apply_to_formula sigma f2)
@@ -37,26 +29,21 @@ let rec apply_to_formula sigma = function
   | Forall (x, f) -> Forall (x, apply_to_formula sigma f)
   | Exists (x, f) -> Exists (x, apply_to_formula sigma f)
 
-(** Apply a substitution to a sequent. *)
 let apply_to_sequent sigma s =
   { antecedent = List.map (apply_to_formula sigma) s.antecedent;
     succedent = List.map (apply_to_formula sigma) s.succedent }
 
-(** Apply a substitution to a literal. *)
 let apply_literal sigma = function
   | Pos (p, args) -> Pos (p, List.map (apply sigma) args)
   | Neg (p, args) -> Neg (p, List.map (apply sigma) args)
 
-(** Apply a substitution to a clause. *)
-let apply_clause sigma clause =
-  List.map (apply_literal sigma) clause
+let apply_clause sigma clause = List.map (apply_literal sigma) clause
 
 (* ================================================================ *)
-(* OCCURS CHECK                                                      *)
+(* SOUNDNESS & OCCURS CHECK                                          *)
 (* ================================================================ *)
 
-(** Check if variable x occurs in term t (after applying sigma).
-    Prevents creation of infinite terms like x = f(x). *)
+(** Check if variable x occurs in term t (after applying sigma). *)
 let rec occurs x sigma = function
   | Var y ->
     if x = y then true
@@ -67,98 +54,91 @@ let rec occurs x sigma = function
   | Func (_, args) ->
     List.exists (occurs x sigma) args
 
+(** Soundness check for metavariables vs Eigenvariables.
+    A metavariable ?m can only be unified with term t if t contains
+    no Eigenvariables created after ?m.
+    
+    Naming convention:
+    - Metavariables: ?N
+    - Eigenvariables: ev_N_name (created when metavar_counter was N)
+    
+    Condition: if x = ?m and v = ev_n_..., then n <= m. *)
+let rec check_rank x = function
+  | Var y ->
+      if String.length x > 0 && x.[0] = '?' && String.length y > 3 && String.sub y 0 3 = "ev_" then
+        try
+          let m = int_of_string (String.sub x 1 (String.length x - 1)) in
+          let first_underscore = String.index_from y 3 '_' in
+          let n = int_of_string (String.sub y 3 (first_underscore - 3)) in
+          n <= m
+        with _ -> true (* Fallback to safe if naming deviates *)
+      else true
+  | Func (_, args) -> List.for_all (check_rank x) args
+
 (* ================================================================ *)
 (* UNIFICATION                                                       *)
 (* ================================================================ *)
 
-(** Unify a list of term pairs under the current substitution.
-    Returns [Some sigma'] on success, [None] on failure.
-    
-    This implements Robinson's algorithm with the following invariant:
-    at each step, the current sigma is a partial solution and the
-    pair list represents remaining constraints to solve. *)
-let rec unify is_substitutable (sigma : substitution) (pairs : (term * term) list) : substitution option =
+let rec unify ~use_rank_check is_substitutable (sigma : substitution) (pairs : (term * term) list) : substitution option =
   match pairs with
   | [] -> Some sigma
   | (s, t) :: rest ->
     let s' = apply sigma s in
     let t' = apply sigma t in
-    unify_terms is_substitutable sigma s' t' rest
+    unify_terms ~use_rank_check is_substitutable sigma s' t' rest
 
-and unify_terms is_substitutable sigma s t rest =
+and unify_terms ~use_rank_check is_substitutable sigma s t rest =
   match s, t with
-  | _ when s = t ->
-    (* Identical terms — constraint satisfied *)
-    unify is_substitutable sigma rest
+  | _ when s = t -> unify ~use_rank_check is_substitutable sigma rest
+  | Var x, Var y when use_rank_check && is_substitutable x && is_substitutable y ->
+      (* Both are metavariables. Bind the newer (higher rank) to the older (lower rank).
+         This ensures the resulting variable has the strictest scope. *)
+      let get_rank s = 
+        try int_of_string (String.sub s 1 (String.length s - 1)) 
+        with _ -> 0
+      in
+      if get_rank x <= get_rank y then
+        unify ~use_rank_check is_substitutable ((y, Var x) :: sigma) rest
+      else
+        unify ~use_rank_check is_substitutable ((x, Var y) :: sigma) rest
   | Var x, t' when is_substitutable x ->
-    if occurs x sigma t' then None  (* Occurs check *)
-    else unify is_substitutable ((x, t') :: sigma) rest
+    if occurs x sigma t' || (use_rank_check && not (check_rank x t')) then None
+    else unify ~use_rank_check is_substitutable ((x, t') :: sigma) rest
   | t', Var x when is_substitutable x ->
-    if occurs x sigma t' then None  (* Occurs check *)
-    else unify is_substitutable ((x, t') :: sigma) rest
+    if occurs x sigma t' || (use_rank_check && not (check_rank x t')) then None
+    else unify ~use_rank_check is_substitutable ((x, t') :: sigma) rest
   | Func (f, args1), Func (g, args2) ->
     if f <> g || List.length args1 <> List.length args2 then None
-    else
-      let new_pairs = List.combine args1 args2 in
-      unify is_substitutable sigma (new_pairs @ rest)
+    else unify ~use_rank_check is_substitutable sigma (List.combine args1 args2 @ rest)
   | _ -> None
 
-(** Attempt to unify two terms starting from an empty substitution. *)
-let unify_terms_fresh is_subst s t =
-  unify is_subst [] [(s, t)]
+let unify_terms_fresh ~use_rank_check is_subst s t = unify ~use_rank_check is_subst [] [(s, t)]
 
-(* ================================================================ *)
-(* LITERAL UNIFICATION                                               *)
-(* ================================================================ *)
-
-(** Unify two literals (for resolution).
-    Two literals can unify if they have the same predicate and polarity,
-    and their argument lists unify. *)
-let unify_literals is_subst sigma l1 l2 =
+let unify_literals ~use_rank_check is_subst sigma l1 l2 =
   match l1, l2 with
-  | Pos (p, args1), Pos (q, args2)
-  | Neg (p, args1), Neg (q, args2) ->
+  | Pos (p, args1), Pos (q, args2) | Neg (p, args1), Neg (q, args2) ->
     if p <> q || List.length args1 <> List.length args2 then None
-    else
-      let pairs = List.combine args1 args2 in
-      unify is_subst sigma pairs
+    else unify ~use_rank_check is_subst sigma (List.combine args1 args2)
   | _ -> None
 
-(** Unify complementary literals (for resolution: one positive, one negative).
-    Checks if Pos(P, args1) can unify with Neg(P, args2). *)
-let unify_complementary is_subst sigma l1 l2 =
+let unify_complementary ~use_rank_check is_subst sigma l1 l2 =
   match l1, l2 with
-  | Pos (p, args1), Neg (q, args2)
-  | Neg (q, args2), Pos (p, args1) ->
+  | Pos (p, args1), Neg (q, args2) | Neg (q, args2), Pos (p, args1) ->
     if p <> q || List.length args1 <> List.length args2 then None
-    else
-      let pairs = List.combine args1 args2 in
-      unify is_subst sigma pairs
+    else unify ~use_rank_check is_subst sigma (List.combine args1 args2)
   | _ -> None
 
 (* ================================================================ *)
 (* SUBSTITUTION UTILITIES                                            *)
 (* ================================================================ *)
 
-(** Compose two substitutions: apply sigma2 after sigma1.
-    Result maps x -> apply sigma2 (sigma1(x)). *)
 let compose sigma1 sigma2 =
   let updated = List.map (fun (x, t) -> (x, apply sigma2 t)) sigma1 in
-  let new_bindings = List.filter (fun (x, _) ->
-    not (List.mem_assoc x sigma1)
-  ) sigma2 in
+  let new_bindings = List.filter (fun (x, _) -> not (List.mem_assoc x sigma1)) sigma2 in
   updated @ new_bindings
 
-(** Restrict a substitution to a set of variables. *)
-let restrict sigma vars =
-  List.filter (fun (x, _) -> List.mem x vars) sigma
+let restrict sigma vars = List.filter (fun (x, _) -> List.mem x vars) sigma
 
-(** Pretty-print a substitution. *)
 let pp_subst sigma =
   if sigma = [] then "{}"
-  else
-    "{" ^
-    String.concat ", " (List.map (fun (x, t) ->
-      x ^ " ↦ " ^ Printer.pp_term t
-    ) sigma) ^
-    "}"
+  else "{" ^ String.concat ", " (List.map (fun (x, t) -> x ^ " ↦ " ^ Printer.pp_term t) sigma) ^ "}"
