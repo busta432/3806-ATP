@@ -152,10 +152,14 @@ type prover_stats = {
   mutable inst_wasted     : int;     (** Backtracked instantiations *)
   mutable clauses_gen     : int;     (** Clauses generated (Engine 3) *)
   mutable subsumptions    : int;     (** Subsumptions applied (Engine 3) *)
-  mutable time_ms         : float;   (** Wall-clock time in milliseconds *)
-}
+  mutable time_ms           : float;   (** Wall-clock time in milliseconds *)
+  }
 
-(** Create fresh zeroed statistics record. *)
+  (** Check if a variable name represents a metavariable (starts with ?). *)
+  let is_metavar v = String.length v > 0 && v.[0] = '?'
+
+  (** Create fresh zeroed statistics record. *)
+
 let make_stats () = {
   steps = 0; branches = 0; max_depth = 0;
   inst_attempts = 0; inst_hits = 0; inst_wasted = 0;
