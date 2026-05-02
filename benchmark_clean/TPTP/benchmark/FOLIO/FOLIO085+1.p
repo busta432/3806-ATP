@@ -1,0 +1,13 @@
+%------------------------------------------------------------------------------
+% File     : FOLIO085+1
+% Domain   : NL Reasoning (FOLIO-style)
+% Problem  : henry has strong via brave
+% Status   : Theorem
+% Rating   : 0.08 v1.0.0
+% Source   : [FOLIO]
+% SPC      : FOF_THM
+%------------------------------------------------------------------------------
+fof(ax1, axiom, ( ! [X] : ((brave(X) => strong(X))) )).
+fof(ax2, axiom, ( brave(henry) )).
+fof(goal, conjecture, ( strong(henry) )).
+%------------------------------------------------------------------------------

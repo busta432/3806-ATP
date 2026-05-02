@@ -1,0 +1,33 @@
+Engine: Baseline
+  Total:        400
+  PASS:         71
+  FAIL:         119
+  TIMEOUT:      104
+  Mean time:    1.5s
+  Median time:  1.0s
+  Inst attempts: 298123772
+  Inst hits:     0
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_CASC_Baseline_20260501_032917.csv
+------------------------------------------------------------
+Engine: Improved
+  Total:        400
+  PASS:         80
+  FAIL:         317
+  TIMEOUT:      3
+  Mean time:    0.4s
+  Median time:  0s
+  Inst attempts: 8571441
+  Inst hits:     219863
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_CASC_Improved_20260501_032917.csv
+------------------------------------------------------------
+Engine: Resolution
+  Total:        400
+  PASS:         78
+  FAIL:         322
+  TIMEOUT:      0
+  Mean time:    0.5s
+  Median time:  0.0s
+  Clauses gen:  7930
+  Subsumptions: 470
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_CASC_Resolution_20260501_032917.csv
+------------------------------------------------------------

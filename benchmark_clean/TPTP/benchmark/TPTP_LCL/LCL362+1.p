@@ -1,0 +1,25 @@
+%------------------------------------------------------------------------------
+% File     : LCL362+1
+% Domain   : Logic Calculi
+% Problem  : Negation elimination with 7 predicates
+% Status   : Theorem
+% Rating   : 0.24 v1.0.0
+% Source   : [LCL]
+% SPC      : FOF_THM
+%------------------------------------------------------------------------------
+fof(p0_imp, axiom, ( ! [X] : ((p0(X) => q(X))) )).
+fof(p1_imp, axiom, ( ! [X] : ((p1(X) => q(X))) )).
+fof(p2_imp, axiom, ( ! [X] : ((p2(X) => q(X))) )).
+fof(p3_imp, axiom, ( ! [X] : ((p3(X) => q(X))) )).
+fof(p4_imp, axiom, ( ! [X] : ((p4(X) => q(X))) )).
+fof(p5_imp, axiom, ( ! [X] : ((p5(X) => q(X))) )).
+fof(p6_imp, axiom, ( ! [X] : ((p6(X) => q(X))) )).
+fof(neg0, axiom, ( ! [X] : (~p0(X)) )).
+fof(neg1, axiom, ( ! [X] : (~p1(X)) )).
+fof(neg2, axiom, ( ! [X] : (~p2(X)) )).
+fof(neg3, axiom, ( ! [X] : (~p3(X)) )).
+fof(neg4, axiom, ( ! [X] : (~p4(X)) )).
+fof(neg5, axiom, ( ! [X] : (~p5(X)) )).
+fof(negq, axiom, ( ~q(c) )).
+fof(goal, conjecture, ( ~p6(c) )).
+%------------------------------------------------------------------------------

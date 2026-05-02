@@ -13,6 +13,8 @@ open Types
 open Formula
 open Unification
 
+exception Timeout_exn
+
 (* ================================================================ *)
 (* UTILITIES                                                         *)
 (* ================================================================ *)
@@ -59,7 +61,7 @@ let subsumes c1 c2 =
       let rec try_l2s = function
         | [] -> false
         | l2 :: l2s ->
-          (match unify_literals (fun _ -> true) sigma l1 l2 with
+          (match unify_literals ~use_rank_check:false (fun _ -> true) sigma l1 l2 with
            | Some sigma' -> if search sigma' rest then true else try_l2s l2s
            | None -> try_l2s l2s)
       in
@@ -70,7 +72,7 @@ let subsumes c1 c2 =
 
 (* ================================================================ *)
 (* RESOLUTION & FACTORING                                            *)
-(* = *)
+(* = = *)
 
 (** Perform binary resolution on two clauses.
     Returns a list of all possible resolvents. *)
@@ -80,7 +82,7 @@ let resolve c1 c2 =
   let res = ref [] in
   List.iter (fun l1 ->
     List.iter (fun l2 ->
-      match unify_complementary (fun _ -> true) [] l1 l2 with
+      match unify_complementary ~use_rank_check:false (fun _ -> true) [] l1 l2 with
       | Some sigma ->
         let r = List.filter (fun l -> l <> l1) c1' @ List.filter (fun l -> l <> l2) c2' in
         res := (simplify_clause (apply_clause sigma r)) :: !res
@@ -98,7 +100,7 @@ let factor clause =
     | l1 :: rest ->
       List.iter (fun l2 ->
         if l1 <> l2 then
-          match unify_literals (fun _ -> true) [] l1 l2 with
+          match unify_literals ~use_rank_check:false (fun _ -> true) [] l1 l2 with
           | Some sigma ->
             res := (simplify_clause (apply_clause sigma clause)) :: !res
           | None -> ()
@@ -115,12 +117,17 @@ let factor clause =
 let prove formula timeout_ms =
   let start_time = Unix.gettimeofday () in
   let stats = make_stats () in
-  
+  let secs = max 1 (int_of_float (ceil (timeout_ms /. 1000.))) in
+  let old_handler = Sys.signal Sys.sigalrm
+    (Sys.Signal_handle (fun _ -> raise Timeout_exn)) in
+  let _ = Unix.alarm secs in
+  let result =
+  try
   (* 1. Preprocessing: Negate -> CNF *)
-  let clauses = Cnf.to_clauses (Not formula) in
+  let clauses = formula_to_cnf (Not formula) in
   let unprocessed = ref (List.filter (fun c -> not (is_tautology c)) clauses) in
   let processed = ref [] in
-  
+
   stats.clauses_gen <- List.length !unprocessed;
 
   let rec loop () =
@@ -176,3 +183,10 @@ let prove formula timeout_ms =
       )
   in
   loop ()
+  with Timeout_exn ->
+    let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
+    { engine = Resolution; solved = false; stats = { stats with time_ms = elapsed } }
+  in
+  let _ = Unix.alarm 0 in
+  Sys.set_signal Sys.sigalrm old_handler;
+  result

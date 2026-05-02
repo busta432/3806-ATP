@@ -1,0 +1,16 @@
+============================================================
+  BENCHMARK SUMMARY — CASC
+  Thu Apr 30 16:31:27 BST 2026
+============================================================
+
+  Total problems:   400
+  Proved:           71
+  Not proved:       0
+  Timeout:          161
+  Error:            0
+
+  PASS (correct):   71
+  FAIL (wrong):     168
+
+  Results CSV:      /home/opam/app/benchmark_clean/TPTP/results/results_CASC_20260430_153427.csv
+============================================================

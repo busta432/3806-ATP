@@ -1,0 +1,21 @@
+Engine: Baseline
+  Total:   400
+  PASS:    71
+  FAIL:    169
+  TIMEOUT: 160
+  CSV:     /home/opam/app/benchmark_clean/TPTP/results/results_CASC_Baseline_20260430_170752.csv
+------------------------------------------------------------
+Engine: Improved
+  Total:   400
+  PASS:    322
+  FAIL:    76
+  TIMEOUT: 2
+  CSV:     /home/opam/app/benchmark_clean/TPTP/results/results_CASC_Improved_20260430_170752.csv
+------------------------------------------------------------
+Engine: Resolution
+  Total:   400
+  PASS:    78
+  FAIL:    322
+  TIMEOUT: 0
+  CSV:     /home/opam/app/benchmark_clean/TPTP/results/results_CASC_Resolution_20260430_170752.csv
+------------------------------------------------------------
