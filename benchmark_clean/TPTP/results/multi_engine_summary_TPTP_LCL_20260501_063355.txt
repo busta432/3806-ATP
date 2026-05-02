@@ -1,0 +1,33 @@
+Engine: Baseline
+  Total:        247
+  PASS:         0
+  FAIL:         222
+  TIMEOUT:      0
+  Mean time:    0.6s
+  Median time:  1.0s
+  Inst attempts: 0
+  Inst hits:     0
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_TPTP_LCL_Baseline_20260501_063355.csv
+------------------------------------------------------------
+Engine: Improved
+  Total:        247
+  PASS:         0
+  FAIL:         242
+  TIMEOUT:      0
+  Mean time:    0.5s
+  Median time:  1.0s
+  Inst attempts: 0
+  Inst hits:     0
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_TPTP_LCL_Improved_20260501_063355.csv
+------------------------------------------------------------
+Engine: Resolution
+  Total:        247
+  PASS:         0
+  FAIL:         247
+  TIMEOUT:      0
+  Mean time:    0.5s
+  Median time:  1s
+  Clauses gen:  0
+  Subsumptions: 0
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_TPTP_LCL_Resolution_20260501_063355.csv
+------------------------------------------------------------

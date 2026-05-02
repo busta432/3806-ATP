@@ -9,7 +9,9 @@ open Indexing
 (* METAVARIABLE HANDLING                                             *)
 (* ================================================================ *)
 
+exception Timeout_exn
 let metavar_counter = ref 0
+let deadline = ref 0.
 let fresh_metavar () = 
   let n = !metavar_counter in
   incr metavar_counter;
@@ -232,10 +234,11 @@ let canonical_hash sigma s =
   let suc = List.sort compare s'.succedent in
   Hashtbl.hash (ant, suc)
 
-let rec search stats proof_limit inst_limit sigma failed_cache node =
+let rec search (stats : prover_stats) proof_limit inst_limit sigma failed_cache current_depth node =
   stats.steps <- stats.steps + 1;
-  stats.max_depth <- max stats.max_depth (200 - proof_limit);
-  
+  stats.max_depth <- max current_depth stats.max_depth;
+  if stats.steps mod 1000 = 0 && Unix.gettimeofday () > !deadline then None else
+
   if proof_limit < 0 || inst_limit < 0 then None else
   let h = canonical_hash sigma node.sequent in
   if Hashtbl.mem failed_cache (h, proof_limit, inst_limit) then None else
@@ -289,7 +292,7 @@ let rec search stats proof_limit inst_limit sigma failed_cache node =
                       let merged_sigma = List.fold_left (fun acc (s_i, _) -> compose acc s_i) current_sigma acc_results in
                       unify_origins merged_sigma mvars
                   | (b, map) :: bs ->
-                      (match search stats (proof_limit - 1) next_inst current_sigma failed_cache b with
+                      (match search stats (proof_limit - 1) next_inst current_sigma failed_cache (current_depth + 1) b with
                        | Some sigma_i -> solve_and_unify current_sigma ((sigma_i, map) :: acc_results) bs
                        | None -> None)
                 in
@@ -300,7 +303,7 @@ let rec search stats proof_limit inst_limit sigma failed_cache node =
                 let rec try_branches current_sigma = function
                   | [] -> Some current_sigma
                   | b :: bs ->
-                      (match search stats (proof_limit - 1) next_inst current_sigma failed_cache b with
+                      (match search stats (proof_limit - 1) next_inst current_sigma failed_cache (current_depth + 1) b with
                        | Some sigma' -> try_branches sigma' bs
                        | None -> None)
                 in
@@ -317,19 +320,32 @@ let rec search stats proof_limit inst_limit sigma failed_cache node =
 let prove formula timeout_ms =
   metavar_counter := 0;
   let start_time = Unix.gettimeofday () in
+  deadline := start_time +. timeout_ms /. 1000.;
   let stats = make_stats () in
   let root = mk_node { antecedent = []; succedent = [formula] } in
   let failed_cache = Hashtbl.create 1024 in
-  
-  let rec iterative_deepening inst_limit =
-    let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
-    if elapsed > timeout_ms || inst_limit > 10 then
+  let secs = max 1 (int_of_float (ceil (timeout_ms /. 1000.))) in
+  let old_handler = Sys.signal Sys.sigalrm
+    (Sys.Signal_handle (fun _ -> raise Timeout_exn)) in
+  let _ = Unix.alarm secs in
+  let result =
+    try
+      let rec iterative_deepening inst_limit =
+        let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
+        if elapsed > timeout_ms || inst_limit > 10 then
+          { engine = Improved; solved = false; stats = { stats with time_ms = elapsed } }
+        else
+          match search stats 500 inst_limit [] failed_cache 0 root with
+          | Some _ ->
+              stats.time_ms <- (Unix.gettimeofday () -. start_time) *. 1000.;
+              { engine = Improved; solved = true; stats }
+          | None -> iterative_deepening (inst_limit + 1)
+      in
+      iterative_deepening 0
+    with Timeout_exn ->
+      let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
       { engine = Improved; solved = false; stats = { stats with time_ms = elapsed } }
-    else
-      match search stats 500 inst_limit [] failed_cache root with
-      | Some _ ->
-          stats.time_ms <- (Unix.gettimeofday () -. start_time) *. 1000.;
-          { engine = Improved; solved = true; stats }
-      | None -> iterative_deepening (inst_limit + 1)
   in
-  iterative_deepening 0
+  let _ = Unix.alarm 0 in
+  Sys.set_signal Sys.sigalrm old_handler;
+  result

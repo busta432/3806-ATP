@@ -1,0 +1,33 @@
+Engine: Baseline
+  Total:        75
+  PASS:         44
+  FAIL:         15
+  TIMEOUT:      16
+  Mean time:    1.0s
+  Median time:  1s
+  Inst attempts: 53085044
+  Inst hits:     0
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_TPTP_GRP_Baseline_20260501_032006.csv
+------------------------------------------------------------
+Engine: Improved
+  Total:        75
+  PASS:         0
+  FAIL:         75
+  TIMEOUT:      0
+  Mean time:    0.4s
+  Median time:  0s
+  Inst attempts: 11872608
+  Inst hits:     14762
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_TPTP_GRP_Improved_20260501_032006.csv
+------------------------------------------------------------
+Engine: Resolution
+  Total:        75
+  PASS:         40
+  FAIL:         35
+  TIMEOUT:      0
+  Mean time:    0.4s
+  Median time:  0s
+  Clauses gen:  1454
+  Subsumptions: 40
+  CSV:          /home/opam/app/benchmark_clean/TPTP/results/results_TPTP_GRP_Resolution_20260501_032006.csv
+------------------------------------------------------------

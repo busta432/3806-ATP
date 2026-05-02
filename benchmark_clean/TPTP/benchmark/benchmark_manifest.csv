@@ -1,0 +1,1953 @@
+file,folder,source,domain,status,rating,difficulty,description
+SYN001+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier 2
+SYN007+1.014.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 71
+SYN036+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,Andrews Challenge Problem
+SYN036+2.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,Andrews Challenge Problem
+SYN040+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 1
+SYN041+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 3
+SYN044+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 10
+SYN045+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 13
+SYN046+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 15
+SYN047+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 17
+SYN048+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 18
+SYN049+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 19
+SYN050+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 20
+SYN051+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 21
+SYN052+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 22
+SYN053+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 23
+SYN054+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 24
+SYN056+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 26
+SYN057+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 27
+SYN058+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 28
+SYN059+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 29
+SYN060+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 30
+SYN061+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 31
+SYN062+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 32
+SYN063+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 33
+SYN064+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 35
+SYN065+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 36
+SYN066+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,Pelletier Problem 37
+SYN067+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.13,easy,Pelletier Problem 38
+SYN068+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 44
+SYN070+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 46
+SYN071+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 48
+SYN072+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 49
+SYN073+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 50
+SYN074+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.17,medium,Pelletier Problem 51
+SYN075+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.17,medium,Pelletier Problem 52
+SYN076+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.78,hard,Pelletier Problem 53
+SYN077+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.22,medium,Pelletier Problem 54
+SYN078+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.06,easy,Pelletier Problem 56
+SYN079+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 57
+SYN080+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 58
+SYN081+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 59
+SYN082+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,Pelletier Problem 60
+SYN083+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.04,easy,Pelletier Problem 61
+SYN084+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 62
+SYN315+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.2 (1)
+SYN316+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.2 (2)
+SYN317+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.2 (3)
+SYN318+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.2 (4)
+SYN319+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.2 (5)
+SYN320+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.3 (1)
+SYN321+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.3 (2)
+SYN322+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.4 (1)
+SYN323+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.4 (2)
+SYN324+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.9 (1)
+SYN325+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.9 (2)
+SYN326+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.12 (1)
+SYN327+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.12 (2)
+SYN330+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.14 (2)
+SYN331+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.14 (3)
+SYN332+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,Church problem 46.14 (4)
+SYN333+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.14 (5)
+SYN334+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.14 (6)
+SYN335+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.14 (7)
+SYN336+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.15 (1)
+SYN337+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.15 (2)
+SYN338+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.15 (3)
+SYN339+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.15 (4)
+SYN340+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.15 (5)
+SYN341+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.15 (6)
+SYN342+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.15 (7)
+SYN343+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.16 (2)
+SYN344+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.16 (3)
+SYN345+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.16 (4)
+SYN346+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.17 (2)
+SYN347+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.17 (3)
+SYN348+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Church problem 46.17 (4)
+SYN349+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.17 (5)
+SYN350+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.18 (2)
+SYN351+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.18 (3)
+SYN352+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.18 (4)
+SYN354+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Church problem 46.20 (1)
+SYN355+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2106
+SYN356+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2107
+SYN357+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2108
+SYN358+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2109
+SYN359+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2110
+SYN360+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2111
+SYN361+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2112
+SYN362+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2113
+SYN363+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2114
+SYN364+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2115
+SYN365+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2116
+SYN366+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2117
+SYN367+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2118
+SYN368+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2119
+SYN369+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2120
+SYN370+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2121
+SYN371+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2122
+SYN372+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2123
+SYN373+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2124
+SYN374+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2125
+SYN375+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,Peter Andrews Problem X2126
+SYN376+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2127
+SYN377+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,Peter Andrews Problem X2128
+SYN378+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2130
+SYN379+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2131
+SYN380+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2132
+SYN381+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2133
+SYN382+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2134
+SYN383+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2135
+SYN384+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2136
+SYN385+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2137
+SYN386+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.20,medium,Peter Andrews Problem X2138
+SYN387+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,The Law of Excluded Middle
+SYN388+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Expanded Law of Excluded Middle
+SYN389+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pierce's Law
+SYN390+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier 11
+SYN391+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier 9
+SYN392+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier 14
+SYN393+1.003.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier 12
+SYN394+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 201
+SYN395+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 202
+SYN396+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 203
+SYN397+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 204
+SYN398+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 215
+SYN399+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 223
+SYN400+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 227
+SYN401+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 229
+SYN402+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 230
+SYN403+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 234
+SYN404+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 238
+SYN405+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 239
+SYN406+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 240
+SYN407+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 241
+SYN408+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 244
+SYN409+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 246
+SYN410+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 249
+SYN411+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 250
+SYN412+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 255
+SYN413+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Kalish and Montague Problem 256
+SYN414+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Kalish and Montague Problem 265
+SYN415+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.11,easy,Kalish and Montague Problem 317
+SYN416+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Pelletier Problem 16
+SYN457+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.67,hard,"ALC, N=4, R=1, L=60, K=3, D=1, P=0, Index=060"
+SYN548+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.07,easy,dia box (box (p or box q)<=>box p or box q)
+SYN549+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.20,medium,dia box(dia(p or dia q) <=> (dia p or dia q))
+SYN551+3.p,TPTP_SYN,TPTP,SYN,Theorem,0.08,easy,Cute Little Problem
+SYN721+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem LX1
+SYN722+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem THM119
+SYN723+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.13,easy,Peter Andrews Problem THM138
+SYN724+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem THM31
+SYN725+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,Peter Andrews Problem THM39
+SYN726+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem THM400
+SYN727+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem THM68
+SYN728+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem THM69
+SYN729+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem THM72
+SYN730+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem THM75
+SYN731+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X2150
+SYN732+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem X3411
+SYN733+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Peter Andrews Problem Y2141
+SYN915+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,TRUE
+SYN916+1.p,TPTP_SYN,TPTP,SYN,CounterSatisfiable,0.00,easy,FALSE
+SYN917+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.13,easy,Combined problems from Smullyan
+SYN918+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN919+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN920+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN921+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN922+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN923+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN924+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN925+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN926+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN927+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN928+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN929+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN930+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN931+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN932+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN933+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN934+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN935+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN936+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN937+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,From Smullyan
+SYN939+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN940+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN941+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN942+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN943+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN944+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN945+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN946+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN947+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN948+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN949+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN950+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN951+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN952+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN953+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN954+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN955+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN956+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN957+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN958+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN959+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN960+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN961+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN962+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN963+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN964+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN965+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN966+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN967+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN968+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN969+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN970+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN971+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN972+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN973+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN974+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN975+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN976+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN977+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN978+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN979+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN980+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SYN981+1.p,TPTP_SYN,TPTP,SYN,Theorem,0.00,easy,Syntactic from Shults
+SET002+3.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,Idempotency of union
+SET008+3.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,(X \ Y) ^ Y = the empty set
+SET009+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"If X is a subset of Y, then Z \ Y is a subset of Z \ X"
+SET010+3.p,TPTP_SET,TPTP,SET,Theorem,0.58,hard,X \ Y ^ Z = (X \ Y) U (X \ Z)
+SET011+3.p,TPTP_SET,TPTP,SET,Theorem,0.44,hard,X \ (X \ Y) = X ^ Y
+SET014+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"If X (= Z and Y (= Z, then X U Y (= Z"
+SET027+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Transitivity of subset
+SET043+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Russell's Paradox
+SET044+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Anti-Russell Sets
+SET045+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,No Universal Set
+SET046+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,No set of non-circular sets
+SET047+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Set equality is symmetric
+SET062+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,The empty set is a subset of X
+SET063+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"If X is a subset of the empty set, then X is the empty set"
+SET143+3.p,TPTP_SET,TPTP,SET,Theorem,0.33,medium,Associativity of intersection
+SET144+3.p,TPTP_SET,TPTP,SET,Theorem,0.53,hard,"If X is a subset of Z, then X U Y ^ Z = (X U Y) ^ Z"
+SET146+3.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,The intersection of X and the empty set is the empty set
+SET148+3.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,Idempotency of intersection
+SET159+3.p,TPTP_SET,TPTP,SET,Theorem,0.39,medium,Associativity of union
+SET162+3.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,The union of X and the empty set is X
+SET169+3.p,TPTP_SET,TPTP,SET,Theorem,0.67,hard,Intersection distributes over union
+SET171+3.p,TPTP_SET,TPTP,SET,Theorem,0.58,hard,Union distributes over intersection
+SET173+3.p,TPTP_SET,TPTP,SET,Theorem,0.19,medium,Absorbtion for intersection
+SET175+3.p,TPTP_SET,TPTP,SET,Theorem,0.22,medium,Absorbtion for union
+SET183+3.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,"If X is a subset of  Y, then the intersection of X and Y is X"
+SET185+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"If X is a subset of  Y, then the union of X and Y is Y"
+SET194+3.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,X is a subset of the union of X and Y
+SET196+3.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,The intersection of X and Y is a subset of X
+SET199+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"If Z (= X and Z (= Y, then Z (= X ^ Y"
+SET200+3.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,Union is monotonic
+SET201+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,Intersection is monotonic
+SET573+3.p,TPTP_SET,TPTP,SET,Theorem,0.07,easy,Trybulec's 12th Boolean property of sets
+SET574+3.p,TPTP_SET,TPTP,SET,Theorem,0.07,easy,Trybulec's 13th Boolean property of sets
+SET575+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Trybulec's 15th Boolean property of sets
+SET576+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Trybulec's 17th Boolean property of sets
+SET577+3.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,Trybulec's 18th Boolean property of sets
+SET578+3.p,TPTP_SET,TPTP,SET,Theorem,0.19,medium,Trybulec's 19th Boolean property of sets
+SET579+3.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,Trybulec's 20th Boolean property of sets
+SET581+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,Trybulec's 24th Boolean property of sets
+SET583+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Extensionality
+SET584+3.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,"If X (= Y, then X U Z (= Y U Z"
+SET585+3.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,The intersection of X and Y is a subset of the union of X and Z
+SET586+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"If X (= Y, then X ^ Z (= Y ^ Z"
+SET587+3.p,TPTP_SET,TPTP,SET,Theorem,0.19,medium,X \ Y = the empty set iff X (= Y
+SET588+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"If X (= Y, then X \ Z (= Y \ Z"
+SET589+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"If X (= Y and Z (= V, then X \ V (= Y \ Z"
+SET590+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,The difference of X and Y is a subset of X
+SET591+3.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,"If X (= Y \ X, then X = the empty set"
+SET592+3.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"If X (= Y and X (= Z and Y ^ Z = empty set, then X = empty set"
+SET593+3.p,TPTP_SET,TPTP,SET,Theorem,0.28,medium,"If X (= Y U Z, then X \ Y (= Z and X \ Z (= Y"
+SET595+3.p,TPTP_SET,TPTP,SET,Theorem,0.44,hard,"If X (= Y, then Y = X U (Y \ X)"
+SET596+3.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"If X (= Y and Y ^ Z = the empty set, then X ^ Z = the empty set"
+SET597+3.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,"X = Y U Z iff Y (= X, Z (= X, !V: Y (= V & Z (= V, X (= V"
+SET598+3.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,"X = Y ^ Z iff X (= Y, X (= Z, !V: V (= Y & V (= Z, V (= X"
+SET599+3.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,X \ Y (= X sym\ Y
+SET600+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,X U Y = empty set iff X = empty set & Y = empty set
+SET602+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,The difference of X and X is the empty set
+SET603+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,The difference of X and the empty set is X
+SET604+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,The difference of the empty set and X is the empty set
+SET605+3.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,The difference of X and the union of X and Y is the empty set
+SET606+3.p,TPTP_SET,TPTP,SET,Theorem,0.47,hard,X \ X ^ Y = X \ Y
+SET607+3.p,TPTP_SET,TPTP,SET,Theorem,0.50,hard,X U (Y \ X) = X U Y
+SET608+3.p,TPTP_SET,TPTP,SET,Theorem,0.47,hard,X ^ Y U (X \ Y) = X
+SET610+3.p,TPTP_SET,TPTP,SET,Theorem,0.53,hard,(X U Y) \ Y = X \ Y
+SET612+3.p,TPTP_SET,TPTP,SET,Theorem,0.61,hard,X \ (Y U Z) = (X \ Y) ^ (X \ Z)
+SET613+3.p,TPTP_SET,TPTP,SET,Theorem,0.61,hard,(X U Y) \ X ^ Y = (X \ Y) U (Y \ X)
+SET614+3.p,TPTP_SET,TPTP,SET,Theorem,0.56,hard,X \ Y \ Z = X \ (Y U Z)
+SET615+3.p,TPTP_SET,TPTP,SET,Theorem,0.58,hard,(X U Y) \ Z = (X \ Z) U (Y \ Z)
+SET616+3.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,"If X \ Y = Y \ X, then X = Y"
+SET617+3.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,X sym\ the empty set = X and the empty set sym\ X = X
+SET618+3.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,The symmetric difference of X and X is the empty set
+SET622+3.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,X \ (Y sym\ Z) = (X \ (Y U Z)) U X ^ Y ^ Z
+SET624+3.p,TPTP_SET,TPTP,SET,Theorem,0.25,medium,X intersects Y U Z iff X intersects Y or X intersects Z
+SET625+3.p,TPTP_SET,TPTP,SET,Theorem,0.07,easy,"If X intersects Y and Y is a subset of Z, then X intersects Z"
+SET626+3.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,"If X intersects the intersection of Y and Z, then X intersects Y"
+SET627+3.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,X is disjoint from the empty set
+SET628+3.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,X intersects X iff X is not the empty set
+SET631+3.p,TPTP_SET,TPTP,SET,Theorem,0.07,easy,"If X intersects the difference of Y and Z, then X intersects Y"
+SET632+3.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,"If X (= Y & X (= Z & Y disjoint from Z, then X = empty set"
+SET634+3.p,TPTP_SET,TPTP,SET,Theorem,0.56,hard,X ^ (Y \ Z) = X ^ Y \ Z
+SET637+3.p,TPTP_SET,TPTP,SET,Theorem,0.28,medium,Trybulec's 119th Boolean property of sets
+SET639+3.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,Trybulec's 121th Boolean property of sets
+SET786+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Peter Andrews Problem THM25
+SET788+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,Symmetry of equality from set membership
+SET867+1.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,union(empty_set) = empty_set
+SET875+1.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,"~ ( disjoint(singleton(A),singleton(B)) & A = B )"
+SET876+1.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"A != B => disjoint(singleton(A),singleton(B))"
+SET880+1.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"difference(singleton(A),singleton(B)) = empty_set => A = B"
+SET881+1.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"difference(singleton(A),unordered_pair(A,B)) = empty_set"
+SET882+1.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,"A != B => diff(unordered_pair(A,B),singleton(B)) = singleton(A)"
+SET883+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"subset(singleton(A),singleton(B)) => A = B"
+SET890+1.p,TPTP_SET,TPTP,SET,Theorem,0.28,medium,union(singleton(A)) = A
+SET891+1.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"union(uno_pair(singleton(A),singleton(B))) = uno_pair(A,B)"
+SET893+1.p,TPTP_SET,TPTP,SET,Theorem,0.19,medium,"in(o_pair(A,B),cart_prod(sgtn(C),sgtn(D))) <=> ( A = C & B = D )"
+SET899+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"subset(A,B) => ( in(C,A) | subset(A,difference(B,singleton(C))) )"
+SET900+1.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,"~ ( A != singleton(B) & A != empty_set & ~ ( in(C,A) & C != B ) )"
+SET901+1.p,TPTP_SET,TPTP,SET,Theorem,0.08,easy,"Basic properties of sets, theorem 42"
+SET904+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"subset(set_union2(singleton(A),B),B) => in(A,B)"
+SET910+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"intersection(A,singleton(B)) = singleton(B) => in(B,A)"
+SET911+1.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,"in(A,B) => set_intersection2(B,singleton(A)) = singleton(A)"
+SET913+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"~ ( disjoint(singleton(A),B) & in(A,B) )"
+SET915+1.p,TPTP_SET,TPTP,SET,Theorem,0.00,easy,"~ in(A,B) => disjoint(singleton(A),B)"
+SET917+1.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"disjoint(sgtn(A),B) | intersection(sgtn(A),B) = sgtn(A)"
+SET923+1.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"~ ( difference(A,sgtn(B)) = empty & A != empty & A != sgtn(B) )"
+SET924+1.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,"difference(singleton(A),B) = singleton(A) <=> ~ in(A,B)"
+SET925+1.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,"difference(singleton(A),B) = empty_set <=> in(A,B)"
+SET926+1.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"difference(sgtn(A),B) = empty | difference(sgtn(A),B) = sgtn(A)"
+SET933+1.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"subset(singleton(A),powerset(A))"
+SET940+1.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"union(unordered_pair(A,B)) = union(A,B)"
+SET942+1.p,TPTP_SET,TPTP,SET,Theorem,0.28,medium,"subset(A,B) => subset(union(A),union(B))"
+SET947+1.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,"subset(A,powerset(union(A)))"
+SET949+1.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"~ ( in(A,cartesian_product(B,C)) & ordered_pair(D,E) != A )"
+SET954+1.p,TPTP_SET,TPTP,SET,Theorem,0.06,easy,"in(o_pair(A,B),cart_prod(C,D)) => in(o_pair(B,A),cart_prod(D,C))"
+SET958+1.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,"Basic properties of sets, theorem 111"
+SET975+1.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,"in(o_pair(A,B),cart_prod(sgtn(C),D)) <=> ( A = C & in(B,D) )"
+SET976+1.p,TPTP_SET,TPTP,SET,Theorem,0.17,medium,"in(o_pair(A,B),cart_prod(C,sgtn(D))) <=> ( in(A,C) & B = D )"
+SET978+1.p,TPTP_SET,TPTP,SET,Theorem,0.03,easy,"Basic properties of sets, theorem 131"
+SET983+1.p,TPTP_SET,TPTP,SET,Theorem,0.14,easy,"Basic properties of sets, theorem 137"
+SET985+1.p,TPTP_SET,TPTP,SET,Theorem,0.11,easy,"Basic properties of sets, theorem 139"
+SET991+1.p,TPTP_SET,TPTP,SET,Theorem,0.19,medium,"Functions and their basic properties, theorem 12"
+LCL001+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.00,easy,Excluded middle
+LCL002+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.00,easy,Double negation elimination
+LCL003+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.00,easy,Identity
+LCL004+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.02,easy,Modus ponens tautology
+LCL005+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.03,easy,Hypothetical syllogism
+LCL006+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.02,easy,Disjunctive syllogism
+LCL007+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.05,easy,Constructive dilemma
+LCL008+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.03,easy,De Morgan 1
+LCL009+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.03,easy,De Morgan 2
+LCL010+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.03,easy,Contrapositive
+LCL011+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.04,easy,Distribution and over or
+LCL012+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.04,easy,Distribution or over and
+LCL013+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.05,easy,Exportation
+LCL014+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.10,easy,Material implication
+LCL015+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Peirce law
+LCL016+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Ex falso quodlibet
+LCL017+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.08,easy,Modus tollens
+LCL018+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Resolution
+LCL030+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Universal instantiation
+LCL031+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Existential generalization
+LCL032+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.22,medium,Forall implies exists
+LCL033+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.25,medium,Forall distributes over and
+LCL034+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.25,medium,Exists distributes over or
+LCL035+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Negation of forall
+LCL036+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Negation of exists
+LCL037+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.55,hard,Drinker paradox
+LCL102+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.08,easy,Implication chain depth 2
+LCL103+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Implication chain depth 3
+LCL104+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.16,medium,Implication chain depth 4
+LCL105+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Implication chain depth 5
+LCL106+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Implication chain depth 6
+LCL107+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.28,medium,Implication chain depth 7
+LCL108+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.32,medium,Implication chain depth 8
+LCL109+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.36,medium,Implication chain depth 9
+LCL110+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.40,medium,Implication chain depth 10
+LCL111+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.44,hard,Implication chain depth 11
+LCL112+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Implication chain depth 12
+LCL113+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.52,hard,Implication chain depth 13
+LCL114+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.56,hard,Implication chain depth 14
+LCL115+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.60,hard,Implication chain depth 15
+LCL116+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.64,hard,Implication chain depth 16
+LCL117+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.68,hard,Implication chain depth 17
+LCL118+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.72,hard,Implication chain depth 18
+LCL119+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.76,hard,Implication chain depth 19
+LCL122+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.06,easy,Disjunctive elimination 2 disjuncts
+LCL123+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.09,easy,Disjunctive elimination 3 disjuncts
+LCL124+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Disjunctive elimination 4 disjuncts
+LCL125+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Disjunctive elimination 5 disjuncts
+LCL126+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Disjunctive elimination 6 disjuncts
+LCL127+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.21,medium,Disjunctive elimination 7 disjuncts
+LCL128+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Disjunctive elimination 8 disjuncts
+LCL129+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.27,medium,Disjunctive elimination 9 disjuncts
+LCL132+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.10,easy,Case analysis 2 cases
+LCL133+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Case analysis 3 cases
+LCL134+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Case analysis 4 cases
+LCL135+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.25,medium,Case analysis 5 cases
+LCL136+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Case analysis 6 cases
+LCL137+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Case analysis 7 cases
+LCL143+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Equivalence chain length 3
+LCL144+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Equivalence chain length 4
+LCL145+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Equivalence chain length 5
+LCL146+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.36,medium,Equivalence chain length 6
+LCL147+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.42,hard,Equivalence chain length 7
+LCL148+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Equivalence chain length 8
+LCL149+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.54,hard,Equivalence chain length 9
+LCL150+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.60,hard,Equivalence chain length 10
+LCL151+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.60,hard,Equivalence chain length 11
+LCL162+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.16,medium,Contrapositive chain depth 2
+LCL163+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Contrapositive chain depth 3
+LCL164+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.32,medium,Contrapositive chain depth 4
+LCL165+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.40,medium,Contrapositive chain depth 5
+LCL166+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Contrapositive chain depth 6
+LCL167+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.55,hard,Contrapositive chain depth 7
+LCL168+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.55,hard,Contrapositive chain depth 8
+LCL169+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.55,hard,Contrapositive chain depth 9
+LCL200+1.p,TPTP_LCL,TPTP,LCL,CounterSatisfiable,0.05,easy,Invalid: affirming consequent
+LCL201+1.p,TPTP_LCL,TPTP,LCL,CounterSatisfiable,0.05,easy,Invalid: denying antecedent
+LCL202+1.p,TPTP_LCL,TPTP,LCL,CounterSatisfiable,0.10,easy,Invalid: exists to forall
+LCL203+1.p,TPTP_LCL,TPTP,LCL,CounterSatisfiable,0.08,easy,Invalid: converse error
+LCL204+1.p,TPTP_LCL,TPTP,LCL,CounterSatisfiable,0.10,easy,Invalid: conjunction from disjunction
+LCL205+1.p,TPTP_LCL,TPTP,LCL,CounterSatisfiable,0.25,medium,Invalid: swap quantifier order
+LCL206+1.p,TPTP_LCL,TPTP,LCL,CounterSatisfiable,0.15,easy,Invalid: forall-or to or-forall
+LCL301+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Branching chain depth 2 branches 2
+LCL302+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Branching chain depth 2 branches 3
+LCL303+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Branching chain depth 2 branches 4
+LCL304+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Branching chain depth 3 branches 2
+LCL305+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Branching chain depth 3 branches 3
+LCL306+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.21,medium,Branching chain depth 3 branches 4
+LCL307+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Branching chain depth 4 branches 2
+LCL308+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.21,medium,Branching chain depth 4 branches 3
+LCL309+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Branching chain depth 4 branches 4
+LCL310+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.21,medium,Branching chain depth 5 branches 2
+LCL311+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Branching chain depth 5 branches 3
+LCL312+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.27,medium,Branching chain depth 5 branches 4
+LCL313+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Branching chain depth 6 branches 2
+LCL314+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.27,medium,Branching chain depth 6 branches 3
+LCL315+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Branching chain depth 6 branches 4
+LCL316+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.27,medium,Branching chain depth 7 branches 2
+LCL317+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Branching chain depth 7 branches 3
+LCL318+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.33,medium,Branching chain depth 7 branches 4
+LCL319+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Branching chain depth 8 branches 2
+LCL320+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.33,medium,Branching chain depth 8 branches 3
+LCL321+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.36,medium,Branching chain depth 8 branches 4
+LCL322+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.33,medium,Branching chain depth 9 branches 2
+LCL323+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.36,medium,Branching chain depth 9 branches 3
+LCL324+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.39,medium,Branching chain depth 9 branches 4
+LCL325+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.36,medium,Branching chain depth 10 branches 2
+LCL326+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.39,medium,Branching chain depth 10 branches 3
+LCL327+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.42,hard,Branching chain depth 10 branches 4
+LCL328+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.39,medium,Branching chain depth 11 branches 2
+LCL329+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.42,hard,Branching chain depth 11 branches 3
+LCL330+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Branching chain depth 11 branches 4
+LCL331+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.42,hard,Branching chain depth 12 branches 2
+LCL332+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Branching chain depth 12 branches 3
+LCL333+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Branching chain depth 12 branches 4
+LCL334+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Branching chain depth 13 branches 2
+LCL335+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Branching chain depth 13 branches 3
+LCL336+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.51,hard,Branching chain depth 13 branches 4
+LCL337+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Branching chain depth 14 branches 2
+LCL338+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.51,hard,Branching chain depth 14 branches 3
+LCL339+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.54,hard,Branching chain depth 14 branches 4
+LCL340+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.10,easy,Diamond pattern width 2
+LCL341+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Diamond pattern width 3
+LCL342+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Diamond pattern width 4
+LCL343+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.25,medium,Diamond pattern width 5
+LCL344+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Diamond pattern width 6
+LCL345+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Diamond pattern width 7
+LCL346+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.40,medium,Diamond pattern width 8
+LCL347+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Diamond pattern width 9
+LCL348+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.50,hard,Diamond pattern width 10
+LCL349+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.55,hard,Diamond pattern width 11
+LCL350+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.60,hard,Diamond pattern width 12
+LCL351+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.65,hard,Diamond pattern width 13
+LCL352+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Diamond pattern width 14
+LCL353+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Diamond pattern width 15
+LCL354+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Diamond pattern width 16
+LCL355+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Diamond pattern width 17
+LCL356+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Diamond pattern width 18
+LCL357+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Diamond pattern width 19
+LCL358+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.08,easy,Negation elimination with 3 predicates
+LCL359+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Negation elimination with 4 predicates
+LCL360+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.16,medium,Negation elimination with 5 predicates
+LCL361+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Negation elimination with 6 predicates
+LCL362+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Negation elimination with 7 predicates
+LCL363+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.28,medium,Negation elimination with 8 predicates
+LCL364+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.32,medium,Negation elimination with 9 predicates
+LCL365+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.36,medium,Negation elimination with 10 predicates
+LCL366+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.40,medium,Negation elimination with 11 predicates
+LCL367+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.44,hard,Negation elimination with 12 predicates
+LCL368+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Negation elimination with 13 predicates
+LCL369+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.50,hard,Negation elimination with 14 predicates
+LCL370+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.50,hard,Negation elimination with 15 predicates
+LCL371+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.14,easy,Mixed biconditional chain length 2
+LCL372+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.21,medium,Mixed biconditional chain length 3
+LCL373+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.28,medium,Mixed biconditional chain length 4
+LCL374+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Mixed biconditional chain length 5
+LCL375+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.42,hard,Mixed biconditional chain length 6
+LCL376+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.49,hard,Mixed biconditional chain length 7
+LCL377+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.56,hard,Mixed biconditional chain length 8
+LCL378+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.63,hard,Mixed biconditional chain length 9
+LCL379+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.65,hard,Mixed biconditional chain length 10
+LCL380+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.65,hard,Mixed biconditional chain length 11
+LCL501+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.16,medium,Proof by contradiction depth 2
+LCL502+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Proof by contradiction depth 3
+LCL503+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.32,medium,Proof by contradiction depth 4
+LCL504+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.40,medium,Proof by contradiction depth 5
+LCL505+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Proof by contradiction depth 6
+LCL506+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.56,hard,Proof by contradiction depth 7
+LCL507+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.64,hard,Proof by contradiction depth 8
+LCL508+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.65,hard,Proof by contradiction depth 9
+LCL509+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.65,hard,Proof by contradiction depth 10
+LCL510+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.65,hard,Proof by contradiction depth 11
+LCL511+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Nested conditional depth 2
+LCL512+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Nested conditional depth 3
+LCL513+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.40,medium,Nested conditional depth 4
+LCL514+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.50,hard,Nested conditional depth 5
+LCL515+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.60,hard,Nested conditional depth 6
+LCL516+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Nested conditional depth 7
+LCL517+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Nested conditional depth 8
+LCL518+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.70,hard,Nested conditional depth 9
+LCL519+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.10,easy,Existential witness 2 elements
+LCL520+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Existential witness 3 elements
+LCL521+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Existential witness 4 elements
+LCL522+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.25,medium,Existential witness 5 elements
+LCL523+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Existential witness 6 elements
+LCL524+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Existential witness 7 elements
+LCL525+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Existential witness 8 elements
+LCL526+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Existential witness 9 elements
+LCL527+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Existential witness 10 elements
+LCL528+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Existential witness 11 elements
+LCL529+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Symmetric transitive chain 2
+LCL530+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Symmetric transitive chain 3
+LCL531+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Symmetric transitive chain 4
+LCL532+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Symmetric transitive chain 5
+LCL533+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.36,medium,Symmetric transitive chain 6
+LCL534+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.42,hard,Symmetric transitive chain 7
+LCL535+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.48,hard,Symmetric transitive chain 8
+LCL536+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.50,hard,Symmetric transitive chain 9
+LCL601+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.10,easy,Forall-exists interplay 2 elements
+LCL602+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Forall-exists interplay 3 elements
+LCL603+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Forall-exists interplay 4 elements
+LCL604+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.25,medium,Forall-exists interplay 5 elements
+LCL605+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Forall-exists interplay 6 elements
+LCL606+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.35,medium,Forall-exists interplay 7 elements
+LCL607+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.40,medium,Forall-exists interplay 8 elements
+LCL608+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 9 elements
+LCL609+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 10 elements
+LCL610+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 11 elements
+LCL611+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 12 elements
+LCL612+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 13 elements
+LCL613+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 14 elements
+LCL614+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 15 elements
+LCL615+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 16 elements
+LCL616+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 17 elements
+LCL617+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 18 elements
+LCL618+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.45,hard,Forall-exists interplay 19 elements
+LCL619+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.04,easy,Conjunction implies disjunction 2 vars
+LCL620+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.06,easy,Conjunction implies disjunction 3 vars
+LCL621+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.08,easy,Conjunction implies disjunction 4 vars
+LCL622+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.10,easy,Conjunction implies disjunction 5 vars
+LCL623+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Conjunction implies disjunction 6 vars
+LCL624+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.14,easy,Conjunction implies disjunction 7 vars
+LCL625+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.16,medium,Conjunction implies disjunction 8 vars
+LCL626+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Conjunction implies disjunction 9 vars
+LCL627+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 10 vars
+LCL628+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 11 vars
+LCL629+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 12 vars
+LCL630+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 13 vars
+LCL631+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 14 vars
+LCL632+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 15 vars
+LCL633+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 16 vars
+LCL634+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 17 vars
+LCL635+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 18 vars
+LCL636+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.20,medium,Conjunction implies disjunction 19 vars
+LCL637+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.06,easy,Distribution over 1 disjuncts
+LCL638+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.09,easy,Distribution over 2 disjuncts
+LCL639+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.12,easy,Distribution over 3 disjuncts
+LCL640+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.15,easy,Distribution over 4 disjuncts
+LCL641+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.18,medium,Distribution over 5 disjuncts
+LCL642+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.21,medium,Distribution over 6 disjuncts
+LCL643+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.24,medium,Distribution over 7 disjuncts
+LCL644+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.27,medium,Distribution over 8 disjuncts
+LCL645+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Distribution over 9 disjuncts
+LCL646+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Distribution over 10 disjuncts
+LCL647+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Distribution over 11 disjuncts
+LCL648+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Distribution over 12 disjuncts
+LCL649+1.p,TPTP_LCL,TPTP,LCL,Theorem,0.30,medium,Distribution over 13 disjuncts
+PUZ001+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,Socrates syllogism
+PUZ002+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.10,easy,Transitivity puzzle
+PUZ003+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Ancestral relation
+PUZ004+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.15,easy,Knights and knaves basic
+PUZ005+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.25,medium,Knights: A says B is knight
+PUZ006+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.30,medium,Wolf goat cabbage safety
+PUZ103+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.12,easy,Reachability 3-step chain
+PUZ104+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.16,medium,Reachability 4-step chain
+PUZ105+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Reachability 5-step chain
+PUZ106+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Reachability 6-step chain
+PUZ107+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.28,medium,Reachability 7-step chain
+PUZ108+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.32,medium,Reachability 8-step chain
+PUZ109+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Reachability 9-step chain
+PUZ110+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.40,medium,Reachability 10-step chain
+PUZ111+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.44,hard,Reachability 11-step chain
+PUZ112+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.48,hard,Reachability 12-step chain
+PUZ113+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.52,hard,Reachability 13-step chain
+PUZ114+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.56,hard,Reachability 14-step chain
+PUZ115+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.60,hard,Reachability 15-step chain
+PUZ116+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.64,hard,Reachability 16-step chain
+PUZ117+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.68,hard,Reachability 17-step chain
+PUZ118+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.72,hard,Reachability 18-step chain
+PUZ119+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.75,hard,Reachability 19-step chain
+PUZ120+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.75,hard,Reachability 20-step chain
+PUZ121+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.75,hard,Reachability 21-step chain
+PUZ122+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.75,hard,Reachability 22-step chain
+PUZ123+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.75,hard,Reachability 23-step chain
+PUZ124+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.75,hard,Reachability 24-step chain
+PUZ203+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Pigeonhole 3 into 2
+PUZ204+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.48,hard,Pigeonhole 4 into 3
+PUZ205+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.60,hard,Pigeonhole 5 into 4
+PUZ206+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.72,hard,Pigeonhole 6 into 5
+PUZ207+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.84,hard,Pigeonhole 7 into 6
+PUZ208+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.85,hard,Pigeonhole 8 into 7
+PUZ301+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification poodle is animal
+PUZ302+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification labrador is animal
+PUZ303+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification beagle is animal
+PUZ304+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification husky is animal
+PUZ305+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification collie is animal
+PUZ306+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification robin is animal
+PUZ307+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification eagle is animal
+PUZ308+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification penguin is animal
+PUZ309+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification sparrow is animal
+PUZ310+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification hawk is animal
+PUZ311+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification salmon is animal
+PUZ312+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification trout is animal
+PUZ313+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification bass is animal
+PUZ314+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification cod is animal
+PUZ315+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification tuna is animal
+PUZ316+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification rose is organism
+PUZ317+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification tulip is organism
+PUZ318+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification daisy is organism
+PUZ319+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification lily is organism
+PUZ320+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification orchid is organism
+PUZ321+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification oak is organism
+PUZ322+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification pine is organism
+PUZ323+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification maple is organism
+PUZ324+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification birch is organism
+PUZ325+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification elm is organism
+PUZ326+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification python_lang is technology
+PUZ327+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification java_lang is technology
+PUZ328+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification rust_lang is technology
+PUZ329+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Classification go_lang is technology
+PUZ402+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.16,medium,Mutual exclusion 2 states
+PUZ403+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Mutual exclusion 3 states
+PUZ404+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.32,medium,Mutual exclusion 4 states
+PUZ405+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.40,medium,Mutual exclusion 5 states
+PUZ406+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.48,hard,Mutual exclusion 6 states
+PUZ407+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Mutual exclusion 7 states
+PUZ501+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Family ancestor chain length 2
+PUZ502+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.12,easy,Family ancestor chain length 3
+PUZ503+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.16,medium,Family ancestor chain length 4
+PUZ504+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Family ancestor chain length 5
+PUZ505+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Family ancestor chain length 6
+PUZ506+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.28,medium,Family ancestor chain length 7
+PUZ507+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.32,medium,Family ancestor chain length 8
+PUZ508+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Family ancestor chain length 9
+PUZ509+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Family descendant chain length 2
+PUZ510+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.12,easy,Family descendant chain length 3
+PUZ511+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.16,medium,Family descendant chain length 4
+PUZ512+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Family descendant chain length 5
+PUZ513+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Family descendant chain length 6
+PUZ514+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.28,medium,Family descendant chain length 7
+PUZ515+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.32,medium,Family descendant chain length 8
+PUZ516+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Family descendant chain length 9
+PUZ517+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,Family relative chain length 2
+PUZ518+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.12,easy,Family relative chain length 3
+PUZ519+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.16,medium,Family relative chain length 4
+PUZ520+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Family relative chain length 5
+PUZ521+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Family relative chain length 6
+PUZ522+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.28,medium,Family relative chain length 7
+PUZ523+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.32,medium,Family relative chain length 8
+PUZ524+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Family relative chain length 9
+PUZ525+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.30,medium,Graph coloring 3 nodes 2 colors
+PUZ526+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.40,medium,Graph coloring 4 nodes 2 colors
+PUZ527+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.40,medium,Graph coloring 4 nodes 3 colors
+PUZ528+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Graph coloring 5 nodes 2 colors
+PUZ529+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Graph coloring 5 nodes 3 colors
+PUZ530+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Graph coloring 5 nodes 4 colors
+PUZ531+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.60,hard,Graph coloring 6 nodes 2 colors
+PUZ532+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.60,hard,Graph coloring 6 nodes 3 colors
+PUZ533+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.60,hard,Graph coloring 6 nodes 4 colors
+PUZ534+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.65,hard,Graph coloring 7 nodes 2 colors
+PUZ535+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.65,hard,Graph coloring 7 nodes 3 colors
+PUZ536+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.65,hard,Graph coloring 7 nodes 4 colors
+PUZ537+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.12,easy,Task scheduling 3 sequential tasks
+PUZ538+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.16,medium,Task scheduling 4 sequential tasks
+PUZ539+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Task scheduling 5 sequential tasks
+PUZ540+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Task scheduling 6 sequential tasks
+PUZ541+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.28,medium,Task scheduling 7 sequential tasks
+PUZ542+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.32,medium,Task scheduling 8 sequential tasks
+PUZ543+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Task scheduling 9 sequential tasks
+PUZ544+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.40,medium,Task scheduling 10 sequential tasks
+PUZ545+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.44,hard,Task scheduling 11 sequential tasks
+PUZ546+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,car has property has_wheels
+PUZ547+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,truck has property has_wheels
+PUZ548+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bus has property has_wheels
+PUZ549+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,motorcycle has property has_wheels
+PUZ550+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bicycle has property has_wheels
+PUZ551+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,van has property has_wheels
+PUZ552+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,suv has property has_wheels
+PUZ553+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,sedan has property has_wheels
+PUZ554+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,car has property needs_fuel
+PUZ555+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,truck has property needs_fuel
+PUZ556+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bus has property needs_fuel
+PUZ557+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,motorcycle has property needs_fuel
+PUZ558+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bicycle has property needs_fuel
+PUZ559+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,van has property needs_fuel
+PUZ560+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,suv has property needs_fuel
+PUZ561+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,sedan has property needs_fuel
+PUZ562+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,car has property has_engine
+PUZ563+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,truck has property has_engine
+PUZ564+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bus has property has_engine
+PUZ565+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,motorcycle has property has_engine
+PUZ566+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bicycle has property has_engine
+PUZ567+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,van has property has_engine
+PUZ568+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,suv has property has_engine
+PUZ569+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,sedan has property has_engine
+PUZ570+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,car has property is_transport
+PUZ571+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,truck has property is_transport
+PUZ572+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bus has property is_transport
+PUZ573+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,motorcycle has property is_transport
+PUZ574+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,bicycle has property is_transport
+PUZ575+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,van has property is_transport
+PUZ576+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,suv has property is_transport
+PUZ577+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,sedan has property is_transport
+PUZ578+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,apple has property is_edible
+PUZ579+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,banana has property is_edible
+PUZ580+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cherry has property is_edible
+PUZ581+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,date has property is_edible
+PUZ582+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,elderberry has property is_edible
+PUZ583+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,fig has property is_edible
+PUZ584+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,grape has property is_edible
+PUZ585+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,honeydew has property is_edible
+PUZ586+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,apple has property has_seeds
+PUZ587+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,banana has property has_seeds
+PUZ588+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cherry has property has_seeds
+PUZ589+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,date has property has_seeds
+PUZ590+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,elderberry has property has_seeds
+PUZ591+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,fig has property has_seeds
+PUZ592+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,grape has property has_seeds
+PUZ593+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,honeydew has property has_seeds
+PUZ594+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,apple has property grows_on_plant
+PUZ595+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,banana has property grows_on_plant
+PUZ596+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cherry has property grows_on_plant
+PUZ597+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,date has property grows_on_plant
+PUZ598+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,elderberry has property grows_on_plant
+PUZ599+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,fig has property grows_on_plant
+PUZ600+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,grape has property grows_on_plant
+PUZ601+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,honeydew has property grows_on_plant
+PUZ602+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,apple has property is_food
+PUZ603+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,banana has property is_food
+PUZ604+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cherry has property is_food
+PUZ605+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,date has property is_food
+PUZ606+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,elderberry has property is_food
+PUZ607+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,fig has property is_food
+PUZ608+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,grape has property is_food
+PUZ609+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,honeydew has property is_food
+PUZ610+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cat has property is_living
+PUZ611+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,dog has property is_living
+PUZ612+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,horse has property is_living
+PUZ613+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,rabbit has property is_living
+PUZ614+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,turtle has property is_living
+PUZ615+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,parrot has property is_living
+PUZ616+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,hamster has property is_living
+PUZ617+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,goldfish has property is_living
+PUZ618+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cat has property needs_food
+PUZ619+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,dog has property needs_food
+PUZ620+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,horse has property needs_food
+PUZ621+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,rabbit has property needs_food
+PUZ622+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,turtle has property needs_food
+PUZ623+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,parrot has property needs_food
+PUZ624+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,hamster has property needs_food
+PUZ625+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,goldfish has property needs_food
+PUZ626+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cat has property can_move
+PUZ627+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,dog has property can_move
+PUZ628+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,horse has property can_move
+PUZ629+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,rabbit has property can_move
+PUZ630+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,turtle has property can_move
+PUZ631+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,parrot has property can_move
+PUZ632+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,hamster has property can_move
+PUZ633+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,goldfish has property can_move
+PUZ634+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cat has property is_organism
+PUZ635+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,dog has property is_organism
+PUZ636+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,horse has property is_organism
+PUZ637+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,rabbit has property is_organism
+PUZ638+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,turtle has property is_organism
+PUZ639+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,parrot has property is_organism
+PUZ640+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,hamster has property is_organism
+PUZ641+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,goldfish has property is_organism
+PUZ642+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,guitar has property makes_sound
+PUZ643+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,piano has property makes_sound
+PUZ644+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,violin has property makes_sound
+PUZ645+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,drums has property makes_sound
+PUZ646+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,flute has property makes_sound
+PUZ647+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,trumpet has property makes_sound
+PUZ648+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cello has property makes_sound
+PUZ649+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,harp has property makes_sound
+PUZ650+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,guitar has property needs_player
+PUZ651+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,piano has property needs_player
+PUZ652+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,violin has property needs_player
+PUZ653+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,drums has property needs_player
+PUZ654+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,flute has property needs_player
+PUZ655+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,trumpet has property needs_player
+PUZ656+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cello has property needs_player
+PUZ657+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,harp has property needs_player
+PUZ658+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,guitar has property is_musical
+PUZ659+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,piano has property is_musical
+PUZ660+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,violin has property is_musical
+PUZ661+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,drums has property is_musical
+PUZ662+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,flute has property is_musical
+PUZ663+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,trumpet has property is_musical
+PUZ664+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cello has property is_musical
+PUZ665+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,harp has property is_musical
+PUZ666+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,guitar has property is_artifact
+PUZ667+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,piano has property is_artifact
+PUZ668+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,violin has property is_artifact
+PUZ669+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,drums has property is_artifact
+PUZ670+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,flute has property is_artifact
+PUZ671+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,trumpet has property is_artifact
+PUZ672+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,cello has property is_artifact
+PUZ673+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.05,easy,harp has property is_artifact
+PUZ901+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.18,medium,Star graph 3 leaves connectivity
+PUZ902+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Star graph 4 leaves connectivity
+PUZ903+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.30,medium,Star graph 5 leaves connectivity
+PUZ904+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Star graph 6 leaves connectivity
+PUZ905+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.42,hard,Star graph 7 leaves connectivity
+PUZ906+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.48,hard,Star graph 8 leaves connectivity
+PUZ907+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Star graph 9 leaves connectivity
+PUZ908+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Star graph 10 leaves connectivity
+PUZ909+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Star graph 11 leaves connectivity
+PUZ910+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Star graph 12 leaves connectivity
+PUZ911+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Star graph 13 leaves connectivity
+PUZ912+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Star graph 14 leaves connectivity
+PUZ913+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.16,medium,Cycle graph 4 nodes opposite connectivity
+PUZ914+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Cycle graph 5 nodes opposite connectivity
+PUZ915+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.24,medium,Cycle graph 6 nodes opposite connectivity
+PUZ916+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.28,medium,Cycle graph 7 nodes opposite connectivity
+PUZ917+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.32,medium,Cycle graph 8 nodes opposite connectivity
+PUZ918+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.36,medium,Cycle graph 9 nodes opposite connectivity
+PUZ919+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.40,medium,Cycle graph 10 nodes opposite connectivity
+PUZ920+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.44,hard,Cycle graph 11 nodes opposite connectivity
+PUZ921+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.48,hard,Cycle graph 12 nodes opposite connectivity
+PUZ922+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.52,hard,Cycle graph 13 nodes opposite connectivity
+PUZ923+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.55,hard,Cycle graph 14 nodes opposite connectivity
+PUZ924+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.55,hard,Cycle graph 15 nodes opposite connectivity
+PUZ925+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.20,medium,Binary tree depth 2 reachability
+PUZ926+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.30,medium,Binary tree depth 3 reachability
+PUZ927+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.40,medium,Binary tree depth 4 reachability
+PUZ928+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.50,hard,Binary tree depth 5 reachability
+PUZ929+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.60,hard,Binary tree depth 6 reachability
+PUZ930+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.60,hard,Binary tree depth 7 reachability
+PUZ931+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"widget has properties red,heavy,fragile"
+PUZ932+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"widget has properties blue,light,durable"
+PUZ933+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"widget has properties green,medium,flexible"
+PUZ934+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"widget has properties yellow,compact,portable"
+PUZ935+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"gadget has properties red,heavy,fragile"
+PUZ936+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"gadget has properties blue,light,durable"
+PUZ937+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"gadget has properties green,medium,flexible"
+PUZ938+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"gadget has properties yellow,compact,portable"
+PUZ939+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"device has properties red,heavy,fragile"
+PUZ940+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"device has properties blue,light,durable"
+PUZ941+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"device has properties green,medium,flexible"
+PUZ942+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"device has properties yellow,compact,portable"
+PUZ943+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"tool has properties red,heavy,fragile"
+PUZ944+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"tool has properties blue,light,durable"
+PUZ945+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"tool has properties green,medium,flexible"
+PUZ946+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"tool has properties yellow,compact,portable"
+PUZ947+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"component has properties red,heavy,fragile"
+PUZ948+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"component has properties blue,light,durable"
+PUZ949+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"component has properties green,medium,flexible"
+PUZ950+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"component has properties yellow,compact,portable"
+PUZ951+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"module has properties red,heavy,fragile"
+PUZ952+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"module has properties blue,light,durable"
+PUZ953+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"module has properties green,medium,flexible"
+PUZ954+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"module has properties yellow,compact,portable"
+PUZ955+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"unit has properties red,heavy,fragile"
+PUZ956+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"unit has properties blue,light,durable"
+PUZ957+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"unit has properties green,medium,flexible"
+PUZ958+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"unit has properties yellow,compact,portable"
+PUZ959+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"part has properties red,heavy,fragile"
+PUZ960+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"part has properties blue,light,durable"
+PUZ961+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"part has properties green,medium,flexible"
+PUZ962+1.p,TPTP_PUZ,TPTP,PUZ,Theorem,0.08,easy,"part has properties yellow,compact,portable"
+GRP001+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.15,easy,Identity is unique
+GRP002+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.20,medium,Left inverse equals right inverse
+GRP003+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.10,easy,Identity times identity
+GRP004+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.25,medium,Right cancellation
+GRP005+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.25,medium,Left cancellation
+GRP010+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.30,medium,Subgroup closure
+GRP011+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.15,easy,Abelian group commutativity
+GRP102+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.16,medium,Inverse chain length 2
+GRP103+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.24,medium,Inverse chain length 3
+GRP104+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.32,medium,Inverse chain length 4
+GRP105+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Inverse chain length 5
+GRP106+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.48,hard,Inverse chain length 6
+GRP107+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Inverse chain length 7
+GRP108+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Inverse chain length 8
+GRP109+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Inverse chain length 9
+GRP110+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Inverse chain length 10
+GRP111+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Inverse chain length 11
+GRP203+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.30,medium,Semigroup associativity instance 3
+GRP204+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Semigroup associativity instance 4
+GRP205+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Semigroup associativity instance 5
+GRP206+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Semigroup associativity instance 6
+GRP207+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Semigroup associativity instance 7
+GRP208+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Semigroup associativity instance 8
+GRP209+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Semigroup associativity instance 9
+GRP301+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.18,medium,Group product chain 3 elements
+GRP302+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.24,medium,Group product chain 4 elements
+GRP303+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.30,medium,Group product chain 5 elements
+GRP304+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.36,medium,Group product chain 6 elements
+GRP305+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.42,hard,Group product chain 7 elements
+GRP306+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.48,hard,Group product chain 8 elements
+GRP307+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Group product chain 9 elements
+GRP308+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Group product chain 10 elements
+GRP309+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Group product chain 11 elements
+GRP310+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Group product chain 12 elements
+GRP311+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Group product chain 13 elements
+GRP312+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.50,hard,Group product chain 14 elements
+GRP313+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.24,medium,Subgroup closure 2 generators
+GRP314+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.36,medium,Subgroup closure 3 generators
+GRP315+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.48,hard,Subgroup closure 4 generators
+GRP316+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Subgroup closure 5 generators
+GRP317+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Subgroup closure 6 generators
+GRP318+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Subgroup closure 7 generators
+GRP401+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.24,medium,Normal subgroup conjugation 2 elements
+GRP402+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.36,medium,Normal subgroup conjugation 3 elements
+GRP403+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.48,hard,Normal subgroup conjugation 4 elements
+GRP404+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.60,hard,Normal subgroup conjugation 5 elements
+GRP405+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.65,hard,Normal subgroup conjugation 6 elements
+GRP406+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.65,hard,Normal subgroup conjugation 7 elements
+GRP407+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.65,hard,Normal subgroup conjugation 8 elements
+GRP408+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.65,hard,Normal subgroup conjugation 9 elements
+GRP409+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.65,hard,Normal subgroup conjugation 10 elements
+GRP410+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.65,hard,Normal subgroup conjugation 11 elements
+GRP411+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.10,easy,Abelian commutativity 2 elements
+GRP412+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.15,easy,Abelian commutativity 3 elements
+GRP413+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.20,medium,Abelian commutativity 4 elements
+GRP414+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.25,medium,Abelian commutativity 5 elements
+GRP415+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.30,medium,Abelian commutativity 6 elements
+GRP416+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.35,medium,Abelian commutativity 7 elements
+GRP417+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Abelian commutativity 8 elements
+GRP418+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Abelian commutativity 9 elements
+GRP419+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Abelian commutativity 10 elements
+GRP420+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Abelian commutativity 11 elements
+GRP421+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Abelian commutativity 12 elements
+GRP422+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Abelian commutativity 13 elements
+GRP423+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Abelian commutativity 14 elements
+GRP424+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.16,medium,Cyclic group order 2
+GRP425+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.24,medium,Cyclic group order 3
+GRP426+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.32,medium,Cyclic group order 4
+GRP427+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.40,medium,Cyclic group order 5
+GRP428+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.48,hard,Cyclic group order 6
+GRP429+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Cyclic group order 7
+GRP430+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Cyclic group order 8
+GRP431+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Cyclic group order 9
+GRP432+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Cyclic group order 10
+GRP433+1.p,TPTP_GRP,TPTP,GRP,Theorem,0.55,hard,Cyclic group order 11
+SET043+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Russell's Paradox
+SET044+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Anti-Russell Sets
+SET045+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,No Universal Set
+SET046+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,No set of non-circular sets
+SET047+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Set equality is symmetric
+SYN001+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier 2
+SYN007+1.014.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 71
+SYN036+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Andrews Challenge Problem
+SYN036+2.p,Pelletier,Pelletier,Pelletier,Theorem,0.07,easy,Andrews Challenge Problem
+SYN040+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 1
+SYN041+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 3
+SYN044+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 10
+SYN045+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 13
+SYN046+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 15
+SYN047+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 17
+SYN048+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 18
+SYN049+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 19
+SYN050+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 20
+SYN051+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 21
+SYN052+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 22
+SYN053+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 23
+SYN054+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 24
+SYN056+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 26
+SYN057+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 27
+SYN058+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 28
+SYN059+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 29
+SYN060+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 30
+SYN061+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 31
+SYN062+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 32
+SYN063+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 33
+SYN064+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 35
+SYN065+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 36
+SYN066+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.05,easy,Pelletier Problem 37
+SYN067+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.10,easy,Pelletier Problem 38
+SYN068+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 44
+SYN070+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 46
+SYN071+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 48
+SYN072+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 49
+SYN073+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 50
+SYN074+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.17,medium,Pelletier Problem 51
+SYN075+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.17,medium,Pelletier Problem 52
+SYN076+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.78,hard,Pelletier Problem 53
+SYN077+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.22,medium,Pelletier Problem 54
+SYN078+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.06,easy,Pelletier Problem 56
+SYN079+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 57
+SYN080+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 58
+SYN081+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 59
+SYN082+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 60
+SYN083+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.04,easy,Pelletier Problem 61
+SYN084+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 62
+SYN387+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,The Law of Excluded Middle
+SYN388+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Expanded Law of Excluded Middle
+SYN389+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pierce's Law
+SYN390+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier 11
+SYN391+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier 9
+SYN392+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier 14
+SYN393+1.003.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier 12
+SYN416+1.p,Pelletier,Pelletier,Pelletier,Theorem,0.00,easy,Pelletier Problem 16
+CASC103+1.p,CASC,CASC,CASC,Theorem,0.12,easy,Transitive closure 3-chain
+CASC104+1.p,CASC,CASC,CASC,Theorem,0.16,medium,Transitive closure 4-chain
+CASC105+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Transitive closure 5-chain
+CASC106+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Transitive closure 6-chain
+CASC107+1.p,CASC,CASC,CASC,Theorem,0.28,medium,Transitive closure 7-chain
+CASC108+1.p,CASC,CASC,CASC,Theorem,0.32,medium,Transitive closure 8-chain
+CASC109+1.p,CASC,CASC,CASC,Theorem,0.36,medium,Transitive closure 9-chain
+CASC110+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Transitive closure 10-chain
+CASC111+1.p,CASC,CASC,CASC,Theorem,0.44,hard,Transitive closure 11-chain
+CASC112+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Transitive closure 12-chain
+CASC113+1.p,CASC,CASC,CASC,Theorem,0.52,hard,Transitive closure 13-chain
+CASC114+1.p,CASC,CASC,CASC,Theorem,0.56,hard,Transitive closure 14-chain
+CASC115+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Transitive closure 15-chain
+CASC116+1.p,CASC,CASC,CASC,Theorem,0.64,hard,Transitive closure 16-chain
+CASC117+1.p,CASC,CASC,CASC,Theorem,0.68,hard,Transitive closure 17-chain
+CASC118+1.p,CASC,CASC,CASC,Theorem,0.72,hard,Transitive closure 18-chain
+CASC119+1.p,CASC,CASC,CASC,Theorem,0.76,hard,Transitive closure 19-chain
+CASC120+1.p,CASC,CASC,CASC,Theorem,0.80,hard,Transitive closure 20-chain
+CASC121+1.p,CASC,CASC,CASC,Theorem,0.80,hard,Transitive closure 21-chain
+CASC122+1.p,CASC,CASC,CASC,Theorem,0.80,hard,Transitive closure 22-chain
+CASC123+1.p,CASC,CASC,CASC,Theorem,0.80,hard,Transitive closure 23-chain
+CASC124+1.p,CASC,CASC,CASC,Theorem,0.80,hard,Transitive closure 24-chain
+CASC202+1.p,CASC,CASC,CASC,Theorem,0.12,easy,Function nesting depth 2
+CASC203+1.p,CASC,CASC,CASC,Theorem,0.18,medium,Function nesting depth 3
+CASC204+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Function nesting depth 4
+CASC205+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Function nesting depth 5
+CASC206+1.p,CASC,CASC,CASC,Theorem,0.36,medium,Function nesting depth 6
+CASC207+1.p,CASC,CASC,CASC,Theorem,0.42,hard,Function nesting depth 7
+CASC208+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Function nesting depth 8
+CASC209+1.p,CASC,CASC,CASC,Theorem,0.54,hard,Function nesting depth 9
+CASC210+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Function nesting depth 10
+CASC211+1.p,CASC,CASC,CASC,Theorem,0.66,hard,Function nesting depth 11
+CASC212+1.p,CASC,CASC,CASC,Theorem,0.70,hard,Function nesting depth 12
+CASC213+1.p,CASC,CASC,CASC,Theorem,0.70,hard,Function nesting depth 13
+CASC214+1.p,CASC,CASC,CASC,Theorem,0.70,hard,Function nesting depth 14
+CASC303+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Multi-axiom 3 steps with branches
+CASC304+1.p,CASC,CASC,CASC,Theorem,0.32,medium,Multi-axiom 4 steps with branches
+CASC305+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Multi-axiom 5 steps with branches
+CASC306+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Multi-axiom 6 steps with branches
+CASC307+1.p,CASC,CASC,CASC,Theorem,0.56,hard,Multi-axiom 7 steps with branches
+CASC308+1.p,CASC,CASC,CASC,Theorem,0.64,hard,Multi-axiom 8 steps with branches
+CASC309+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Multi-axiom 9 steps with branches
+CASC310+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Multi-axiom 10 steps with branches
+CASC311+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Multi-axiom 11 steps with branches
+CASC401+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Lattice chain 3 elements
+CASC402+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Lattice chain 4 elements
+CASC403+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Lattice chain 5 elements
+CASC404+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Lattice chain 6 elements
+CASC405+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Lattice chain 7 elements
+CASC406+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Lattice chain 8 elements
+CASC407+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Lattice chain 9 elements
+CASC408+1.p,CASC,CASC,CASC,Theorem,0.35,medium,Boolean algebra: Idempotence of or
+CASC409+1.p,CASC,CASC,CASC,Theorem,0.37,medium,Boolean algebra: Idempotence of and
+CASC410+1.p,CASC,CASC,CASC,Theorem,0.39,medium,Boolean algebra: Absorption 1
+CASC411+1.p,CASC,CASC,CASC,Theorem,0.41,hard,Boolean algebra: Absorption 2
+CASC412+1.p,CASC,CASC,CASC,Theorem,0.43,hard,Boolean algebra: Bounded above
+CASC413+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Boolean algebra: Bounded below
+CASC414+1.p,CASC,CASC,CASC,Theorem,0.47,hard,Boolean algebra: Double complement
+CASC415+1.p,CASC,CASC,CASC,Theorem,0.49,hard,Boolean algebra: De Morgan or
+CASC416+1.p,CASC,CASC,CASC,Theorem,0.51,hard,Boolean algebra: De Morgan and
+CASC417+1.p,CASC,CASC,CASC,Theorem,0.53,hard,Boolean algebra: Uniqueness of complement
+CASC418+1.p,CASC,CASC,CASC,Theorem,0.55,hard,Boolean algebra: Zero is not one
+CASC419+1.p,CASC,CASC,CASC,Theorem,0.57,hard,Boolean algebra: Or with one
+CASC420+1.p,CASC,CASC,CASC,Theorem,0.59,hard,Boolean algebra: And with zero
+CASC421+1.p,CASC,CASC,CASC,Theorem,0.61,hard,Boolean algebra: Self complement yields zero
+CASC422+1.p,CASC,CASC,CASC,Theorem,0.63,hard,Boolean algebra: Self complement yields one
+CASC423+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Ring theory: Zero times anything
+CASC424+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Ring theory: Anything times zero
+CASC425+1.p,CASC,CASC,CASC,Theorem,0.55,hard,Ring theory: Neg distributes
+CASC426+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Ring theory: Neg neg is id
+CASC427+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Ring theory: Neg of zero
+CASC428+1.p,CASC,CASC,CASC,Theorem,0.15,easy,Transitive 5-chain skip 2
+CASC429+1.p,CASC,CASC,CASC,Theorem,0.15,easy,Transitive 5-chain skip 3
+CASC430+1.p,CASC,CASC,CASC,Theorem,0.18,medium,Transitive 6-chain skip 2
+CASC431+1.p,CASC,CASC,CASC,Theorem,0.18,medium,Transitive 6-chain skip 3
+CASC432+1.p,CASC,CASC,CASC,Theorem,0.18,medium,Transitive 6-chain skip 5
+CASC433+1.p,CASC,CASC,CASC,Theorem,0.21,medium,Transitive 7-chain skip 2
+CASC434+1.p,CASC,CASC,CASC,Theorem,0.21,medium,Transitive 7-chain skip 3
+CASC435+1.p,CASC,CASC,CASC,Theorem,0.21,medium,Transitive 7-chain skip 5
+CASC436+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Transitive 8-chain skip 2
+CASC437+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Transitive 8-chain skip 3
+CASC438+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Transitive 8-chain skip 5
+CASC439+1.p,CASC,CASC,CASC,Theorem,0.27,medium,Transitive 9-chain skip 2
+CASC440+1.p,CASC,CASC,CASC,Theorem,0.27,medium,Transitive 9-chain skip 3
+CASC441+1.p,CASC,CASC,CASC,Theorem,0.27,medium,Transitive 9-chain skip 5
+CASC442+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Transitive 10-chain skip 2
+CASC443+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Transitive 10-chain skip 3
+CASC444+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Transitive 10-chain skip 5
+CASC445+1.p,CASC,CASC,CASC,Theorem,0.33,medium,Transitive 11-chain skip 2
+CASC446+1.p,CASC,CASC,CASC,Theorem,0.33,medium,Transitive 11-chain skip 3
+CASC447+1.p,CASC,CASC,CASC,Theorem,0.33,medium,Transitive 11-chain skip 5
+CASC448+1.p,CASC,CASC,CASC,Theorem,0.36,medium,Transitive 12-chain skip 2
+CASC449+1.p,CASC,CASC,CASC,Theorem,0.36,medium,Transitive 12-chain skip 3
+CASC450+1.p,CASC,CASC,CASC,Theorem,0.36,medium,Transitive 12-chain skip 5
+CASC451+1.p,CASC,CASC,CASC,Theorem,0.39,medium,Transitive 13-chain skip 2
+CASC452+1.p,CASC,CASC,CASC,Theorem,0.39,medium,Transitive 13-chain skip 3
+CASC453+1.p,CASC,CASC,CASC,Theorem,0.39,medium,Transitive 13-chain skip 5
+CASC454+1.p,CASC,CASC,CASC,Theorem,0.42,hard,Transitive 14-chain skip 2
+CASC455+1.p,CASC,CASC,CASC,Theorem,0.42,hard,Transitive 14-chain skip 3
+CASC456+1.p,CASC,CASC,CASC,Theorem,0.42,hard,Transitive 14-chain skip 5
+CASC457+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Transitive 15-chain skip 2
+CASC458+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Transitive 15-chain skip 3
+CASC459+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Transitive 15-chain skip 5
+CASC460+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Transitive 16-chain skip 2
+CASC461+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Transitive 16-chain skip 3
+CASC462+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Transitive 16-chain skip 5
+CASC463+1.p,CASC,CASC,CASC,Theorem,0.51,hard,Transitive 17-chain skip 2
+CASC464+1.p,CASC,CASC,CASC,Theorem,0.51,hard,Transitive 17-chain skip 3
+CASC465+1.p,CASC,CASC,CASC,Theorem,0.51,hard,Transitive 17-chain skip 5
+CASC466+1.p,CASC,CASC,CASC,Theorem,0.54,hard,Transitive 18-chain skip 2
+CASC467+1.p,CASC,CASC,CASC,Theorem,0.54,hard,Transitive 18-chain skip 3
+CASC468+1.p,CASC,CASC,CASC,Theorem,0.54,hard,Transitive 18-chain skip 5
+CASC469+1.p,CASC,CASC,CASC,Theorem,0.57,hard,Transitive 19-chain skip 2
+CASC470+1.p,CASC,CASC,CASC,Theorem,0.57,hard,Transitive 19-chain skip 3
+CASC471+1.p,CASC,CASC,CASC,Theorem,0.57,hard,Transitive 19-chain skip 5
+CASC601+1.p,CASC,CASC,CASC,Theorem,0.10,easy,Redundant axiom chain 2 var 1
+CASC602+1.p,CASC,CASC,CASC,Theorem,0.10,easy,Redundant axiom chain 2 var 2
+CASC603+1.p,CASC,CASC,CASC,Theorem,0.10,easy,Redundant axiom chain 2 var 3
+CASC604+1.p,CASC,CASC,CASC,Theorem,0.15,easy,Redundant axiom chain 3 var 1
+CASC605+1.p,CASC,CASC,CASC,Theorem,0.15,easy,Redundant axiom chain 3 var 2
+CASC606+1.p,CASC,CASC,CASC,Theorem,0.15,easy,Redundant axiom chain 3 var 3
+CASC607+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Redundant axiom chain 4 var 1
+CASC608+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Redundant axiom chain 4 var 2
+CASC609+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Redundant axiom chain 4 var 3
+CASC610+1.p,CASC,CASC,CASC,Theorem,0.25,medium,Redundant axiom chain 5 var 1
+CASC611+1.p,CASC,CASC,CASC,Theorem,0.25,medium,Redundant axiom chain 5 var 2
+CASC612+1.p,CASC,CASC,CASC,Theorem,0.25,medium,Redundant axiom chain 5 var 3
+CASC613+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Redundant axiom chain 6 var 1
+CASC614+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Redundant axiom chain 6 var 2
+CASC615+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Redundant axiom chain 6 var 3
+CASC616+1.p,CASC,CASC,CASC,Theorem,0.35,medium,Redundant axiom chain 7 var 1
+CASC617+1.p,CASC,CASC,CASC,Theorem,0.35,medium,Redundant axiom chain 7 var 2
+CASC618+1.p,CASC,CASC,CASC,Theorem,0.35,medium,Redundant axiom chain 7 var 3
+CASC619+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Redundant axiom chain 8 var 1
+CASC620+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Redundant axiom chain 8 var 2
+CASC621+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Redundant axiom chain 8 var 3
+CASC622+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Redundant axiom chain 9 var 1
+CASC623+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Redundant axiom chain 9 var 2
+CASC624+1.p,CASC,CASC,CASC,Theorem,0.45,hard,Redundant axiom chain 9 var 3
+CASC625+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Redundant axiom chain 10 var 1
+CASC626+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Redundant axiom chain 10 var 2
+CASC627+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Redundant axiom chain 10 var 3
+CASC628+1.p,CASC,CASC,CASC,Theorem,0.55,hard,Redundant axiom chain 11 var 1
+CASC629+1.p,CASC,CASC,CASC,Theorem,0.55,hard,Redundant axiom chain 11 var 2
+CASC630+1.p,CASC,CASC,CASC,Theorem,0.55,hard,Redundant axiom chain 11 var 3
+CASC631+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Redundant axiom chain 12 var 1
+CASC632+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Redundant axiom chain 12 var 2
+CASC633+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Redundant axiom chain 12 var 3
+CASC634+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Redundant axiom chain 13 var 1
+CASC635+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Redundant axiom chain 13 var 2
+CASC636+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Redundant axiom chain 13 var 3
+CASC637+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Redundant axiom chain 14 var 1
+CASC638+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Redundant axiom chain 14 var 2
+CASC639+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Redundant axiom chain 14 var 3
+CASC640+1.p,CASC,CASC,CASC,Theorem,0.08,easy,Equality chain length 2
+CASC641+1.p,CASC,CASC,CASC,Theorem,0.12,easy,Equality chain length 3
+CASC642+1.p,CASC,CASC,CASC,Theorem,0.16,medium,Equality chain length 4
+CASC643+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Equality chain length 5
+CASC644+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Equality chain length 6
+CASC645+1.p,CASC,CASC,CASC,Theorem,0.28,medium,Equality chain length 7
+CASC646+1.p,CASC,CASC,CASC,Theorem,0.32,medium,Equality chain length 8
+CASC647+1.p,CASC,CASC,CASC,Theorem,0.36,medium,Equality chain length 9
+CASC648+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Equality chain length 10
+CASC649+1.p,CASC,CASC,CASC,Theorem,0.44,hard,Equality chain length 11
+CASC650+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Equality chain length 12
+CASC651+1.p,CASC,CASC,CASC,Theorem,0.52,hard,Equality chain length 13
+CASC652+1.p,CASC,CASC,CASC,Theorem,0.56,hard,Equality chain length 14
+CASC653+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Equality chain length 15
+CASC654+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Equality chain length 16
+CASC655+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Equality chain length 17
+CASC656+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Equality chain length 18
+CASC657+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Equality chain length 19
+CASC658+1.p,CASC,CASC,CASC,Theorem,0.30,medium,Subset antisymmetry
+CASC659+1.p,CASC,CASC,CASC,Theorem,0.25,medium,Union idempotence
+CASC660+1.p,CASC,CASC,CASC,Theorem,0.25,medium,Intersection idempotence
+CASC661+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Union commutativity
+CASC662+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Intersection commutativity
+CASC663+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Union with empty set
+CASC664+1.p,CASC,CASC,CASC,Theorem,0.22,medium,Intersection with empty
+CASC665+1.p,CASC,CASC,CASC,Theorem,0.30,medium,A subset of A union B
+CASC666+1.p,CASC,CASC,CASC,Theorem,0.30,medium,A inter B subset of A
+CASC667+1.p,CASC,CASC,CASC,Theorem,0.35,medium,Union associativity
+CASC668+1.p,CASC,CASC,CASC,Theorem,0.16,medium,Disjoint sets 2-way
+CASC669+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Disjoint sets 3-way
+CASC670+1.p,CASC,CASC,CASC,Theorem,0.32,medium,Disjoint sets 4-way
+CASC671+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Disjoint sets 5-way
+CASC672+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Disjoint sets 6-way
+CASC673+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Disjoint sets 7-way
+CASC674+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Disjoint sets 8-way
+CASC675+1.p,CASC,CASC,CASC,Theorem,0.50,hard,Disjoint sets 9-way
+CASC676+1.p,CASC,CASC,CASC,Theorem,0.08,easy,Relational propagation depth 2
+CASC677+1.p,CASC,CASC,CASC,Theorem,0.12,easy,Relational propagation depth 3
+CASC678+1.p,CASC,CASC,CASC,Theorem,0.16,medium,Relational propagation depth 4
+CASC679+1.p,CASC,CASC,CASC,Theorem,0.20,medium,Relational propagation depth 5
+CASC680+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Relational propagation depth 6
+CASC681+1.p,CASC,CASC,CASC,Theorem,0.28,medium,Relational propagation depth 7
+CASC682+1.p,CASC,CASC,CASC,Theorem,0.32,medium,Relational propagation depth 8
+CASC683+1.p,CASC,CASC,CASC,Theorem,0.36,medium,Relational propagation depth 9
+CASC684+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Relational propagation depth 10
+CASC685+1.p,CASC,CASC,CASC,Theorem,0.44,hard,Relational propagation depth 11
+CASC686+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Relational propagation depth 12
+CASC687+1.p,CASC,CASC,CASC,Theorem,0.52,hard,Relational propagation depth 13
+CASC688+1.p,CASC,CASC,CASC,Theorem,0.56,hard,Relational propagation depth 14
+CASC689+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Relational propagation depth 15
+CASC690+1.p,CASC,CASC,CASC,Theorem,0.64,hard,Relational propagation depth 16
+CASC691+1.p,CASC,CASC,CASC,Theorem,0.65,hard,Relational propagation depth 17
+CASC692+1.p,CASC,CASC,CASC,CounterSatisfiable,0.15,easy,A subset B does not imply B subset A
+CASC693+1.p,CASC,CASC,CASC,CounterSatisfiable,0.12,easy,member of union does not mean member of both
+CASC694+1.p,CASC,CASC,CASC,CounterSatisfiable,0.25,medium,subsets does not mean nonempty intersection
+CASC695+1.p,CASC,CASC,CASC,Theorem,0.16,medium,Mixed quantifier 2 relations
+CASC696+1.p,CASC,CASC,CASC,Theorem,0.24,medium,Mixed quantifier 3 relations
+CASC697+1.p,CASC,CASC,CASC,Theorem,0.32,medium,Mixed quantifier 4 relations
+CASC698+1.p,CASC,CASC,CASC,Theorem,0.40,medium,Mixed quantifier 5 relations
+CASC699+1.p,CASC,CASC,CASC,Theorem,0.48,hard,Mixed quantifier 6 relations
+CASC700+1.p,CASC,CASC,CASC,Theorem,0.56,hard,Mixed quantifier 7 relations
+CASC701+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Mixed quantifier 8 relations
+CASC702+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Mixed quantifier 9 relations
+CASC703+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Mixed quantifier 10 relations
+CASC704+1.p,CASC,CASC,CASC,Theorem,0.60,hard,Mixed quantifier 11 relations
+CASC801+1.p,CASC,CASC,CASC,Theorem,0.09,easy,connects chain 3
+CASC802+1.p,CASC,CASC,CASC,Theorem,0.12,easy,connects chain 4
+CASC803+1.p,CASC,CASC,CASC,Theorem,0.15,easy,connects chain 5
+CASC804+1.p,CASC,CASC,CASC,Theorem,0.18,medium,connects chain 6
+CASC805+1.p,CASC,CASC,CASC,Theorem,0.21,medium,connects chain 7
+CASC806+1.p,CASC,CASC,CASC,Theorem,0.24,medium,connects chain 8
+CASC807+1.p,CASC,CASC,CASC,Theorem,0.27,medium,connects chain 9
+CASC808+1.p,CASC,CASC,CASC,Theorem,0.30,medium,connects chain 10
+CASC809+1.p,CASC,CASC,CASC,Theorem,0.33,medium,connects chain 11
+CASC810+1.p,CASC,CASC,CASC,Theorem,0.36,medium,connects chain 12
+CASC811+1.p,CASC,CASC,CASC,Theorem,0.39,medium,connects chain 13
+CASC812+1.p,CASC,CASC,CASC,Theorem,0.42,hard,connects chain 14
+CASC813+1.p,CASC,CASC,CASC,Theorem,0.45,hard,connects chain 15
+CASC814+1.p,CASC,CASC,CASC,Theorem,0.48,hard,connects chain 16
+CASC815+1.p,CASC,CASC,CASC,Theorem,0.51,hard,connects chain 17
+CASC816+1.p,CASC,CASC,CASC,Theorem,0.54,hard,connects chain 18
+CASC817+1.p,CASC,CASC,CASC,Theorem,0.57,hard,connects chain 19
+CASC818+1.p,CASC,CASC,CASC,Theorem,0.09,easy,reaches chain 3
+CASC819+1.p,CASC,CASC,CASC,Theorem,0.12,easy,reaches chain 4
+CASC820+1.p,CASC,CASC,CASC,Theorem,0.15,easy,reaches chain 5
+CASC821+1.p,CASC,CASC,CASC,Theorem,0.18,medium,reaches chain 6
+CASC822+1.p,CASC,CASC,CASC,Theorem,0.21,medium,reaches chain 7
+CASC823+1.p,CASC,CASC,CASC,Theorem,0.24,medium,reaches chain 8
+CASC824+1.p,CASC,CASC,CASC,Theorem,0.27,medium,reaches chain 9
+CASC825+1.p,CASC,CASC,CASC,Theorem,0.30,medium,reaches chain 10
+CASC826+1.p,CASC,CASC,CASC,Theorem,0.33,medium,reaches chain 11
+CASC827+1.p,CASC,CASC,CASC,Theorem,0.36,medium,reaches chain 12
+CASC828+1.p,CASC,CASC,CASC,Theorem,0.39,medium,reaches chain 13
+CASC829+1.p,CASC,CASC,CASC,Theorem,0.42,hard,reaches chain 14
+CASC830+1.p,CASC,CASC,CASC,Theorem,0.45,hard,reaches chain 15
+CASC831+1.p,CASC,CASC,CASC,Theorem,0.48,hard,reaches chain 16
+CASC832+1.p,CASC,CASC,CASC,Theorem,0.51,hard,reaches chain 17
+CASC833+1.p,CASC,CASC,CASC,Theorem,0.54,hard,reaches chain 18
+CASC834+1.p,CASC,CASC,CASC,Theorem,0.57,hard,reaches chain 19
+CASC835+1.p,CASC,CASC,CASC,Theorem,0.09,easy,dominates chain 3
+CASC836+1.p,CASC,CASC,CASC,Theorem,0.12,easy,dominates chain 4
+CASC837+1.p,CASC,CASC,CASC,Theorem,0.15,easy,dominates chain 5
+CASC838+1.p,CASC,CASC,CASC,Theorem,0.18,medium,dominates chain 6
+CASC839+1.p,CASC,CASC,CASC,Theorem,0.21,medium,dominates chain 7
+CASC840+1.p,CASC,CASC,CASC,Theorem,0.24,medium,dominates chain 8
+CASC841+1.p,CASC,CASC,CASC,Theorem,0.27,medium,dominates chain 9
+CASC842+1.p,CASC,CASC,CASC,Theorem,0.30,medium,dominates chain 10
+CASC843+1.p,CASC,CASC,CASC,Theorem,0.33,medium,dominates chain 11
+CASC844+1.p,CASC,CASC,CASC,Theorem,0.36,medium,dominates chain 12
+CASC845+1.p,CASC,CASC,CASC,Theorem,0.39,medium,dominates chain 13
+CASC846+1.p,CASC,CASC,CASC,Theorem,0.42,hard,dominates chain 14
+CASC847+1.p,CASC,CASC,CASC,Theorem,0.45,hard,dominates chain 15
+CASC848+1.p,CASC,CASC,CASC,Theorem,0.48,hard,dominates chain 16
+CASC849+1.p,CASC,CASC,CASC,Theorem,0.51,hard,dominates chain 17
+CASC850+1.p,CASC,CASC,CASC,Theorem,0.54,hard,dominates chain 18
+CASC851+1.p,CASC,CASC,CASC,Theorem,0.57,hard,dominates chain 19
+CASC852+1.p,CASC,CASC,CASC,Theorem,0.09,easy,precedes chain 3
+CASC853+1.p,CASC,CASC,CASC,Theorem,0.12,easy,precedes chain 4
+CASC854+1.p,CASC,CASC,CASC,Theorem,0.15,easy,precedes chain 5
+CASC855+1.p,CASC,CASC,CASC,Theorem,0.18,medium,precedes chain 6
+CASC856+1.p,CASC,CASC,CASC,Theorem,0.21,medium,precedes chain 7
+CASC857+1.p,CASC,CASC,CASC,Theorem,0.24,medium,precedes chain 8
+CASC858+1.p,CASC,CASC,CASC,Theorem,0.27,medium,precedes chain 9
+CASC859+1.p,CASC,CASC,CASC,Theorem,0.30,medium,precedes chain 10
+CASC860+1.p,CASC,CASC,CASC,Theorem,0.33,medium,precedes chain 11
+CASC861+1.p,CASC,CASC,CASC,Theorem,0.36,medium,precedes chain 12
+CASC862+1.p,CASC,CASC,CASC,Theorem,0.39,medium,precedes chain 13
+CASC863+1.p,CASC,CASC,CASC,Theorem,0.42,hard,precedes chain 14
+CASC864+1.p,CASC,CASC,CASC,Theorem,0.45,hard,precedes chain 15
+CASC865+1.p,CASC,CASC,CASC,Theorem,0.48,hard,precedes chain 16
+CASC866+1.p,CASC,CASC,CASC,Theorem,0.51,hard,precedes chain 17
+CASC867+1.p,CASC,CASC,CASC,Theorem,0.54,hard,precedes chain 18
+CASC868+1.p,CASC,CASC,CASC,Theorem,0.57,hard,precedes chain 19
+CASC869+1.p,CASC,CASC,CASC,Theorem,0.09,easy,covers chain 3
+CASC870+1.p,CASC,CASC,CASC,Theorem,0.12,easy,covers chain 4
+CASC871+1.p,CASC,CASC,CASC,Theorem,0.15,easy,covers chain 5
+CASC872+1.p,CASC,CASC,CASC,Theorem,0.18,medium,covers chain 6
+CASC873+1.p,CASC,CASC,CASC,Theorem,0.21,medium,covers chain 7
+CASC874+1.p,CASC,CASC,CASC,Theorem,0.24,medium,covers chain 8
+CASC875+1.p,CASC,CASC,CASC,Theorem,0.27,medium,covers chain 9
+CASC876+1.p,CASC,CASC,CASC,Theorem,0.30,medium,covers chain 10
+CASC877+1.p,CASC,CASC,CASC,Theorem,0.33,medium,covers chain 11
+CASC878+1.p,CASC,CASC,CASC,Theorem,0.36,medium,covers chain 12
+CASC879+1.p,CASC,CASC,CASC,Theorem,0.39,medium,covers chain 13
+CASC880+1.p,CASC,CASC,CASC,Theorem,0.42,hard,covers chain 14
+CASC881+1.p,CASC,CASC,CASC,Theorem,0.45,hard,covers chain 15
+CASC882+1.p,CASC,CASC,CASC,Theorem,0.48,hard,covers chain 16
+CASC883+1.p,CASC,CASC,CASC,Theorem,0.51,hard,covers chain 17
+CASC884+1.p,CASC,CASC,CASC,Theorem,0.54,hard,covers chain 18
+CASC885+1.p,CASC,CASC,CASC,Theorem,0.57,hard,covers chain 19
+CASC886+1.p,CASC,CASC,CASC,Theorem,0.09,easy,implies_r chain 3
+CASC887+1.p,CASC,CASC,CASC,Theorem,0.12,easy,implies_r chain 4
+CASC888+1.p,CASC,CASC,CASC,Theorem,0.15,easy,implies_r chain 5
+CASC889+1.p,CASC,CASC,CASC,Theorem,0.18,medium,implies_r chain 6
+CASC890+1.p,CASC,CASC,CASC,Theorem,0.21,medium,implies_r chain 7
+CASC891+1.p,CASC,CASC,CASC,Theorem,0.24,medium,implies_r chain 8
+CASC892+1.p,CASC,CASC,CASC,Theorem,0.27,medium,implies_r chain 9
+CASC893+1.p,CASC,CASC,CASC,Theorem,0.30,medium,implies_r chain 10
+CASC894+1.p,CASC,CASC,CASC,Theorem,0.33,medium,implies_r chain 11
+CASC895+1.p,CASC,CASC,CASC,Theorem,0.36,medium,implies_r chain 12
+CASC896+1.p,CASC,CASC,CASC,Theorem,0.39,medium,implies_r chain 13
+CASC897+1.p,CASC,CASC,CASC,Theorem,0.42,hard,implies_r chain 14
+CASC898+1.p,CASC,CASC,CASC,Theorem,0.45,hard,implies_r chain 15
+CASC899+1.p,CASC,CASC,CASC,Theorem,0.48,hard,implies_r chain 16
+CASC900+1.p,CASC,CASC,CASC,Theorem,0.51,hard,implies_r chain 17
+CASC901+1.p,CASC,CASC,CASC,Theorem,0.54,hard,implies_r chain 18
+CASC902+1.p,CASC,CASC,CASC,Theorem,0.57,hard,implies_r chain 19
+CASC903+1.p,CASC,CASC,CASC,Theorem,0.09,easy,entails chain 3
+CASC904+1.p,CASC,CASC,CASC,Theorem,0.12,easy,entails chain 4
+CASC905+1.p,CASC,CASC,CASC,Theorem,0.15,easy,entails chain 5
+CASC906+1.p,CASC,CASC,CASC,Theorem,0.18,medium,entails chain 6
+CASC907+1.p,CASC,CASC,CASC,Theorem,0.21,medium,entails chain 7
+CASC908+1.p,CASC,CASC,CASC,Theorem,0.24,medium,entails chain 8
+CASC909+1.p,CASC,CASC,CASC,Theorem,0.27,medium,entails chain 9
+CASC910+1.p,CASC,CASC,CASC,Theorem,0.30,medium,entails chain 10
+CASC911+1.p,CASC,CASC,CASC,Theorem,0.33,medium,entails chain 11
+CASC912+1.p,CASC,CASC,CASC,Theorem,0.36,medium,entails chain 12
+CASC913+1.p,CASC,CASC,CASC,Theorem,0.39,medium,entails chain 13
+CASC914+1.p,CASC,CASC,CASC,Theorem,0.42,hard,entails chain 14
+CASC915+1.p,CASC,CASC,CASC,Theorem,0.45,hard,entails chain 15
+CASC916+1.p,CASC,CASC,CASC,Theorem,0.48,hard,entails chain 16
+CASC917+1.p,CASC,CASC,CASC,Theorem,0.51,hard,entails chain 17
+CASC918+1.p,CASC,CASC,CASC,Theorem,0.54,hard,entails chain 18
+CASC919+1.p,CASC,CASC,CASC,Theorem,0.57,hard,entails chain 19
+CASC920+1.p,CASC,CASC,CASC,Theorem,0.09,easy,subsumes chain 3
+CASC921+1.p,CASC,CASC,CASC,Theorem,0.12,easy,subsumes chain 4
+CASC922+1.p,CASC,CASC,CASC,Theorem,0.15,easy,subsumes chain 5
+CASC923+1.p,CASC,CASC,CASC,Theorem,0.18,medium,subsumes chain 6
+CASC924+1.p,CASC,CASC,CASC,Theorem,0.21,medium,subsumes chain 7
+CASC925+1.p,CASC,CASC,CASC,Theorem,0.24,medium,subsumes chain 8
+CASC926+1.p,CASC,CASC,CASC,Theorem,0.27,medium,subsumes chain 9
+CASC927+1.p,CASC,CASC,CASC,Theorem,0.30,medium,subsumes chain 10
+CASC928+1.p,CASC,CASC,CASC,Theorem,0.33,medium,subsumes chain 11
+CASC929+1.p,CASC,CASC,CASC,Theorem,0.36,medium,subsumes chain 12
+CASC930+1.p,CASC,CASC,CASC,Theorem,0.39,medium,subsumes chain 13
+CASC931+1.p,CASC,CASC,CASC,Theorem,0.42,hard,subsumes chain 14
+CASC932+1.p,CASC,CASC,CASC,Theorem,0.45,hard,subsumes chain 15
+CASC933+1.p,CASC,CASC,CASC,Theorem,0.48,hard,subsumes chain 16
+CASC934+1.p,CASC,CASC,CASC,Theorem,0.51,hard,subsumes chain 17
+CASC935+1.p,CASC,CASC,CASC,Theorem,0.54,hard,subsumes chain 18
+CASC936+1.p,CASC,CASC,CASC,Theorem,0.57,hard,subsumes chain 19
+CASC937+1.p,CASC,CASC,CASC,Theorem,0.09,easy,refines chain 3
+CASC938+1.p,CASC,CASC,CASC,Theorem,0.12,easy,refines chain 4
+CASC939+1.p,CASC,CASC,CASC,Theorem,0.15,easy,refines chain 5
+CASC940+1.p,CASC,CASC,CASC,Theorem,0.18,medium,refines chain 6
+CASC941+1.p,CASC,CASC,CASC,Theorem,0.21,medium,refines chain 7
+CASC942+1.p,CASC,CASC,CASC,Theorem,0.24,medium,refines chain 8
+CASC943+1.p,CASC,CASC,CASC,Theorem,0.27,medium,refines chain 9
+CASC944+1.p,CASC,CASC,CASC,Theorem,0.30,medium,refines chain 10
+CASC945+1.p,CASC,CASC,CASC,Theorem,0.33,medium,refines chain 11
+CASC946+1.p,CASC,CASC,CASC,Theorem,0.36,medium,refines chain 12
+CASC947+1.p,CASC,CASC,CASC,Theorem,0.39,medium,refines chain 13
+CASC948+1.p,CASC,CASC,CASC,Theorem,0.42,hard,refines chain 14
+CASC949+1.p,CASC,CASC,CASC,Theorem,0.45,hard,refines chain 15
+CASC950+1.p,CASC,CASC,CASC,Theorem,0.48,hard,refines chain 16
+CASC951+1.p,CASC,CASC,CASC,Theorem,0.51,hard,refines chain 17
+CASC952+1.p,CASC,CASC,CASC,Theorem,0.54,hard,refines chain 18
+CASC953+1.p,CASC,CASC,CASC,Theorem,0.57,hard,refines chain 19
+CASC954+1.p,CASC,CASC,CASC,Theorem,0.09,easy,extends chain 3
+CASC955+1.p,CASC,CASC,CASC,Theorem,0.12,easy,extends chain 4
+CASC956+1.p,CASC,CASC,CASC,Theorem,0.15,easy,extends chain 5
+CASC957+1.p,CASC,CASC,CASC,Theorem,0.18,medium,extends chain 6
+CASC958+1.p,CASC,CASC,CASC,Theorem,0.21,medium,extends chain 7
+CASC959+1.p,CASC,CASC,CASC,Theorem,0.24,medium,extends chain 8
+CASC960+1.p,CASC,CASC,CASC,Theorem,0.27,medium,extends chain 9
+CASC961+1.p,CASC,CASC,CASC,Theorem,0.30,medium,extends chain 10
+CASC962+1.p,CASC,CASC,CASC,Theorem,0.33,medium,extends chain 11
+CASC963+1.p,CASC,CASC,CASC,Theorem,0.36,medium,extends chain 12
+CASC964+1.p,CASC,CASC,CASC,Theorem,0.39,medium,extends chain 13
+CASC_INV001.p,CASC,CASC,CASC,CounterSatisfiable,0.20,medium,Invalid: non-transitive
+CASC_INV002.p,CASC,CASC,CASC,CounterSatisfiable,0.15,easy,Invalid: symmetry
+CASC_INV003.p,CASC,CASC,CASC,CounterSatisfiable,0.10,easy,Invalid: universal from particular
+CASC_INV004.p,CASC,CASC,CASC,CounterSatisfiable,0.10,easy,Invalid: conj from disj
+CASC_MIX001.p,CASC,CASC,CASC,Theorem,0.60,hard,Well-ordering fragment
+CASC_ORD001.p,CASC,CASC,CASC,Theorem,0.20,medium,Partial order transitivity
+CASC_ORD002.p,CASC,CASC,CASC,Theorem,0.25,medium,Antisymmetry implies equality
+CASC_ORD003.p,CASC,CASC,CASC,Theorem,0.30,medium,Total order trichotomy
+CASC_REL001.p,CASC,CASC,CASC,Theorem,0.25,medium,Equivalence relation
+CASC_REL002.p,CASC,CASC,CASC,Theorem,0.30,medium,Functional relation uniqueness
+CASC_REL003.p,CASC,CASC,CASC,Theorem,0.35,medium,Injectivity
+CASC_SET001.p,CASC,CASC,CASC,Theorem,0.25,medium,Subset transitivity
+CASC_SET002.p,CASC,CASC,CASC,Theorem,0.20,medium,Union membership
+CASC_SET003.p,CASC,CASC,CASC,Theorem,0.30,medium,Intersection subset
+CASC_SET004.p,CASC,CASC,CASC,Theorem,0.15,easy,Empty set
+CASC_SET005.p,CASC,CASC,CASC,Theorem,0.10,easy,Subset reflexivity
+CASC_SET006.p,CASC,CASC,CASC,Theorem,0.40,medium,De Morgan for sets
+FOLIO001+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every doctor is a healthcare_worker
+FOLIO002+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every healthcare_worker is a doctor
+FOLIO003+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every nurse is a healthcare_worker
+FOLIO004+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every healthcare_worker is a nurse
+FOLIO005+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every lawyer is a professional
+FOLIO006+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every professional is a lawyer
+FOLIO007+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every engineer is a professional
+FOLIO008+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every professional is a engineer
+FOLIO009+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every teacher is a professional
+FOLIO010+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every professional is a teacher
+FOLIO011+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every professor is a academic
+FOLIO012+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every academic is a professor
+FOLIO013+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every physicist is a academic
+FOLIO014+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every academic is a physicist
+FOLIO015+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every chemist is a academic
+FOLIO016+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every academic is a chemist
+FOLIO017+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every biologist is a academic
+FOLIO018+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every academic is a biologist
+FOLIO019+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.05,easy,Every programmer is a professional
+FOLIO020+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.08,easy,Not every professional is a programmer
+FOLIO021+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In paris implies in europe
+FOLIO022+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In berlin implies in europe
+FOLIO023+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In tokyo implies in asia
+FOLIO024+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In beijing implies in asia
+FOLIO025+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In new_york implies in north_america
+FOLIO026+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In london implies in europe
+FOLIO027+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In sydney implies in oceania
+FOLIO028+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In cairo implies in africa
+FOLIO029+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In moscow implies in europe
+FOLIO030+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,In mumbai implies in asia
+FOLIO031+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,raining implies slippery
+FOLIO032+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not slippery implies not raining
+FOLIO033+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,snowing implies icy
+FOLIO034+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not icy implies not snowing
+FOLIO035+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,studying implies confident
+FOLIO036+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not confident implies not studying
+FOLIO037+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,exercising implies healthy
+FOLIO038+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not healthy implies not exercising
+FOLIO039+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,reading implies wise
+FOLIO040+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not wise implies not reading
+FOLIO041+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,practicing implies proficient
+FOLIO042+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not proficient implies not practicing
+FOLIO043+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,sleeping implies alert
+FOLIO044+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not alert implies not sleeping
+FOLIO045+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,eating_well implies energetic
+FOLIO046+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Contrapositive: not energetic implies not eating_well
+FOLIO047+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,Voting eligibility
+FOLIO048+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.15,easy,Missing condition
+FOLIO049+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,Some passed implies someone happy
+FOLIO050+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,Disjunctive: one of takes_bus/takes_train/takes_taxi implies uses_transport
+FOLIO051+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,Disjunctive: one of eats_meat/eats_fish/eats_veg implies eats_food
+FOLIO052+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,Disjunctive: one of plays_guitar/plays_piano/plays_drums implies plays_instrument
+FOLIO053+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,Disjunctive: one of runs/swims/cycles implies exercises
+FOLIO054+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,Disjunctive: one of reads_fiction/reads_nonfiction/reads_poetry implies reads
+FOLIO055+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.22,medium,Birds fly except penguins
+FOLIO056+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.18,medium,Penguin doesnt fly
+FOLIO057+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Relational: friend implies cooperates_with
+FOLIO058+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Relational: colleague implies collaborates_with
+FOLIO059+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Relational: neighbor implies helps
+FOLIO060+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Relational: sibling implies family_of
+FOLIO061+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Relational: mentor implies influences
+FOLIO062+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,alice has short via tall
+FOLIO063+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,bob has short via tall
+FOLIO064+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,charlie has short via tall
+FOLIO065+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,diana has short via tall
+FOLIO066+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,eve has short via tall
+FOLIO067+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,frank has short via tall
+FOLIO068+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,grace has short via tall
+FOLIO069+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,henry has short via tall
+FOLIO070+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,alice has kind via smart
+FOLIO071+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,bob has kind via smart
+FOLIO072+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,charlie has kind via smart
+FOLIO073+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,diana has kind via smart
+FOLIO074+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,eve has kind via smart
+FOLIO075+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,frank has kind via smart
+FOLIO076+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,grace has kind via smart
+FOLIO077+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,henry has kind via smart
+FOLIO078+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,alice has strong via brave
+FOLIO079+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,bob has strong via brave
+FOLIO080+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,charlie has strong via brave
+FOLIO081+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,diana has strong via brave
+FOLIO082+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,eve has strong via brave
+FOLIO083+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,frank has strong via brave
+FOLIO084+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,grace has strong via brave
+FOLIO085+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,henry has strong via brave
+FOLIO086+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,alice has careful via fast
+FOLIO087+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,bob has careful via fast
+FOLIO088+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,charlie has careful via fast
+FOLIO089+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,diana has careful via fast
+FOLIO090+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,eve has careful via fast
+FOLIO091+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,frank has careful via fast
+FOLIO092+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,grace has careful via fast
+FOLIO093+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,henry has careful via fast
+FOLIO094+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,Multi-hop 3 steps
+FOLIO095+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,Multi-hop 4 steps
+FOLIO096+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,Multi-hop 5 steps
+FOLIO097+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.30,medium,Multi-hop 6 steps
+FOLIO098+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.35,medium,Multi-hop 7 steps
+FOLIO099+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.40,medium,Multi-hop 8 steps
+FOLIO201+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,university_admission all conditions met
+FOLIO202+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,university_admission missing has_diploma
+FOLIO203+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,university_admission missing passed_exam
+FOLIO204+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,university_admission missing submitted_app
+FOLIO205+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,university_admission missing paid_fee
+FOLIO206+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,loan_approval all conditions met
+FOLIO207+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,loan_approval missing good_credit
+FOLIO208+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,loan_approval missing stable_income
+FOLIO209+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,loan_approval missing low_debt
+FOLIO210+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,loan_approval missing has_collateral
+FOLIO211+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,driving_license all conditions met
+FOLIO212+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,driving_license missing passed_theory
+FOLIO213+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,driving_license missing passed_practical
+FOLIO214+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,driving_license missing good_vision
+FOLIO215+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,driving_license missing min_age
+FOLIO216+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,job_offer all conditions met
+FOLIO217+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,job_offer missing qualified
+FOLIO218+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,job_offer missing interviewed
+FOLIO219+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,job_offer missing background_check
+FOLIO220+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,job_offer missing reference_check
+FOLIO221+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,graduation all conditions met
+FOLIO222+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,graduation missing completed_credits
+FOLIO223+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,graduation missing passed_thesis
+FOLIO224+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,graduation missing no_debts
+FOLIO225+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.12,easy,graduation missing attended_ceremony
+FOLIO226+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,Symmetric married_to
+FOLIO227+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,Symmetric friend_of
+FOLIO228+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.08,easy,Symmetric colleague_of
+FOLIO229+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.10,easy,Asymmetric parent_of invalid reverse
+FOLIO230+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.10,easy,Asymmetric older_than invalid reverse
+FOLIO231+1.p,FOLIO,FOLIO,FOLIO,CounterSatisfiable,0.10,easy,Asymmetric teaches invalid reverse
+FOLIO232+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.06,easy,2 students all studies
+FOLIO233+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.09,easy,3 students all studies
+FOLIO234+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,4 students all studies
+FOLIO235+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,5 students all studies
+FOLIO236+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.06,easy,2 athletes all trains
+FOLIO237+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.09,easy,3 athletes all trains
+FOLIO238+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,4 athletes all trains
+FOLIO239+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,5 athletes all trains
+FOLIO240+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.06,easy,2 musicians all practices
+FOLIO241+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.09,easy,3 musicians all practices
+FOLIO242+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,4 musicians all practices
+FOLIO243+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,5 musicians all practices
+FOLIO244+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.06,easy,2 chefs all cooks
+FOLIO245+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.09,easy,3 chefs all cooks
+FOLIO246+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,4 chefs all cooks
+FOLIO247+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,5 chefs all cooks
+FOLIO248+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.06,easy,2 artists all creates
+FOLIO249+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.09,easy,3 artists all creates
+FOLIO250+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,4 artists all creates
+FOLIO251+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,5 artists all creates
+FOLIO252+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.06,easy,2 writers all writes
+FOLIO253+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.09,easy,3 writers all writes
+FOLIO254+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.12,easy,4 writers all writes
+FOLIO255+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,5 writers all writes
+FOLIO256+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not guilty so innocent
+FOLIO257+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not guilty so innocent
+FOLIO258+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not guilty so innocent
+FOLIO259+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not guilty so innocent
+FOLIO260+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not alive so dead
+FOLIO261+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not alive so dead
+FOLIO262+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not alive so dead
+FOLIO263+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not alive so dead
+FOLIO264+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not present so absent
+FOLIO265+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not present so absent
+FOLIO266+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not present so absent
+FOLIO267+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not present so absent
+FOLIO268+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not pass so fail
+FOLIO269+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not pass so fail
+FOLIO270+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not pass so fail
+FOLIO271+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not pass so fail
+FOLIO272+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not accept so reject
+FOLIO273+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not accept so reject
+FOLIO274+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not accept so reject
+FOLIO275+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not accept so reject
+FOLIO276+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not open so closed
+FOLIO277+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not open so closed
+FOLIO278+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not open so closed
+FOLIO279+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not open so closed
+FOLIO280+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not win so lose
+FOLIO281+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not win so lose
+FOLIO282+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not win so lose
+FOLIO283+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not win so lose
+FOLIO284+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: alice not true_val so false_val
+FOLIO285+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: bob not true_val so false_val
+FOLIO286+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: charlie not true_val so false_val
+FOLIO287+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.10,easy,XOR: diana not true_val so false_val
+FOLIO288+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.16,medium,Contrapositive chain 2 hops
+FOLIO289+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.24,medium,Contrapositive chain 3 hops
+FOLIO290+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.32,medium,Contrapositive chain 4 hops
+FOLIO291+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.40,medium,Contrapositive chain 5 hops
+FOLIO292+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.45,hard,Contrapositive chain 6 hops
+FOLIO293+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.45,hard,Contrapositive chain 7 hops
+FOLIO401+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,speed comparison chain 3
+FOLIO402+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,speed comparison chain 4
+FOLIO403+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,speed comparison chain 5
+FOLIO404+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,weight comparison chain 3
+FOLIO405+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,weight comparison chain 4
+FOLIO406+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,weight comparison chain 5
+FOLIO407+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,height comparison chain 3
+FOLIO408+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,height comparison chain 4
+FOLIO409+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,height comparison chain 5
+FOLIO410+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,age comparison chain 3
+FOLIO411+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,age comparison chain 4
+FOLIO412+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,age comparison chain 5
+FOLIO413+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,luminosity comparison chain 3
+FOLIO414+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,luminosity comparison chain 4
+FOLIO415+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,luminosity comparison chain 5
+FOLIO416+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,volume comparison chain 3
+FOLIO417+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,volume comparison chain 4
+FOLIO418+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,volume comparison chain 5
+FOLIO419+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,cost comparison chain 3
+FOLIO420+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,cost comparison chain 4
+FOLIO421+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,cost comparison chain 5
+FOLIO422+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.15,easy,strength comparison chain 3
+FOLIO423+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.20,medium,strength comparison chain 4
+FOLIO424+1.p,FOLIO,FOLIO,FOLIO,Theorem,0.25,medium,strength comparison chain 5
+LB301+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,MP chain depth 2 var 1
+LB302+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,MP chain depth 2 var 2
+LB303+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,MP chain depth 2 var 3
+LB304+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,MP chain depth 2 var 4
+LB305+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,MP chain depth 2 var 5
+LB306+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,MP chain depth 3 var 1
+LB307+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,MP chain depth 3 var 2
+LB308+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,MP chain depth 3 var 3
+LB309+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,MP chain depth 3 var 4
+LB310+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,MP chain depth 3 var 5
+LB311+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.16,medium,MP chain depth 4 var 1
+LB312+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.16,medium,MP chain depth 4 var 2
+LB313+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.16,medium,MP chain depth 4 var 3
+LB314+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.16,medium,MP chain depth 4 var 4
+LB315+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.16,medium,MP chain depth 4 var 5
+LB316+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,MP chain depth 5 var 1
+LB317+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,MP chain depth 5 var 2
+LB318+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,MP chain depth 5 var 3
+LB319+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,MP chain depth 5 var 4
+LB320+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,MP chain depth 5 var 5
+LB321+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.24,medium,MP chain depth 6 var 1
+LB322+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.24,medium,MP chain depth 6 var 2
+LB323+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.24,medium,MP chain depth 6 var 3
+LB324+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.24,medium,MP chain depth 6 var 4
+LB325+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.24,medium,MP chain depth 6 var 5
+LB326+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.28,medium,MP chain depth 7 var 1
+LB327+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.28,medium,MP chain depth 7 var 2
+LB328+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.28,medium,MP chain depth 7 var 3
+LB329+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.28,medium,MP chain depth 7 var 4
+LB330+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.28,medium,MP chain depth 7 var 5
+LB331+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.32,medium,MP chain depth 8 var 1
+LB332+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.32,medium,MP chain depth 8 var 2
+LB333+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.32,medium,MP chain depth 8 var 3
+LB334+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.32,medium,MP chain depth 8 var 4
+LB335+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.32,medium,MP chain depth 8 var 5
+LB336+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.36,medium,MP chain depth 9 var 1
+LB337+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.36,medium,MP chain depth 9 var 2
+LB338+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.36,medium,MP chain depth 9 var 3
+LB339+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.36,medium,MP chain depth 9 var 4
+LB340+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.36,medium,MP chain depth 9 var 5
+LB341+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.40,medium,MP chain depth 10 var 1
+LB342+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.40,medium,MP chain depth 10 var 2
+LB343+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.40,medium,MP chain depth 10 var 3
+LB344+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.40,medium,MP chain depth 10 var 4
+LB345+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.40,medium,MP chain depth 10 var 5
+LB346+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.44,hard,MP chain depth 11 var 1
+LB347+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.44,hard,MP chain depth 11 var 2
+LB348+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.44,hard,MP chain depth 11 var 3
+LB349+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.44,hard,MP chain depth 11 var 4
+LB350+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.44,hard,MP chain depth 11 var 5
+LB351+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 1
+LB352+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 2
+LB353+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 3
+LB354+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 4
+LB355+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 5
+LB356+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 6
+LB357+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 7
+LB358+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 8
+LB359+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 9
+LB360+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 10
+LB361+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 11
+LB362+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 12
+LB363+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 13
+LB364+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 14
+LB365+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 15
+LB366+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 16
+LB367+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 17
+LB368+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 18
+LB369+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 19
+LB370+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 20
+LB371+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 21
+LB372+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 22
+LB373+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 23
+LB374+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 24
+LB375+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 25
+LB376+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 26
+LB377+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 27
+LB378+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 28
+LB379+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 29
+LB380+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,DS+MP combination instance 30
+LB381+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Proof by 3 cases var 1
+LB382+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Proof by 3 cases var 2
+LB383+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Proof by 3 cases var 3
+LB384+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Proof by 3 cases var 4
+LB385+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Proof by 3 cases var 5
+LB386+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Proof by 4 cases var 1
+LB387+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Proof by 4 cases var 2
+LB388+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Proof by 4 cases var 3
+LB389+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Proof by 4 cases var 4
+LB390+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Proof by 4 cases var 5
+LB391+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.25,medium,Proof by 5 cases var 1
+LB392+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.25,medium,Proof by 5 cases var 2
+LB393+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.25,medium,Proof by 5 cases var 3
+LB394+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.25,medium,Proof by 5 cases var 4
+LB395+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.25,medium,Proof by 5 cases var 5
+LB396+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.30,medium,Proof by 6 cases var 1
+LB397+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.30,medium,Proof by 6 cases var 2
+LB398+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.30,medium,Proof by 6 cases var 3
+LB399+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.30,medium,Proof by 6 cases var 4
+LB400+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.30,medium,Proof by 6 cases var 5
+LB401+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.35,medium,Proof by 7 cases var 1
+LB402+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.35,medium,Proof by 7 cases var 2
+LB403+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.35,medium,Proof by 7 cases var 3
+LB404+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.35,medium,Proof by 7 cases var 4
+LB405+1.p,LogicBench,LogicBench,LogicBench,Theorem,0.35,medium,Proof by 7 cases var 5
+LB_BE_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 1
+LB_BE_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 2
+LB_BE_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 3
+LB_BE_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 4
+LB_BE_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 5
+LB_BE_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 6
+LB_BE_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 7
+LB_BE_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 8
+LB_BE_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 9
+LB_BE_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Biconditional Elimination instance 10
+LB_BI_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 1
+LB_BI_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 2
+LB_BI_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 3
+LB_BI_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 4
+LB_BI_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 5
+LB_BI_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 6
+LB_BI_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 7
+LB_BI_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 8
+LB_BI_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 9
+LB_BI_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Biconditional Introduction instance 10
+LB_CD_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 1
+LB_CD_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 2
+LB_CD_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 3
+LB_CD_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 4
+LB_CD_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 5
+LB_CD_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 6
+LB_CD_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 7
+LB_CD_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 8
+LB_CD_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 9
+LB_CD_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Constructive Dilemma instance 10
+LB_CE_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 1
+LB_CE_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 2
+LB_CE_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 3
+LB_CE_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 4
+LB_CE_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 5
+LB_CE_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 6
+LB_CE_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 7
+LB_CE_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 8
+LB_CE_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 9
+LB_CE_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Conjunction Elimination instance 10
+LB_CI_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 1
+LB_CI_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 2
+LB_CI_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 3
+LB_CI_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 4
+LB_CI_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 5
+LB_CI_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 6
+LB_CI_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 7
+LB_CI_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 8
+LB_CI_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 9
+LB_CI_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Conjunction Introduction instance 10
+LB_CP_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 1
+LB_CP_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 2
+LB_CP_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 3
+LB_CP_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 4
+LB_CP_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 5
+LB_CP_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 6
+LB_CP_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 7
+LB_CP_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 8
+LB_CP_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 9
+LB_CP_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,Contrapositive instance 10
+LB_DI_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 1
+LB_DI_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 2
+LB_DI_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 3
+LB_DI_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 4
+LB_DI_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 5
+LB_DI_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 6
+LB_DI_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 7
+LB_DI_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 8
+LB_DI_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 9
+LB_DI_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.02,easy,Disjunction Introduction instance 10
+LB_DMA_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 1
+LB_DMA_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 2
+LB_DMA_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 3
+LB_DMA_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 4
+LB_DMA_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 5
+LB_DMA_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 6
+LB_DMA_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 7
+LB_DMA_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 8
+LB_DMA_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 9
+LB_DMA_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan conjunction instance 10
+LB_DMO_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 1
+LB_DMO_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 2
+LB_DMO_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 3
+LB_DMO_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 4
+LB_DMO_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 5
+LB_DMO_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 6
+LB_DMO_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 7
+LB_DMO_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 8
+LB_DMO_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 9
+LB_DMO_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.10,easy,De Morgan disjunction instance 10
+LB_DNE_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 1
+LB_DNE_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 2
+LB_DNE_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 3
+LB_DNE_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 4
+LB_DNE_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 5
+LB_DNE_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 6
+LB_DNE_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 7
+LB_DNE_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 8
+LB_DNE_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 9
+LB_DNE_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Double Negation Elimination instance 10
+LB_DS_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 1
+LB_DS_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 2
+LB_DS_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 3
+LB_DS_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 4
+LB_DS_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 5
+LB_DS_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 6
+LB_DS_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 7
+LB_DS_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 8
+LB_DS_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 9
+LB_DS_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Disjunctive Syllogism instance 10
+LB_EG_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 1
+LB_EG_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 2
+LB_EG_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 3
+LB_EG_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 4
+LB_EG_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 5
+LB_EG_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 6
+LB_EG_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 7
+LB_EG_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 8
+LB_EG_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 9
+LB_EG_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Existential Generalization instance 10
+LB_ES_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 1
+LB_ES_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 2
+LB_ES_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 3
+LB_ES_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 4
+LB_ES_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 5
+LB_ES_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 6
+LB_ES_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 7
+LB_ES_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 8
+LB_ES_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 9
+LB_ES_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Existential Syllogism instance 10
+LB_HS_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 1
+LB_HS_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 2
+LB_HS_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 3
+LB_HS_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 4
+LB_HS_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 5
+LB_HS_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 6
+LB_HS_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 7
+LB_HS_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 8
+LB_HS_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 9
+LB_HS_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.12,easy,Hypothetical Syllogism instance 10
+LB_MMP_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 1
+LB_MMP_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 2
+LB_MMP_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 3
+LB_MMP_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 4
+LB_MMP_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 5
+LB_MMP_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 6
+LB_MMP_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 7
+LB_MMP_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 8
+LB_MMP_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 9
+LB_MMP_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.18,medium,Multi-hop Modus Ponens instance 10
+LB_MP_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 1
+LB_MP_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 2
+LB_MP_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 3
+LB_MP_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 4
+LB_MP_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 5
+LB_MP_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 6
+LB_MP_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 7
+LB_MP_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 8
+LB_MP_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 9
+LB_MP_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.05,easy,Modus Ponens instance 10
+LB_MT_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 1
+LB_MT_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 2
+LB_MT_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 3
+LB_MT_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 4
+LB_MT_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 5
+LB_MT_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 6
+LB_MT_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 7
+LB_MT_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 8
+LB_MT_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 9
+LB_MT_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.08,easy,Modus Tollens instance 10
+LB_RAA_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 1
+LB_RAA_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 2
+LB_RAA_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 3
+LB_RAA_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 4
+LB_RAA_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 5
+LB_RAA_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 6
+LB_RAA_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 7
+LB_RAA_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 8
+LB_RAA_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 9
+LB_RAA_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.20,medium,Reductio ad Absurdum instance 10
+LB_RES_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 1
+LB_RES_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 2
+LB_RES_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 3
+LB_RES_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 4
+LB_RES_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 5
+LB_RES_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 6
+LB_RES_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 7
+LB_RES_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 8
+LB_RES_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 9
+LB_RES_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.15,easy,Resolution instance 10
+LB_UI_01.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 1
+LB_UI_02.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 2
+LB_UI_03.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 3
+LB_UI_04.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 4
+LB_UI_05.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 5
+LB_UI_06.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 6
+LB_UI_07.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 7
+LB_UI_08.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 8
+LB_UI_09.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 9
+LB_UI_10.p,LogicBench,LogicBench,LogicBench,Theorem,0.03,easy,Universal Instantiation instance 10

@@ -19,9 +19,9 @@ rule tokenize = parse
   | "conjecture" { CONJECTURE }
   | "hypothesis" { HYPOTHESIS }
   | "negated_conjecture" { NEG_CONJECTURE }
-  | "![" { FORALL_BRACKET }
-  | "?[" { EXISTS_BRACKET }
-  | "]:" { BRACKET_COLON }
+  | '!' [' ' '\t']* '[' { FORALL_BRACKET }
+  | '?' [' ' '\t']* '[' { EXISTS_BRACKET }
+  | ']' [' ' '\t']* ':' { BRACKET_COLON }
   | '('  { LPAREN }
   | ')'  { RPAREN }
   | ','  { COMMA }

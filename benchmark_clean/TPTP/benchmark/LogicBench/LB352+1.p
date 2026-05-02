@@ -1,0 +1,14 @@
+%------------------------------------------------------------------------------
+% File     : LB352+1
+% Domain   : Inference Rules (LogicBench)
+% Problem  : DS+MP combination instance 2
+% Status   : Theorem
+% Rating   : 0.15 v1.0.0
+% Source   : [LogicBench]
+% SPC      : FOF_THM
+%------------------------------------------------------------------------------
+fof(p1, axiom, ( psi(obj1) | sigma(obj1) )).
+fof(p2, axiom, ( ~psi(obj1) )).
+fof(p3, axiom, ( ! [X] : ((sigma(X) => mu(X))) )).
+fof(goal, conjecture, ( mu(obj1) )).
+%------------------------------------------------------------------------------

@@ -11,6 +11,9 @@
 open Types
 open Formula
 
+exception Timeout_exn
+let deadline = ref 0.
+
 (* ================================================================ *)
 (* HERBRAND UNIVERSE ENUMERATION                                     *)
 (* ================================================================ *)
@@ -60,9 +63,10 @@ let is_identity { antecedent; succedent } =
 (** Main search function.
     Strictly prioritized based on the if-else chain in Algorithm 2.
     [used] tracks (formula, term) pairs already instantiated on this branch. *)
-let rec search (stats : prover_stats) max_depth term_limit used toggle sequent =
+let rec search (stats : prover_stats) max_depth term_limit used toggle current_depth sequent =
   stats.steps <- stats.steps + 1;
-  stats.max_depth <- max (20 - max_depth) stats.max_depth;
+  stats.max_depth <- max current_depth stats.max_depth;
+  if stats.steps mod 1000 = 0 && Unix.gettimeofday () > !deadline then None else
 
   (* 1. Tier 1: Axiom check *)
   if is_identity sequent then Some (Axiom (Identity, sequent))
@@ -73,7 +77,7 @@ let rec search (stats : prover_stats) max_depth term_limit used toggle sequent =
     let rec try_rules = function
       | [] -> None
       | r :: rs ->
-          (match apply_rule stats (max_depth - 1) term_limit used (not toggle) sequent r with
+          (match apply_rule stats (max_depth - 1) term_limit used (not toggle) (current_depth + 1) sequent r with
            | Some tree -> Some tree
            | None -> try_rules rs)
     in
@@ -91,7 +95,7 @@ let rec search (stats : prover_stats) max_depth term_limit used toggle sequent =
           let rec try_apps = function
             | [] -> None
             | (r, t) :: rs ->
-                (match apply_quantifier_instantiation stats (max_depth - 1) term_limit used (not toggle) sequent r t with
+                (match apply_quantifier_instantiation stats (max_depth - 1) term_limit used (not toggle) (current_depth + 1) sequent r t with
                  | Some tree -> Some tree
                  | None -> try_apps rs)
           in try_apps apps4
@@ -104,14 +108,14 @@ let rec search (stats : prover_stats) max_depth term_limit used toggle sequent =
               | r :: rs ->
                   let avoid = List.concat_map free_vars (sequent.antecedent @ sequent.succedent) in
                   let z' = variant "z" avoid in
-                  (match apply_quantifier_instantiation stats (max_depth - 1) term_limit used (not toggle) sequent r (Var z') with
+                  (match apply_quantifier_instantiation stats (max_depth - 1) term_limit used (not toggle) (current_depth + 1) sequent r (Var z') with
                    | Some tree -> Some tree
                    | None -> try_fresh rs)
             in try_fresh rules5
           else None
 
 (** Apply a specific rule at a sequent. *)
-and apply_rule stats depth term_limit used next_toggle sequent rule =
+and apply_rule stats depth term_limit used next_toggle current_depth sequent rule =
   let children_sequents = match rule with
     | AndLeft i ->
         let a, b = match List.nth sequent.antecedent i with And(a,b) -> a,b | _ -> failwith "AndL" in
@@ -172,7 +176,7 @@ and apply_rule stats depth term_limit used next_toggle sequent rule =
   let rec prove_all = function
     | [] -> Some []
     | g :: gs ->
-        (match search stats depth term_limit used next_toggle g with
+        (match search stats depth term_limit used next_toggle current_depth g with
          | None -> None
          | Some t -> match prove_all gs with None -> None | Some ts -> Some (t :: ts))
   in
@@ -180,7 +184,7 @@ and apply_rule stats depth term_limit used next_toggle sequent rule =
   | Some trees -> Some (Inference (rule, sequent, trees))
   | None -> None
 
-and apply_quantifier_instantiation stats depth term_limit used next_toggle sequent rule t =
+and apply_quantifier_instantiation stats depth term_limit used next_toggle current_depth sequent rule t =
   stats.inst_attempts <- stats.inst_attempts + 1;
   let s' = match rule with
     | ForallLeft (i, _) ->
@@ -198,7 +202,7 @@ and apply_quantifier_instantiation stats depth term_limit used next_toggle seque
     | _ -> failwith "Invalid quantifier rule"
   in
   let f_orig = match rule with ForallLeft(i, _) -> List.nth sequent.antecedent i | ExistsRight(i, _) -> List.nth sequent.succedent i | _ -> failwith "!" in
-  match search stats depth term_limit ((f_orig, t) :: used) next_toggle s' with
+  match search stats depth term_limit ((f_orig, t) :: used) next_toggle current_depth s' with
   | Some tree -> 
       let final_rule = match rule with ForallLeft(i, _) -> ForallLeft(i, t) | ExistsRight(i, _) -> ExistsRight(i, t) | r -> r in
       Some (Inference (final_rule, sequent, [tree]))
@@ -268,18 +272,32 @@ and find_all_tier5_rules sequent toggle =
 
 let prove formula timeout_ms =
   let start_time = Unix.gettimeofday () in
+  deadline := start_time +. timeout_ms /. 1000.;
   let stats = make_stats () in
   let sequent = { antecedent = []; succedent = [formula] } in
-  let rec iterative_deepening max_d term_d =
-    let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
-    if elapsed > timeout_ms then { engine = Baseline; solved = false; stats = { stats with time_ms = elapsed } }
-    else
-      match search stats max_d term_d [] true sequent with
-      | Some _ ->
-        stats.time_ms <- (Unix.gettimeofday () -. start_time) *. 1000.;
-        { engine = Baseline; solved = true; stats }
-      | None ->
-        if max_d < 20 then iterative_deepening (max_d + 1) term_d
-        else if term_d < 3 then iterative_deepening 5 (term_d + 1)
-        else { engine = Baseline; solved = false; stats = { stats with time_ms = elapsed } }
-  in iterative_deepening 1 0
+  let secs = max 1 (int_of_float (ceil (timeout_ms /. 1000.))) in
+  let old_handler = Sys.signal Sys.sigalrm
+    (Sys.Signal_handle (fun _ -> raise Timeout_exn)) in
+  let _ = Unix.alarm secs in
+  let result =
+    try
+      let rec iterative_deepening max_d term_d =
+        let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
+        if elapsed > timeout_ms then { engine = Baseline; solved = false; stats = { stats with time_ms = elapsed } }
+        else
+          match search stats max_d term_d [] true 0 sequent with
+          | Some _ ->
+            stats.time_ms <- (Unix.gettimeofday () -. start_time) *. 1000.;
+            { engine = Baseline; solved = true; stats }
+          | None ->
+            if max_d < 20 then iterative_deepening (max_d + 1) term_d
+            else if term_d < 3 then iterative_deepening 5 (term_d + 1)
+            else { engine = Baseline; solved = false; stats = { stats with time_ms = elapsed } }
+      in iterative_deepening 1 0
+    with Timeout_exn ->
+      let elapsed = (Unix.gettimeofday () -. start_time) *. 1000. in
+      { engine = Baseline; solved = false; stats = { stats with time_ms = elapsed } }
+  in
+  let _ = Unix.alarm 0 in
+  Sys.set_signal Sys.sigalrm old_handler;
+  result
