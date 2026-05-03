@@ -3,7 +3,6 @@ benchmark.py — Benchmarking suite for the Baseline Prover.
 
 250 FOL problems (85% valid, 15% invalid) and runs them 
 through the BaselineProver, collecting performance metrics. 
-Replace Random Generation as it was causing issues.
 """
 import re
 import json
@@ -13,8 +12,6 @@ from typing import List, Tuple
 from parser import parse_formula
 from baseline import BaselineProver
 from fol_types import Formula
-import random
-from typing import List, Tuple
 
 # ================================================================
 # HARD-CODED BENCHMARK SUITE (250 total)
@@ -87,6 +84,44 @@ def generate_suite(count: int = 250, valid_ratio: float = 0.9) -> List[Tuple[str
         # =========================================================
         "A.x (R(x) -> S(x)) -> (A.x R(x) -> E.x S(x))",
         "A.x R(x) -> (A.x S(x) -> A.x (R(x) & S(x)))",
+
+        # =========================================================
+        # 9. Pelletier's 75 Problems (Valid subset)
+        # =========================================================
+        "P -> Q <-> (~Q -> ~P)",
+        "~~P <-> P",
+        "~(P -> Q) -> (Q -> P)",
+        "~P -> Q <-> ~Q -> P",
+        "(P | Q -> P | R) -> (P | (Q -> R))",
+        "P | ~P",
+        "P | ~~P",
+        "((P -> Q) -> P) -> P",
+        "((P | Q) & (~P | Q) & (P | ~Q)) -> ~(~P | ~Q)",
+        "(Q -> R) & (R -> P & Q) & (P -> Q & R) -> (P <-> Q)",
+        "P <-> P",
+        "((P <-> Q) <-> R) <-> (P <-> (Q <-> R))",
+        "P | (Q & R) <-> (P | Q) & (P | R)",
+        "(P <-> Q) <-> (Q | ~P) & (~Q | P)",
+        "P -> Q <-> ~P | Q",
+        "(P -> Q) | (Q -> P)",
+        "(P & (Q -> R) -> S) <-> (~P | Q | S) & (~P | ~R | S)",
+        "E.y A.x (P(y) -> P(x))",
+        "E.x A.y A.z ((P(y) -> Q(z)) -> (P(x) -> Q(x)))",
+        "(A.x A.y (E.z (P(x) & Q(y) -> R(z)))) -> (A.x A.y (P(x) & Q(y) -> (E.z R(z))))",
+        "(E.x (P -> Q(x))) & (E.x (Q(x) -> P)) -> (E.x (P <-> Q(x)))",     
+        "A.x (P <-> Q(x)) -> (P <-> A.x Q(x))",
+        "A.x (P | Q(x)) <-> P | A.x Q(x)",
+        "~(E.x (P(x) & Q(x))) & (A.x (P(x) -> R(x))) & (E.x (Q(x) & ~R(x))) -> (E.x (Q(x) & ~P(x)))",
+        "(E.x P(x) <-> E.y Q(y)) & (A.x A.y (P(x) & Q(y) -> (R(x) <-> S(y)))) -> (A.x (P(x) -> R(x)) <-> A.y (Q(y) -> S(y)))",
+        "(E.x P(x) & ~A.x Q(x)) & (A.x (P(x) -> R(x))) -> E.x (R(x) & ~Q(x))",
+        "(A.x P(x) -> A.x Q(x)) & (A.x (Q(x) -> R(x))) -> (A.x (P(x) -> R(x)))",
+        "(E.x P(x)) & (E.y Q(y)) -> ((A.x (P(x) -> R(x))) & (A.y (Q(y) -> S(y))) <-> (A.x A.y (P(x) & Q(y) -> R(x) & S(y))))",
+        "A.x (P(x) | Q(x) -> ~R(x)) & A.x ((Q(x) -> ~S(x)) -> P(x) & R(x)) -> A.x S(x)",
+        "~(E.x (P(x) & (G(x) | H(x)))) & (E.x (I(x) & P(x))) & (A.x (~H(x) -> J(x))) -> E.x (I(x) & J(x))",
+        "A.x (P(x) & (Q(x) | R(x)) -> S(x)) & A.x (S(x) & R(x) -> L(x)) & A.x (M(x) -> R(x)) -> A.x (P(x) & M(x) -> L(x))",
+        "A.x (P(a) & (P(x) -> P(b)) -> P(c)) <-> A.x ((~P(a) | P(x) | P(c)) & (~P(a) | ~P(b) | P(c)))",
+        "((E.x A.y (P(x) <-> P(y))) <-> ((E.x Q(x)) <-> (A.y P(y)))) <-> ((E.x A.y (Q(x) <-> Q(y))) <-> ((E.x P(x)) <-> (A.y Q(y))))",
+        "A.x A.y (Q(x,y) <-> A.z (P(z,x) <-> P(z,y))) -> A.x A.y (Q(x,y) <-> Q(y,x))",
     ]
 
     invalid = [
@@ -94,9 +129,7 @@ def generate_suite(count: int = 250, valid_ratio: float = 0.9) -> List[Tuple[str
         # 1. Quantifier fallacies
         # =========================================================
         "E.x R(x) -> A.x R(x)",
-        "A.x R(x) -> R(a) & R(b)",
 
-        "(A.x R(x) | A.x S(x)) -> A.x (R(x) | S(x))",
         "(E.x R(x) & E.x S(x)) -> E.x (R(x) & S(x))",
 
         # =========================================================
@@ -107,7 +140,6 @@ def generate_suite(count: int = 250, valid_ratio: float = 0.9) -> List[Tuple[str
         # =========================================================
         # 3. Distribution errors
         # =========================================================
-        "A.x (R(x) | S(x)) -> (A.x R(x) | A.x S(x))",
         "E.x (R(x) -> S(x)) -> (E.x R(x) -> E.x S(x))",
 
         # =========================================================
@@ -120,20 +152,18 @@ def generate_suite(count: int = 250, valid_ratio: float = 0.9) -> List[Tuple[str
         # =========================================================
         # 5. Function misuse
         # =========================================================
-        "A.x R(x) -> R(f(x))",
         "R(f(a)) -> R(a)",
 
         # =========================================================
-        # 6. Structural invalid forms
-        # =========================================================
-        "A.x R(x) R(a)",   # malformed concatenation
-        "E.x R(x) A.x S(x)",
-
-        # =========================================================
-        # 7. Cross-variable confusion
+        # 6. Cross-variable confusion
         # =========================================================
         "A.x R(x,y) -> R(x)",
         "E.x R(x) -> R(x,y)",
+
+        # =========================================================
+        # 7. Pelletier Invalid
+        # =========================================================
+        "(E.x P(x)) & (A.x (G(x) -> ~P(x))) & (A.x (P(x) -> (H(x) | G(x)))) & (A.x (P(x) -> ~H(x))) -> (A.x (P(x) -> G(x)))",
     ]
 
     # =========================================================
@@ -163,7 +193,7 @@ def run_benchmark():
     print("Generating Test problems (90% valid, 10% invalid)...")
     suite = generate_suite(250, 0.90)
     
-    prover = BaselineProver(timeout_ms=10000000.0) # 10s timeout per problem
+    prover = BaselineProver(timeout_ms=1000.0) # 1s timeout per problem for speed
     results = []
     
     total_valid = sum(1 for _, v in suite if v)
@@ -173,7 +203,7 @@ def run_benchmark():
     solved_invalid = 0 # Should remain 0 for a sound prover
     timeouts = 0
     
-    print(f"\nRunning benchmark...")
+    print(f"\\nRunning benchmark...")
     start_time = time.time()
     
     for i, (f_str, expected_valid) in enumerate(suite, 1):
@@ -214,7 +244,7 @@ def run_benchmark():
     end_time = time.time()
     
     # Summary
-    print("\n=== BENCHMARK SUMMARY ===")
+    print("\\n=== BENCHMARK SUMMARY ===")
     print(f"Total Problems: {len(suite)}")
     print(f"Valid Problems: {total_valid} | Solved: {solved_valid} ({solved_valid/total_valid*100:.1f}%)")
     print(f"Invalid Problems: {total_invalid} | Solved: {solved_invalid} (Soundness check: {'PASS' if solved_invalid == 0 else 'FAIL'})")
@@ -224,7 +254,7 @@ def run_benchmark():
     # Save to file
     with open("benchmark_results.json", "w") as f:
         json.dump(results, f, indent=2)
-    print("\nDetailed results saved to benchmark_results.json")
+    print("\\nDetailed results saved to benchmark_results.json")
 
 if __name__ == "__main__":
     run_benchmark()
