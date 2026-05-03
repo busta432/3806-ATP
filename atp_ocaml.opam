@@ -11,7 +11,7 @@ homepage: "https://github.com/danielbusing/atp-ocaml"
 bug-reports: "https://github.com/danielbusing/atp-ocaml/issues"
 depends: [
   "ocaml" {>= "5.0"}
-  "dune" {>= "3.12" & >= "3.12"}
+  "dune" {>= "3.13" & >= "3.13"}
   "menhir" {>= "20230608"}
   "alcotest" {>= "1.7.0"}
   "cmdliner" {>= "1.2.0"}

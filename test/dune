@@ -1,3 +1,7 @@
 (tests
  (names test_types test_formula test_unification test_parser test_cnf test_baseline test_improved test_resolution test_engines)
  (libraries atp_ocaml alcotest unix))
+
+(executables
+ (names run_benchmark)
+ (libraries atp_ocaml unix))
